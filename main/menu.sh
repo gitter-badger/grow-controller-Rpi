@@ -55,7 +55,7 @@ case $yourch in
                 read yourch ;;
 	h) tail /var/log/auth.log && echo -n "Enter to continue"
                 read yourch ;;
-	i) sudo nano /home/pi/menu.sh && echo -n "Enter to continue"
+	i) sudo nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
                 read yourch ;;
 	j) sudo shutdown -h -P now ;;
 	k) date && echo -n "Enter to continue"
