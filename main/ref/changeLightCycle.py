@@ -4,7 +4,8 @@
 import os
 
 print"Set light cycle"
-print"!!!!WARNING REPLACES CURRENT CRONTAB!!!!"
+print"!!!! WARNING  REPLACES   CURRENT  CRONTAB !!!!"
+print"!!!! CHECK YOUR CRONTAB WITH $ crontab -l !!!!"
 print"Ctrl-C to EXIT"
 t = input("12 or 18\n$")
 if t == 12:
