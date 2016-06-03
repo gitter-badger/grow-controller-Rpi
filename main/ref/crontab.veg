@@ -1,0 +1,3 @@
+ 0 19 * * * python /home/pi/HPSon.py  # Light on at 6pm
+ 0 13 * * * python /home/pi/HPSoff.py  # Light on at 1pm
+

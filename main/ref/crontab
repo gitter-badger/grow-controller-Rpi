@@ -1,0 +1,18 @@
+# Light cycles based on outdoor temp curves
+# use corntab to set your light times 
+# command to edit your crontab: $ crontab -e
+# m h  dom mon dow   command
+
+# FLOWER CYCLE
+0 22 * * * python /home/pi/HPSon.py  # Light on at 10pm
+0 22 * * * python /home/pi/HPSoff.py # Light off at 10am
+
+# VEG CYCLE
+# 0 19 * * * python /home/pi/HPSon.py  # Light on at 6pm
+# 0 13 * * * python /home/pi/HPSoff.py  # Light on at 1pm
+
+
+# emergency temp action \/
+# run every 5 min, sudo because of adafruit library
+# w/out sudo py script fails
+#*/5 22-10 * * *  sudo python /home/pi/reactive_control_WIP.py # i beleive this should run
