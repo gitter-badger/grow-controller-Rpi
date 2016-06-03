@@ -1,5 +1,11 @@
 # grow-controller-RPi3
-
+***************************************************************************
+"THE WEED-WARE LICENSE" :
+ scott snyder wrote these files.  As long as you retain this notice you
+ can do whatever you want with this stuff. If we meet some day, and you 
+ think this stuff is worth it, you can smoke me a bowl in return.
+***************************************************************************
+ 
 I am teaching myself a bit of python with this project
 
 *********assume none of this code works**********
