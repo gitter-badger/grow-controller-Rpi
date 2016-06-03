@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #cant run during lights off
+#This script is not complete
 import Adafruit_DHT as dht
 import RPi.GPIO as GPIO
 import time
