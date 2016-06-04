@@ -1,0 +1,4 @@
+GPIO
+27 == main light
+22 == side lighting
+17 == DHT22
