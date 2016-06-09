@@ -2,7 +2,7 @@
 while :
 do
 clear
-fortune | cowsay -f tux 
+fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "!  TOOLS                 ! RPi Grow controller    !"
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
