@@ -19,7 +19,9 @@ SD card size: 2GB
 
 Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) requires root :<(
 
-Using the Raspbian GPIO library for relay control(built in, no DL required) 
+Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
+
+Using the Raspbian GPIO library for relay control(comes with raspbian lite, no DL required) 
 
 
 building a Raspberry pi grow controller using python and crontab and some shell script
@@ -42,4 +44,3 @@ add water pump
 
 add liquid flow sensor
 
-watchdht.py ---> lcd 16x2 I2C lcd =  Adafruit PRODUCT ID: 1110 
