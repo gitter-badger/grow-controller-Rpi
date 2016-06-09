@@ -1,4 +1,6 @@
 GPIO
+18 == relay
+23 == relay
 27 == main light
 22 == side lighting
 17 == DHT22
