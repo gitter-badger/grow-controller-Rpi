@@ -9,7 +9,7 @@
  
 I am teaching myself a bit of python with this project
 
-*********assume none of this code works**********
+#*********assume none of this code works**********
 
 pins must be set across many files
 
