@@ -1,6 +1,6 @@
-#add lcd support
-#using https://www.adafruit.com/products/1110 lcd
-#waiting for lcd cant test. lcd shipping tomorrow
+# using https://www.adafruit.com/products/1110 lcd
+# buttons need to do something
+
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import time
@@ -14,9 +14,6 @@ while True:
   time.sleep(10)
   lcd.clear()
   lcd.message('T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h))
-#  PRINT DHT VALUE ON LCD
-# lcd.message(print 'T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h)) #test
-#  
   if t1 > 80:
     lcd.set_color(1.0, 0.0, 0.0)#red
   if t1 < 80:
