@@ -44,3 +44,5 @@ add water pump
 
 add liquid flow sensor
 
+add water PH/TDS/EC sensor
+
