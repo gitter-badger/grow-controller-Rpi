@@ -6,6 +6,8 @@
  If we meet some day, and you think this stuff is worth it,
  you can smoke me a bowl in return.
 ***************************************************************************
+
+Using the "change light cycle" in the "light menu" replaces your current crontab
  
 I am teaching myself a bit of python with this project
 
