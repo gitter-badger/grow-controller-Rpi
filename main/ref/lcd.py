@@ -5,7 +5,6 @@
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import time
-import datetime
 
 lcd = LCD.Adafruit_CharLCDPlate()
 
