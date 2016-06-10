@@ -1,5 +1,6 @@
 # using https://www.adafruit.com/products/1110 lcd
 # buttons need to do something
+# This file gets invoked by Cron, installed by changing light cycle in menu
 
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
