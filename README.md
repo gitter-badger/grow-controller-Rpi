@@ -50,4 +50,43 @@ add water PH/TDS/EC sensor
 
 ***************************************************************************************
 #Installation and use
-***************************************************************************************
+ 
+$ sudo apt-get update && sudo apt-get upgrade -y
+
+$ sudo apt-get install build-essential python-dev python-smbus git -y
+
+#DHT22
+
+$ cd ~
+
+$ git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+
+$ cd Adafruit_Python_DHT
+
+$ sudo python setup.py install
+
+#Adafruit LCD
+
+$ cd ~
+
+$ git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
+
+$ cd Adafruit_Python_CharLCD
+
+$ sudo python setup.py install
+
+#Grow controller
+
+$ cd ~
+
+$ git clone https://github.com/growmaster420/grow-controller-Rpi.git
+
+$ cd grow-controller-Rpi
+
+$ cd main
+
+$ bash menu.sh
+
+Install the crontab in light menu
+
+$ sudo reboot now
