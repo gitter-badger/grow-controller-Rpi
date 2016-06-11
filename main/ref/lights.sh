@@ -32,11 +32,11 @@ case $yourch in
                 read yourch ;;
 	6) python /home/pi/grow-controller-Rpi/main/ref/18on.py & echo -n "Enter to continue"
                 read yourch ;;
-  7) python /home/pi/grow-controller-Rpi/main/ref/18off.py & echo -n "Enter to continue"
+        7) python /home/pi/grow-controller-Rpi/main/ref/18off.py & echo -n "Enter to continue"
                 read yourch ;;
 	8) python /home/pi/grow-controller-Rpi/main/ref/23on.py & echo -n "Enter to continue"
                 read yourch ;;
-  9) python /home/pi/grow-controller-Rpi/main/ref/23off.py & echo -n "Enter to continue"
+        9) python /home/pi/grow-controller-Rpi/main/ref/23off.py & echo -n "Enter to continue"
                 read yourch ;;
 	0) exit 0 ;;
 *) echo "really?";
