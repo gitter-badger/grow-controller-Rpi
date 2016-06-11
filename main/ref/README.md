@@ -20,3 +20,6 @@ water Pump control/ flow sensor
 
 Nutrient injector(milli flow meters/liquid pumps)
 
+************************************************************************
+ 
+These are here because I have not found suitable low cost parts
