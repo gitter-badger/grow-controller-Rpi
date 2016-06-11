@@ -1,3 +1,4 @@
+#I Dont understand why this doesnt work!!!!!!!!!!!! SMASHES KEYBOARD
 import time
 import Adafruit_CharLCD as LCD
 import RPi.GPIO as GPIO
