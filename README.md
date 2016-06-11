@@ -48,6 +48,8 @@ add liquid flow sensor
 
 add water PH/TDS/EC sensor
 
+add Android Apk to control everything
+
 ***************************************************************************************
 #Installation and use
  
@@ -80,6 +82,8 @@ $ sudo python setup.py install
 $ cd ~
 
 $ git clone https://github.com/growmaster420/grow-controller-Rpi.git
+
+#To Use
 
 $ cd grow-controller-Rpi
 
