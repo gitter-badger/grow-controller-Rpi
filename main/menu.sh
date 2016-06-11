@@ -7,7 +7,7 @@ echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "!  TOOLS                 ! RPi Grow controller    !"
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "! [1] apt-get update     ! [a] Light menu         !"
-echo "! [2] apt-get upgrade    ! [b]                    !"
+echo "! [2] apt-get upgrade    ! [b] Install Crontab    !"
 echo "! [3] apt-get dist-up    ! [c]                    !"
 echo "! [4] apt-get autoremove ! [d]                    !"
 echo "! [5] crontab -e         ! [e]                    !"
@@ -41,15 +41,9 @@ case $yourch in
                 read yourch ;;
 	a) bash /home/pi/grow-controller-Rpi/main/ref/lights.sh && echo -n "Enter to continue"
                 read yourch ;;
-#	b)  && echo -n "Enter to continue"
-#                read yourch ;;
-#	c)  && echo -n "Enter to continue"
-#                read yourch ;;
-#	d)  && echo -n "Enter to continue"
-#                read yourch ;;
-#	e)  && echo -n "Enter to continue"
-#                read yourch ;;
-	f) sudo python /home/pi/grow-controller-Rpi/main/ref/dht.py && echo -n "Enter to continue"
+	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
+                read yourch ;;
+        f) sudo python /home/pi/grow-controller-Rpi/main/ref/dht.py && echo -n "Enter to continue"
                 read yourch ;;
 	g) sudo python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
                 read yourch ;;
