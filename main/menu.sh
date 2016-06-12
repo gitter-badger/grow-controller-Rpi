@@ -11,7 +11,7 @@ echo "! [2] apt-get upgrade    ! [b] Install Crontab    !"
 echo "! [3] apt-get dist-up    ! [c]                    !"
 echo "! [4] apt-get autoremove ! [d]                    !"
 echo "! [5] crontab -e         ! [e]                    !"
-echo "! [6] htop               ! [f] temp humidity      !"
+echo "! [6] htop               ! [f]                    !"
 echo "! [7] processor temp     ! [g] watch DHT22        !"
 echo "! [8] Check Space        ! [h] auth log           !"
 echo "! [9] tail syslog        ! [i] Edit this Menu     !"
@@ -43,8 +43,8 @@ case $yourch in
                 read yourch ;;
 	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
                 read yourch ;;
-        f) sudo python /home/pi/grow-controller-Rpi/main/ref/dht.py && echo -n "Enter to continue"
-                read yourch ;;
+#        f)  && echo -n "Enter to continue"
+#                read yourch ;;
 	g) sudo python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
                 read yourch ;;
 	h) tail /var/log/auth.log && echo -n "Enter to continue"
