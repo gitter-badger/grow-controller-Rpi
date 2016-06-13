@@ -7,6 +7,8 @@
  you can smoke me a bowl in return.
 ***************************************************************************
 
+Have been having problems getting  grow-controller-Rpi/main/ref/LCDbuttonsTEST.py to work correctly 
+
 Using the "change light cycle" in the "light menu" replaces your current crontab, it also places @reboot lcd.py.
 if your not using the Adafruit PiPlate lcd # out the lcd.py call in crontab.flower and crontab.veg. If U have other
 jobs in your crontab U'll want to also add them to crontab.flower and crontab.veg.
