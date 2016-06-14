@@ -1,7 +1,0 @@
-GPIO
-lcd uses 2 and 3 i2c pins
-18 == relay
-23 == relay
-27 == main light
-22 == side lighting
-17 == DHT22
