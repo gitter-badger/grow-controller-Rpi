@@ -1,4 +1,5 @@
 # LAZY
+sudo apt-get install git python-dev -y
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git /home/pi &&
 git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git /home/pi &&
 git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi &&
