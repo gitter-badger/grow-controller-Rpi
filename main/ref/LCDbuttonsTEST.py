@@ -1,5 +1,6 @@
-    #Mabey this will work, Test tomorrow durring  SD card redo
-    
+    # Mabey this will work, Test tomorrow durring  SD card redo
+    # merge into lcd.py, test before reboot
+    # TEST BEFORE REBOOT 
     import time
     import Adafruit_CharLCD as LCD
     import RPi.GPIO as GPIO
@@ -19,6 +20,7 @@
     print('Press Ctrl-C to quit.')
     while True:
         for button in buttons:
-            if lcd.is_pressed(LCD.SELECT):
+            if lcd.is_pressed(LCD.SELECT):# its ether this
+#            if lcd.is_pressed(LCD.SELECT):# or this
                 GPIO.output(18, GPIO.LOW)
 
