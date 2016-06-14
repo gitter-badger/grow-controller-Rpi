@@ -1,4 +1,4 @@
-    #Mabey Test tomorrow when SD card redo
+    #Mabey this will work, Test tomorrow durring  SD card redo
     
     import time
     import Adafruit_CharLCD as LCD
