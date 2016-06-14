@@ -21,6 +21,6 @@
     while True:
         for button in buttons:
             if lcd.is_pressed(LCD.SELECT):# its ether this
-#            if lcd.is_pressed(LCD.SELECT):# or this
+#            if lcd.is_pressed(SELECT):# or this, or mabey not who knows
                 GPIO.output(18, GPIO.LOW)
 
