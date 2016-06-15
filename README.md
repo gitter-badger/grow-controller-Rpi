@@ -79,6 +79,10 @@ $ cd Adafruit_Python_CharLCD
 
 $ sudo python setup.py install
 
+$ sudo raspi-config 
+
+Advanced Options>A6 I2C>enable
+
 #Grow controller
 
 $ cd ~
