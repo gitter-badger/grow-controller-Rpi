@@ -1,3 +1,4 @@
+# Not tested
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import RPi.GPIO as GPIO
