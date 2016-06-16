@@ -15,7 +15,7 @@ jobs in your crontab U'll want to also add them to crontab.flower and crontab.ve
  
 I am teaching myself a bit of python with this project
 
-#*********assume none of this code works**********
+
 
 using OS: Raspbian jessie lite
 
