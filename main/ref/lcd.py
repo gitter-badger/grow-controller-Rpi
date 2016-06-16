@@ -7,7 +7,7 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 while True:
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
   t1 = t * 9/5.0 + 32 # Convert to F
-  time.sleep(3) #sleep for 10 sec
+  time.sleep(10) #sleep for 10 sec
   lcd.clear() # clear the lcd
   lcd.message('T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h)) # print the DHT22 values in the lcd
   if t1 > 80: # explains itself
