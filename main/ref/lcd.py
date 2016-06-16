@@ -12,7 +12,7 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 while True:
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
   t1 = t * 9/5.0 + 32 # Convert to F
-  if lcd.is_pressed(LCD.SELECT):# its ether this
+  if lcd.is_pressed(LCD.SELECT):# is select is pressed
     GPIO.output(18, GPIO.LOW) # set GPIO pin 18 low, relay on
   time.sleep(3) #sleep for 10 sec
   lcd.clear() # clear the lcd
