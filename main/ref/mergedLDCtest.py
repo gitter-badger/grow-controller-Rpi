@@ -13,6 +13,9 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 while True:
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
   t1 = t * 9/5.0 + 32 # Convert to F
+  if lcd.is_pressed(LCD.SELECT):# its ether this
+#    if lcd.is_pressed(SELECT):# or this, or mabey not who knows
+    GPIO.output(18, GPIO.LOW) # set GPIO pin 18 low, relay on
   time.sleep(10) #sleep for 10 sec
   lcd.clear() # clear the lcd
   lcd.message('T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h)) # print the DHT22 values in the lcd
@@ -20,7 +23,5 @@ while True:
     lcd.set_color(1.0, 0.0, 0.0) # red
   if t1 < 80: # explains itself
     lcd.set_color(0.0, 1.0, 0.0) # green
-  if lcd.is_pressed(LCD.SELECT):# its ether this
-#    if lcd.is_pressed(SELECT):# or this, or mabey not who knows
-    GPIO.output(18, GPIO.LOW) # set GPIO pin 18 low, relay on
+
 
