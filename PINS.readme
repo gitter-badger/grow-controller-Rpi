@@ -5,4 +5,4 @@ GPIO 23 == Fans
 GPIO 27 == main light
 GPIO 22 == side lighting
 GPIO 17 == DHT22
-GPIO 26 == buttom>shutdownbutton.py
+GPIO 26 == button>shutdownbutton.py
