@@ -21,8 +21,6 @@ while True:
 #        print('')
     
     if button_1 == False:
-        print('system going down')
-        time.sleep(2)
         os.system("sudo apt-get update && sudo apt-get upgrade -y")
         time.sleep(2)
         os.system("sudo shutdown -h -P now")
