@@ -55,11 +55,10 @@ add Android Apk to control everything
 ***************************************************************************************
 #Installation and use
 
-[code] 
-sudo apt-get update && sudo apt-get upgrade -y
+$ sudo apt-get update && sudo apt-get upgrade -y
 
-sudo apt-get install build-essential python-dev python-smbus git -y
-[/code]
+$ sudo apt-get install build-essential python-dev python-smbus git -y
+
 #DHT22
 
 $ cd ~
