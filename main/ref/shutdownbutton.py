@@ -8,13 +8,13 @@ import os
 
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(?, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 #GPIO.setup(?, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 time.sleep(0.2)
 
 while True:
-    button_1 = GPIO.input(?)
+    button_1 = GPIO.input(26)
 #    button_2 = GPIO.input(?)
 
 #    if button_2 == False:
