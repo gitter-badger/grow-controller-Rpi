@@ -1,6 +1,4 @@
-    # Mabey this will work, Test tomorrow durring  SD card redo
-    # merge into lcd.py, test before reboot
-    # TEST BEFORE REBOOT 
+# works
 import time
 import Adafruit_CharLCD as LCD
 import RPi.GPIO as GPIO
