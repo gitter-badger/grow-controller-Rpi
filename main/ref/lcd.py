@@ -14,5 +14,5 @@ while True:
     lcd.set_color(1.0, 0.0, 0.0) # red
   if t1 < 80: # explains itself
     lcd.set_color(0.0, 1.0, 0.0) # green
-
-
+  if t1 < 69: 
+    lcd.set_color(0.0, 0.0, 1.0) # Blue?
