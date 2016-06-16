@@ -9,6 +9,7 @@ GPIO.setup(18, GPIO.OUT)
 lcd = LCD.Adafruit_CharLCDPlate()
 
 while True:
+    time.sleep(0.1)
 #    if lcd.is_pressed(LCD.SELECT):
     if lcd.is_pressed(LCD.UP):
         GPIO.output(18, GPIO.LOW)
