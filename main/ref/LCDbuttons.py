@@ -5,7 +5,8 @@ import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(18 23, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
 lcd = LCD.Adafruit_CharLCDPlate()
 
 while True:
@@ -19,4 +20,3 @@ while True:
         GPIO.output(23, GPIO.LOW)
     if lcd.is_pressed(LCD.RIGHT):
         GPIO.output(23, GPIO.HIGH)
-
