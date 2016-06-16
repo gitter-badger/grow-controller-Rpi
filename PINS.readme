@@ -1,7 +1,7 @@
 GPIO
 GPIO 2&3 == lcd
-GPIO 18 == relay
-GPIO 23 == relay
+GPIO 18 == raspPI light
+GPIO 23 == Fans
 GPIO 27 == main light
 GPIO 22 == side lighting
 GPIO 17 == DHT22
