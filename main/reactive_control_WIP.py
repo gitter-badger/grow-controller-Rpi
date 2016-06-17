@@ -18,4 +18,5 @@ while True:
     GPIO.output(22, GPIO.HIGH) #side lighting off
     GPIO.output(23, GPIO.LOW) #fan on
   elif t1 < 68:
-    GPIO.output(23, GPIO.HIGH) #fan off
+    if t1 > 66:
+      GPIO.output(23, GPIO.HIGH) #fan off
