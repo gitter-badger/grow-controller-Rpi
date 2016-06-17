@@ -39,7 +39,7 @@ case $yourch in
                 read yourch ;;
 	9) tail -f /var/log/syslog && echo -n "Enter to continue"
                 read yourch ;;
-	a) bash /home/pi/grow-controller-Rpi/main/ref/lights.sh && echo -n "Enter to continue"
+	a) python /home/pi/grow-controller-Rpi/main/ref/lights.py && echo -n "Enter to continue"
                 read yourch ;;
 	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
                 read yourch ;;
