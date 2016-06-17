@@ -10,7 +10,7 @@
 
 
 
-Using the "change light cycle" in the "light menu" replaces your current crontab, it also places @reboot lcd scripts.
+Using the "light cycle" in the "main menu" replaces your current crontab, it also places @reboot lcd scripts.
 if your not using the Adafruit PiPlate lcd # out the lcd calls in crontab.flower and crontab.veg. If U have other
 jobs in your crontab U'll want to also add them to crontab.flower and crontab.veg.
  
