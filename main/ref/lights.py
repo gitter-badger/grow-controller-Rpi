@@ -25,8 +25,8 @@ while True:
   print "! [0] Exit               !"
   print "!------------------------!"
   var = input("[1-0,a-k]: ")
-  if var == 1:
-  elif var == 2:
+#  if var == 1:
+  if var == 2:
     GPIO.output(27, GPIO.LOW)#on
   elif var == 3:
     GPIO.output(27, GPIO.HIGH)#off
