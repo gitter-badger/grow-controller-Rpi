@@ -21,8 +21,8 @@ print "! [8] fans on            !"
 print "! [9] fans off           !"
 print "! [0] Exit               !"
 print "︻╦╤─----------------─╤╦︻"
-var = input("[1-0,a-k]: ")
 while True:
+  var = input("[1-0,a-k]: ")
   if var == 1:
   elif var == 2:
     GPIO.output(27, GPIO.LOW)#on
