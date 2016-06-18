@@ -1,6 +1,5 @@
 #!/usr/bin/python
-#cant run during lights off
-#This script is not complete
+#does not turn on any lights 
 import Adafruit_DHT as dht
 import RPi.GPIO as GPIO
 import time
@@ -9,7 +8,7 @@ GPIO.setwarnings(False)
 GPIO.setup(22, GPIO.OUT) #side lighting
 GPIO.setup(23, GPIO.OUT) #fan
 while True:
-  time.sleep(1)
+  time.sleep(30)
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22 value, set pin
   time.sleep(1)
   t1 = t * 9/5.0 + 32
