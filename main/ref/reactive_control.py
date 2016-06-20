@@ -20,4 +20,5 @@ while True:
   elif t1 < 68:
     if t1 > 66:
       GPIO.output(?, GPIO.LOW) #heater on
+      time.sleep(30)
       GPIO.output(?, GPIO.HIGH ) #heater off
