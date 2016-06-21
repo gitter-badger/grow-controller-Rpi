@@ -7,7 +7,7 @@
  you can smoke me a bowl in return.
 ***************************************************************************
 
-
+Development Of this project is on hold till parts are delivered. Jun 21, 2016
 
 
 Using the "light cycle" in the "main menu" replaces your current crontab, it also places @reboot lcd scripts.
