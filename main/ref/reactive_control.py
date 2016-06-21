@@ -14,11 +14,11 @@ while True:
   time.sleep(1)
   t1 = t * 9/5.0 + 32
   time.sleep(1)
-  if t1 > 79:
-    GPIO.output(22, GPIO.HIGH) #side lighting off
-    GPIO.output(23, GPIO.LOW) #fan on
-  elif t1 < 68:
-    if t1 > 66:
-      GPIO.output(?, GPIO.LOW) #heater on
-      time.sleep(30)
-      GPIO.output(?, GPIO.HIGH ) #heater off
+#  if t1 > 79:
+#    GPIO.output(22, GPIO.HIGH) #side lighting off
+#    GPIO.output(23, GPIO.LOW) #fan on
+#  elif t1 < 68:
+#    if t1 > 66:
+#      GPIO.output(?, GPIO.LOW) #heater on
+#      time.sleep(30)
+#      GPIO.output(?, GPIO.HIGH ) #heater off
