@@ -43,6 +43,8 @@ if __name__ == '__main__':
   Process(target=lcdDis).start()
   Process(target=lcdBut).start()
   
+#blind write debug
+  
   
  
   
