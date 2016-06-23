@@ -8,5 +8,7 @@ GPIO.setup(23, GPIO.OUT)
 GPIO.setup(22, GPIO.OUT)#FL
 GPIO.setup(27, GPIO.OUT)#HPS
 
-if opt == '-hps':
+if opt == '-h':
   GPIO.output(18, GPIO.HIGH)#on
+  exit
+  
