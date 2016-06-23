@@ -5,4 +5,4 @@ jun 22, 2016
   *cleaned watchdht.py
   *debugged lcd.py
 jun 23, 2016
- *remove DHT22 root, adafruit libary no longer requires Root 4 RPi
+ * AIO relay file TestRelays.py done, must be merged into project
