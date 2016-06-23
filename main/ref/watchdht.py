@@ -11,6 +11,6 @@ def temp():
 
 
 while True:
-        time.sleep(8.0)
-        os.system('clear')
-        temp()
+  time.sleep(8.0)
+  os.system('clear')
+  temp()
