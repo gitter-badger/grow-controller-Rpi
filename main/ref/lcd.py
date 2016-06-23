@@ -16,10 +16,11 @@ def lcdDis():
     t1 = t * 9/5.0 + 32 # Convert to F
     lcd.clear() # clear the lcd
     lcd.message('T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h)) # print the DHT22 values in the lcd
+    if t1 > 69:
+      if t1 < 80:
+        lcd.set_color(0.0, 1.0, 0.0) # green = good temp
     if t1 > 80: # explains itself
       lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
-    if t1 > 69:
-      lcd.set_color(0.0, 1.0, 0.0) # green = good temp
     if t1 < 69: 
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
     time.sleep(10)
