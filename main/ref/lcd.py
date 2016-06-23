@@ -19,9 +19,9 @@ def lcdDis():
     if t1 > 69:
       if t1 < 80:
         lcd.set_color(0.0, 1.0, 0.0) # green = good temp
-    if t1 > 80: # explains itself
+    elif t1 > 80: # explains itself
       lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
-    if t1 < 69: 
+    elif t1 < 69: 
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
     time.sleep(10)
   
@@ -31,11 +31,11 @@ def lcdBut():
 #    if lcd.is_pressed(LCD.SELECT):
     if lcd.is_pressed(LCD.UP):
       GPIO.output(18, GPIO.LOW)
-    if lcd.is_pressed(LCD.DOWN):
+    elif lcd.is_pressed(LCD.DOWN):
       GPIO.output(18, GPIO.HIGH)
-    if lcd.is_pressed(LCD.LEFT):
+    elif lcd.is_pressed(LCD.LEFT):
       GPIO.output(23, GPIO.LOW)
-    if lcd.is_pressed(LCD.RIGHT):
+    elif lcd.is_pressed(LCD.RIGHT):
       GPIO.output(23, GPIO.HIGH)
   
 
