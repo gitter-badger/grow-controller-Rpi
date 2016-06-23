@@ -1,9 +1,14 @@
-#
+#combined cron lcd.py
+from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import time
 
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
 
 def lcdDis():
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
@@ -16,10 +21,26 @@ def lcdDis():
       lcd.set_color(0.0, 1.0, 0.0) # green = good temp
   if t1 < 69: 
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
-
-
-while True:
   time.sleep(10)
-  lcdDis()
+  
+def lcdBut():
+  while True:
+    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
+#    if lcd.is_pressed(LCD.SELECT):
+    if lcd.is_pressed(LCD.UP):
+      GPIO.output(18, GPIO.LOW)
+    if lcd.is_pressed(LCD.DOWN):
+      GPIO.output(18, GPIO.HIGH)
+    if lcd.is_pressed(LCD.LEFT):
+      GPIO.output(23, GPIO.LOW)
+    if lcd.is_pressed(LCD.RIGHT):
+      GPIO.output(23, GPIO.HIGH)
+  
+
+if __name__ == '__main__':
+  Process(target=lcdDis).start()
+  Process(target=lcdBut).start()
+  
+  
  
   
