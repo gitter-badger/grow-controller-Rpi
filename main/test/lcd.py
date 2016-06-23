@@ -5,7 +5,7 @@ import time
 
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 
-def dis():
+def w1():
   h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
   t1 = t * 9/5.0 + 32 # Convert to F
   lcd.clear() # clear the lcd
@@ -20,6 +20,6 @@ def dis():
 
 while True:
   time.sleep(10)
-  dis()
+  w1()
  
   
