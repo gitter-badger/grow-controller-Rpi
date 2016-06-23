@@ -1,4 +1,5 @@
 #trying to do commandline arguments
+#MAKING SOMETHING SIMPLE COMPLICATED
 import argparse
 import RPi.GPIO as GPIO
 parser = argparse.ArgumentParser()
