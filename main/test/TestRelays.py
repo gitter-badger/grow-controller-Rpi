@@ -12,8 +12,6 @@ parser.add_argument("-on")#
 parser.add_argument("-off")#
 parser.add_argument("-on")#
 parser.add_argument("-off")#
-
-
 args = parser.parse_args()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
