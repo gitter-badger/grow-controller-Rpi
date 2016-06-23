@@ -5,14 +5,14 @@
 import argparse
 import RPi.GPIO as GPIO
 parser = argparse.ArgumentParser()
-parser.add_argument("-won")#wiring lights on
-parser.add_argument("-woff")#wiring lights off
-parser.add_argument("-fanon")#
-parser.add_argument("-fanoff")#
-parser.add_argument("-flon")#
-parser.add_argument("-floff")#
-parser.add_argument("-hon")#
-parser.add_argument("-hoff")#
+parser.add_argument("-won", help="wiring lights on")#wiring lights on
+parser.add_argument("-woff", help="wiring lights off")#wiring lights off
+parser.add_argument("-fanon", help="fan on")#
+parser.add_argument("-fanoff", help="fan off")#
+parser.add_argument("-flon", help="T5 lights on")#
+parser.add_argument("-floff", help="T5 lights off")#
+parser.add_argument("-hon", help="HPS on")#
+parser.add_argument("-hoff", help="HPS off")#
 args = parser.parse_args()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
