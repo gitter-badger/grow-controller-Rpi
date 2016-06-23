@@ -2,3 +2,6 @@ jun 22, 2016
   *start change.log
   *lcd.py and lcd buttons.py are now one file lcd.py
   *updated cron files
+  *cleaned watchdht.py
+jun 23, 2016
+ *remove DHT22 root, adafruit libary no longer requires Root
