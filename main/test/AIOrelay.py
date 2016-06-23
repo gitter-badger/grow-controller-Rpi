@@ -20,7 +20,7 @@ GPIO.setup(18, GPIO.OUT)#wiring light
 GPIO.setup(23, GPIO.OUT)#fans
 GPIO.setup(22, GPIO.OUT)#FL
 GPIO.setup(27, GPIO.OUT)#HPS
-def wlon():
+def won():
   GPIO.output(18, GPIO.LOW)#on
 def woff():
   GPIO.output(18, GPIO.HIGH)#off
@@ -38,7 +38,7 @@ def hoff():
   GPIO.output(27, GPIO.HIGH)#off
 
 if args.won:
-  wlon()
+  won()
   exit()
 elif args.woff:
   woff()
