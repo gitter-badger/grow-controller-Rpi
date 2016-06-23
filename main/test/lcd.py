@@ -1,6 +1,7 @@
 #combined cron lcd.py
 #test 4 cpu usage
 from multiprocessing import Process
+import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import time
