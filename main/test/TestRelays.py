@@ -1,3 +1,5 @@
+#usage $ python TestRelay.py -won 1 #
+#
 #trying to do commandline arguments
 #MAKING SOMETHING SIMPLE COMPLICATED
 import argparse
