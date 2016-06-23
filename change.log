@@ -1,3 +1,4 @@
 jun 22, 2016
   *start change.log
   *lcd.py and lcd buttons.py are now one file lcd.py
+  *updated cron files
