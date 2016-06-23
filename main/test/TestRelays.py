@@ -8,10 +8,8 @@ parser.add_argument("-fanon")#
 parser.add_argument("-fanoff")#
 parser.add_argument("-flon")#
 parser.add_argument("-floff")#
-parser.add_argument("-on")#
-parser.add_argument("-off")#
-parser.add_argument("-on")#
-parser.add_argument("-off")#
+parser.add_argument("-hon")#
+parser.add_argument("-hoff")#
 args = parser.parse_args()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
