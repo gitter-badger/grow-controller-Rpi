@@ -1,6 +1,6 @@
 
 #usage $ python AIOrelay.py -h
-#MAKING SOMETHING SIMPLE COMPLICATED
+#MAKING SOMETHING SIMPLE,,,,, COMPLICATED
 import argparse
 import RPi.GPIO as GPIO
 
