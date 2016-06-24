@@ -7,7 +7,7 @@
  you can smoke me a bowl in return.
 ***************************************************************************
 
-UNPLUG MAINS A/C WHILE REBOOT IS A GOOD IDEA RANDOM RELAYS COME ON i think this is due to the GPIO libary automatically setting the pins to low when there first GPIO "setup" called
+UNPLUG MAINS A/C WHILE REBOOT IS A GOOD IDEA RANDOM RELAYS COME ON i think this is due to the GPIO libary automatically setting the pins to low when there first GPIO "setup" called,  boot.py  sets defaults, a Battery backup for the PI is kind of required, a 1 sec power outage caused all the realys to turn on during lights out while flowering, NOT GOOD.. 
 
 # Releases are stable versions of this grow controller
 
