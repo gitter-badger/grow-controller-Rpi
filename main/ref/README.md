@@ -4,23 +4,23 @@
  
  VH400 Soil Moisture Sensor Probe http://www.vegetronix.com/Products/VH400/
 
-A/C control
+#A/C control
 
-Heater control
+#Heater control
 
-co2 sensor
+#co2 sensor
 
-co2 burner
+#co2 burner
 
-dehumidifier
+#dehumidifier
 
-humidifier
+#humidifier
 
-PH/TDS sensor
+#PH/TDS sensor
 
-water Pump control/ flow sensor
+#water Pump control/ flow sensor
 
-Nutrient injector(milli flow meters/liquid pumps)
+#Nutrient injector(milli flow meters/liquid pumps)
 
 ************************************************************************
  
