@@ -20,7 +20,7 @@ I am teaching myself a bit of python with this project
 
 using OS: Raspbian jessie lite
 
-SD card size: 2GB sd card expansion not needed, makes it easy to "img" your sd
+SD card size: 2GB sd card expansion not needed, latest "raspbian lite" auto expanded SD at first boot
 
 Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) requires root :<(
 
