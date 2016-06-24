@@ -1,4 +1,4 @@
-#usage $ python AIOrelay.py -w on
+#usage $ python AIOrelay.py -h
 #MAKING SOMETHING SIMPLE COMPLICATED
 import argparse
 import RPi.GPIO as GPIO
