@@ -7,7 +7,7 @@
  you can smoke me a bowl in return.
 ***************************************************************************
 
-UNPLUG MAINS A/C WHILE REBOOT IS A GOOD IDEA RANDOM RELAYS COME ON i think tis is due to the GPIO libary automatically setting the pins to low when there first "setup" called
+UNPLUG MAINS A/C WHILE REBOOT IS A GOOD IDEA RANDOM RELAYS COME ON i think this is due to the GPIO libary automatically setting the pins to low when there first GPIO "setup" called
 
 # Releases are stable versions of this grow controller
 
