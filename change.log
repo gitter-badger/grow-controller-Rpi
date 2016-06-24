@@ -7,5 +7,5 @@ jun 22, 2016
 jun 23, 2016
  * relay files consolidated into relay.py using "argparse"
  * old relay files deleated 
- * updated cron files
+ * updated cron files, cron calls relay.py with arguments
  * updated changeLightCycle.py
