@@ -56,8 +56,10 @@ add Android Apk to control everything
 ***************************************************************************************
 #Installation and use
 
-$ sudo apt-get update && sudo apt-get upgrade -y
+$ sudo apt-get update && sudo apt-get upgrade -y 
 
+while u wait U can evolve into a superbeing, it takes that F'n long(even on a Pi3)
+ 
 $ sudo apt-get install build-essential python-dev python-smbus git -y
 
 #DHT22
