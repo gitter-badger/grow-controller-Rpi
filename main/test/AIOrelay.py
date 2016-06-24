@@ -5,7 +5,7 @@
 import argparse
 import RPi.GPIO as GPIO
 parser = argparse.ArgumentParser()
-parser.add_argument("-w", "--wiring", choices=['On', 'Off'], help="wiring light on/off")
+#parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light on/off")
 parser.add_argument("-won", help="wiring lights on")#wiring lights on
 parser.add_argument("-woff", help="wiring lights off")#wiring lights off
 parser.add_argument("-fanon", help="fan on")#
