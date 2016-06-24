@@ -1,5 +1,5 @@
 
-#usage $ python AIOrelay.py -h
+#usage $ python AIOrelay.py -h #output will explain usage
 #MAKING SOMETHING SIMPLE,,,,, COMPLICATED
 import argparse
 import RPi.GPIO as GPIO
