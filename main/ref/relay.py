@@ -43,21 +43,21 @@ if args.wiring:
   elif args.wiring == 'off':
     woff()
     exit()
-if args.fan:
+elif args.fan:
   if args.fan == 'on':
     fanon()
     exit()
   elif args.fan == 'off':
     fanoff()
     exit()
-if args.tlight:
+elif args.tlight:
   if args.tlight == 'on':
     flon()
     exit()
   elif args.tlight == 'off':
     floff()
     exit()
-if args.main:
+elif args.main:
   if args.main == 'on':
     hon()
     exit()
