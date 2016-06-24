@@ -5,4 +5,6 @@ jun 22, 2016
   *cleaned watchdht.py
   *debugged lcd.py
 jun 23, 2016
- * AIO relay file AIOrelay.py working(needs optimization, researching "argparse" more)
+ * relay files consolidated into relay.py using "argparse"
+ * old relay files deleated 
+ * updated cron files
