@@ -1,20 +1,14 @@
-#usage $ python TestRelay.py -won 1 #
-#
-#trying to do commandline arguments
+#usage $ python AIOrelay.py -w on
 #MAKING SOMETHING SIMPLE COMPLICATED
 import argparse
 import RPi.GPIO as GPIO
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light on/off")
-parser.add_argument("-won", help="wiring lights on")#wiring lights on
-parser.add_argument("-woff", help="wiring lights off")#wiring lights off
-parser.add_argument("-fanon", help="fan on")#
-parser.add_argument("-fanoff", help="fan off")#
-parser.add_argument("-flon", help="T5 lights on")#
-parser.add_argument("-floff", help="T5 lights off")#
-parser.add_argument("-hon", help="HPS on")#
-parser.add_argument("-hoff", help="HPS off")#
+parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light")
+parser.add_argument("-f", "--fan", choices=['on', 'off'], help="fans")
+parser.add_argument("-t", "--tlight", choices=['on', 'off'], help="t5 light")
+parser.add_argument("-m", "--main", choices=['on', 'off'], help="HPS")
+
 args = parser.parse_args()
 
 GPIO.setmode(GPIO.BCM)
@@ -48,33 +42,26 @@ if args.wiring:
   elif args.wiring == 'off':
     woff()
     exit()
-elif args.won:
-  won()
-  exit()
-elif args.woff:
-  woff()
-  exit()
-elif args.fanon:
-  fanon()
-  exit()
-elif args.fanoff:
-  fanoff()
-  exit()
-elif args.flon:
-  flon()
-  exit()
-elif args.floff:
-  floff()
-  exit()
-elif args.hon:
-  hon()
-  exit()
-elif args.hoff:
-  hoff()
-  exit()
+if args.fan:
+  if args.fan == 'on':
+    fanon()
+    exit()
+  elif args.fan == 'off':
+    fanoff()
+    exit()
+if args.tlight:
+  if args.tlight == 'on':
+    flon()
+    exit()
+  elif args.tlight == 'off':
+    floff()
+    exit()
+if args.main:
+  if args.main == 'on':
+    hon()
+    exit()
+  elif args.main == 'off':
+    hoff()
+    exit()
 
-print parser.parse_args()
-#Needs to be tested
-#needs two arguments 4 some reason look into that
-
-
+#print parser.parse_args() #4 testing
