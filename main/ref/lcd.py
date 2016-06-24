@@ -16,8 +16,7 @@ GPIO.setup(23, GPIO.OUT)
 def lcdDis(): #display function
   while True:
     h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
-    t1 = t * 9/5.0 + 32 ''' Convert to F # this function fails constantly!!!!!! sad i was born in the backwards US, 
-    F is all i know, i have a suspicion that the adafruit libary is at fault (blaming anyone but me for my mistakes, LOL) '''
+    t1 = t * 9/5.0 + 32 
     lcd.clear() # clear the lcd
     lcd.message('T={0:0.1f}*F\nH={1:0.1f}%'.format(t1, h)) # print the DHT22 values in the lcd
     if t1 > 69:
