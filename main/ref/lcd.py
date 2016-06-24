@@ -13,7 +13,7 @@ GPIO.setwarnings(False)
 GPIO.setup(18, GPIO.OUT)
 GPIO.setup(23, GPIO.OUT)
 
-def lcdDis():
+def lcdDis(): #display function
   while True:
     h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
     t1 = t * 9/5.0 + 32 # Convert to F
@@ -28,7 +28,7 @@ def lcdDis():
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
     time.sleep(10)
   
-def lcdBut():
+def lcdBut(): #button functions
   while True:
     time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
 #    if lcd.is_pressed(LCD.SELECT):
@@ -42,6 +42,6 @@ def lcdBut():
       GPIO.output(23, GPIO.HIGH)
   
 
-if __name__ == '__main__':
+if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=lcdDis).start()
   Process(target=lcdBut).start()
