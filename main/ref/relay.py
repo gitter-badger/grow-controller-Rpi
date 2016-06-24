@@ -1,4 +1,4 @@
-#im rather proud of this file, took a day of errors to get it right. was a simple fix but could not find examples
+
 #usage $ python AIOrelay.py -h
 #MAKING SOMETHING SIMPLE COMPLICATED
 import argparse
