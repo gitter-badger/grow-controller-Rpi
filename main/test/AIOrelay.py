@@ -6,7 +6,7 @@ import argparse
 import RPi.GPIO as GPIO
 
 parser = argparse.ArgumentParser()
-#parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light on/off")
+parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light on/off")
 parser.add_argument("-won", help="wiring lights on")#wiring lights on
 parser.add_argument("-woff", help="wiring lights off")#wiring lights off
 parser.add_argument("-fanon", help="fan on")#
@@ -41,14 +41,14 @@ def hon():
 def hoff():
   GPIO.output(27, GPIO.HIGH)#off
 
-#if args.wiring:
-#  if parser.choices == 'on':
-#    won()
-#    exit()
-#  if parser.choices == 'off':
-#    woff()
-#    exit()
-if args.won:
+if args.wiring:
+  if wiring == 'on':
+    won()
+    exit()
+  elif wiring == 'off':
+    woff()
+    exit()
+elif args.won:
   won()
   exit()
 elif args.woff:
@@ -73,5 +73,7 @@ elif args.hoff:
   hoff()
   exit()
 
+print parser.parse_args()
 #Needs to be tested
 #needs two arguments 4 some reason look into that
+
