@@ -1,3 +1,6 @@
+#  Adafruit 16x2 I2C PiPlate / simple, buttons and display script
+#  
+
 from multiprocessing import Process
 import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
