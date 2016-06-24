@@ -58,7 +58,7 @@ add Android Apk to control everything
 
 $ sudo apt-get update && sudo apt-get upgrade -y 
 
-while u wait U can evolve into a superbeing, it takes that F'n long(even on a Pi3, if your on a Pi1 this repo will be outdated before this command is done)
+/\while u wait U can evolve into a superbeing, it takes that F'n long(even on a Pi3, if your on a Pi1 this repo will be outdated before this command is done)
  
 $ sudo apt-get install build-essential python-dev python-smbus git -y
 
