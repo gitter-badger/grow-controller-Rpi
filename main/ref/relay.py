@@ -1,4 +1,4 @@
-
+#simple argparse relay control
 #usage $ python relay.py -h #output will explain usage
 #MAKING SOMETHING SIMPLE,,,,, COMPLICATED
 import argparse
