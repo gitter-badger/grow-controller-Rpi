@@ -42,10 +42,10 @@ def hoff():
   GPIO.output(27, GPIO.HIGH)#off
 
 if args.wiring:
-  if wiring == 'on':
+  if args.wiring == 'on':
     won()
     exit()
-  elif wiring == 'off':
+  elif args.wiring == 'off':
     woff()
     exit()
 elif args.won:
@@ -76,4 +76,5 @@ elif args.hoff:
 print parser.parse_args()
 #Needs to be tested
 #needs two arguments 4 some reason look into that
+
 
