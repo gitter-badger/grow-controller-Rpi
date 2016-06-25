@@ -45,7 +45,7 @@ case $yourch in
                 read yourch ;;
 #        f)  && echo -n "Enter to continue"
 #                read yourch ;;
-	g) sudo python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
+	g) python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
                 read yourch ;;
 	h) tail /var/log/auth.log && echo -n "Enter to continue"
                 read yourch ;;
