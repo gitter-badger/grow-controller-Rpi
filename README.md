@@ -1,4 +1,4 @@
-# grow-controller-RPi3 -RPi2 -PiZero
+
 ***************************************************************************
 "THE WEED-WARE LICENSE" :
  <scott snyder> scott@yep.duckdns.org wrote these files.  As long as you
