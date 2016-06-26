@@ -12,7 +12,7 @@ using OS: Raspbian jessie lite
 
 SD card size: 2GB sd card expansion not needed, latest "raspbian lite" automagicly expanded the SD at first boot
 
-Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) requires root :<(
+Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) 
 
 Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
 
