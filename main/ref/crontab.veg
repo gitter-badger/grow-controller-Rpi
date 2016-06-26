@@ -1,3 +1,4 @@
+@reboot python /home/pi/grow-controller-Rpi/main/ref/boot.py 
 @reboot python /home/pi/grow-controller-Rpi/main/ref/lcd.py &
 0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t on  # Light on at 6pm
 0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t off  # Light off at 1pm
