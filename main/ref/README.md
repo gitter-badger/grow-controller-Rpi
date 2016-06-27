@@ -1,8 +1,8 @@
 #add
 ************************************************************************
 #soil moisture sensor
- 
- VH400 Soil Moisture Sensor Probe http://www.vegetronix.com/Products/VH400/
+
+
 
 #A/C control
 
