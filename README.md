@@ -1,5 +1,6 @@
 #Glorified RPi Timer
 
+the above title reflects the state of this project
 
 ***************************************************************************
 "THE WEED-WARE LICENSE" :
