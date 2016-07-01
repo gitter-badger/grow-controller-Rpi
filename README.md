@@ -4,7 +4,7 @@ the above title reflects the state of this project
 
 ***************************************************************************
 "THE WEED-WARE LICENSE" :
- <scott snyder> scott@yep.duckdns.org wrote these files.  As long as you
+ <scott snyder> yepyep@protonmail.com wrote these files.  As long as you
  retain this notice you can do whatever you want with this stuff. 
  If we meet some day, and you think this stuff is worth it,
  you can smoke me a bowl in return.
