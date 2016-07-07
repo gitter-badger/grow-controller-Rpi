@@ -10,6 +10,7 @@ the above title reflects the state of this project
  you can smoke me a bowl in return.
 ***************************************************************************
 
+Raspberry Pi Zero v1.3
 
 using OS: Raspbian jessie lite
 
