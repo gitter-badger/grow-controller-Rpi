@@ -11,7 +11,7 @@ echo "! [2] apt-get upgrade    ! [b] Light Cycle        !"
 echo "! [3] apt-get dist-up    ! [c]                    !"
 echo "! [4] apt-get autoremove ! [d]                    !"
 echo "! [5] crontab -e         ! [e] HDMI OFF           !"
-echo "! [6] htop               ! [f]                    !"
+echo "! [6] htop               ! [f] network info       !"
 echo "! [7] processor temp     ! [g] watch DHT22        !"
 echo "! [8] Check Space        ! [h] auth log           !"
 echo "! [9] tail syslog        ! [i] Edit this Menu     !"
@@ -44,6 +44,8 @@ case $yourch in
 	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
                 read yourch ;;
         e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
+                read yourch ;;
+        f) ifconfig && iwconfig wlan0 && echo -n "Enter to continue"
                 read yourch ;;
 	g) python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
                 read yourch ;;
