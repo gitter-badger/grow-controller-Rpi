@@ -10,8 +10,8 @@ import time
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(18, GPIO.OUT)
-GPIO.setup(23, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT) #18 = wiring light 
+GPIO.setup(22, GPIO.OUT) #22 = veg light
 
 def lcdDis(): #display function
   while True:
@@ -37,9 +37,9 @@ def lcdBut(): #button functions
     elif lcd.is_pressed(LCD.DOWN):
       GPIO.output(18, GPIO.HIGH)
     elif lcd.is_pressed(LCD.LEFT):
-      GPIO.output(23, GPIO.LOW)
+      GPIO.output(22, GPIO.LOW)
     elif lcd.is_pressed(LCD.RIGHT):
-      GPIO.output(23, GPIO.HIGH)
+      GPIO.output(22, GPIO.HIGH)
   
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
