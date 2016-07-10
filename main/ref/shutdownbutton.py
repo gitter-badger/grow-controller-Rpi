@@ -15,10 +15,7 @@ time.sleep(0.2)
 
 while True:
     button_1 = GPIO.input(26)
-#    button_2 = GPIO.input(?)
 
-#    if button_2 == False:
-#        print('')
     
     if button_1 == False:
         os.system("sudo apt-get update && sudo apt-get upgrade -y")
