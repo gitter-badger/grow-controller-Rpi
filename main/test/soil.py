@@ -6,6 +6,11 @@
 # mcp3008 not ordered yet
 #
 # cd ~
+# git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
+# cd Adafruit_Python_MCP3008
+# sudo python setup.py install
+#
+# cd ~
 # git clone git://github.com/doceme/py-spidev
 # cd py-spidev/
 # sudo python setup.py install
