@@ -1,7 +1,7 @@
 # Testing soil resistive levels
 # yl-38 yl-69 mcp3008
 # 
-#
+#mcp3008 not ordered yet
 import time
 import mcp3008
 
