@@ -12,17 +12,13 @@
 # cd Adafruit_Python_MCP3008
 # sudo python setup.py install
 #
-# cd ~
-# git clone git://github.com/doceme/py-spidev
-# cd py-spidev/
-# sudo python setup.py install
-#
+
 import time
 import mcp3008
 
 while True:
-    m = mcp3008.readadc(5)
-    print "Moisture level: {:>5} ".format(m)
-    time.sleep(0.5)
-    #read_pct()
-    print(m)
+    read_adc(0)
+    read_adc(1)
+    read_adc(2)
+    read_adc(3)
+    
