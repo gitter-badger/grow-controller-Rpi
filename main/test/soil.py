@@ -1,7 +1,13 @@
 # Testing soil resistive levels
 # yl-38 yl-69 mcp3008
 # 
-#mcp3008 not ordered yet
+# mcp3008 not ordered yet
+#
+# cd ~
+# git clone git://github.com/doceme/py-spidev
+# cd py-spidev/
+# sudo python setup.py install
+#
 import time
 import mcp3008
 
