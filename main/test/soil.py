@@ -5,6 +5,8 @@
 #
 # mcp3008 not ordered yet
 #
+# https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008?view=all
+#
 # cd ~
 # git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
 # cd Adafruit_Python_MCP3008
