@@ -1,5 +1,6 @@
 # Testing soil resistive levels
-# yl-38 yl-69 mcp3008
+# yl-38 yl-69 < these might not be what im looking for
+# mcp3008
 # 
 # lcd.py is a good place for this
 #
