@@ -6,10 +6,10 @@ fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "!  TOOLS                 ! RPi Grow controller    !"
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
-echo "! [1] apt-get update     ! [a] Light menu         !"
-echo "! [2] apt-get upgrade    ! [b] Light Cycle        !"
-echo "! [3] apt-get dist-up    ! [c]                    !"
-echo "! [4] apt-get autoremove ! [d]                    !"
+echo "! [1] apt-get u/g/d/a    ! [a] Light menu         !"
+echo "! [2]                    ! [b] Light Cycle        !"
+echo "! [3]                    ! [c]                    !"
+echo "! [4]                    ! [d]                    !"
 echo "! [5] crontab -e         ! [e] HDMI OFF           !"
 echo "! [6] htop               ! [f] network info       !"
 echo "! [7] processor temp     ! [g] watch DHT22        !"
@@ -21,14 +21,14 @@ echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo -n "[1-0,a-k]: "
 read yourch
 case $yourch in
-	1) sudo apt-get update && echo -n "Enter to continue"
+	1) bash /home/pi/grow-controller-Rpi/main/ref/update.sh && echo -n "Enter to continue"
                 read yourch ;;
-	2) sudo apt-get upgrade && echo -n "Enter to continue"
-                read yourch ;;
-	3) sudo apt-get dist-upgrade && echo -n "Enter to continue"
-                read yourch ;;
-	4) sudo apt-get autoremove && echo -n "Enter to continue"
-                read yourch ;;
+#	2) sudo apt-get upgrade && echo -n "Enter to continue"
+#                read yourch ;;
+#	3) sudo apt-get dist-upgrade && echo -n "Enter to continue"
+#                read yourch ;;
+#	4) sudo apt-get autoremove && echo -n "Enter to continue"
+#                read yourch ;;
 	5) crontab -e &&  echo -n "Enter to continue"
                 read yourch ;;
 	6) htop && echo -n "Enter to continue"
