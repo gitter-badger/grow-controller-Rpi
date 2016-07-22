@@ -4,7 +4,7 @@ do
 clear
 fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
-echo "!  TOOLS                 ! RPi Grow controller    !"
+echo "!  MENU                  ! RPi Grow controller    !"
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a    ! [a] Light menu         !"
 echo "! [2]                    ! [b] Light Cycle        !"
