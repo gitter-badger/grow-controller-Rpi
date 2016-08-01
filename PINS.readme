@@ -1,8 +1,8 @@
 GPIO
 GPIO 2&3 == lcd
-GPIO 18 == raspPI light
-GPIO 23 == Fans
+GPIO 18 == empty
+GPIO 23 == empty
 GPIO 27 == main light
-GPIO 22 == side lighting
+GPIO 22 == empty
 GPIO 17 == DHT22
 GPIO 26 == button>shutdownbutton.py
