@@ -1,9 +1,9 @@
 # LAZY / do in order
-sudo apt-get update &&
-sudo apt-get upgrade -y &&
-sudo apt-get dist-upgrade -y &&
-sudo apt-get autoremove -y &&
-sudo apt-get install build-essential python-dev python-smbus python-pip git rpi-update -y &&
+sudo apt-get update 
+sudo apt-get upgrade -y 
+sudo apt-get dist-upgrade -y 
+sudo apt-get autoremove -y 
+sudo apt-get install build-essential python-dev python-smbus python-pip git rpi-update -y 
 sudo rpi-update
 sudo apt-get install cowsay fortune -y
 
@@ -16,7 +16,6 @@ cd ~
 sudo rm * -r 
 git clone https://github.com/growmaster420/grow-controller-Rpi.git
 
-crontab /home/pi/grow-controller-Rpi/main/ref/crontab.flower &&
-#crontab /home/pi/grow-controller-Rpi/main/ref/crontab.veg &&
+crontab /home/pi/grow-controller-Rpi/main/ref/crontab.flower 
 sudo dpkg-reconfigure tzdata &&
 sudo raspi-config #i2c enable
