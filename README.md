@@ -2,6 +2,8 @@
 
 the above title reflects the state of this project
 
+project picts at http://www.growmaster420.com
+
 ***************************************************************************
 "THE WEED-WARE LICENSE" :
  <scott snyder> scott@growmaster420.com wrote these files.  As long as you
