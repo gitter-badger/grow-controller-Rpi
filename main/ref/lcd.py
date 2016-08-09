@@ -29,7 +29,7 @@ def lcdDis(): #display function
 
     time.sleep(1)
     lcd.clear() # clear the lcd
-    lcd.message('T={0:0.1f} H={1:0.1f}\n F={2:0.1f}'.format(t, h, t1)) # print the DHT22 values in the lcd
+    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f}'.format(t, h, t1)) # print the DHT22 values in the lcd
 
 def lcdBut(): #button functions
   while True:
