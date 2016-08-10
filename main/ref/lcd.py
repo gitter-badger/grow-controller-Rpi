@@ -5,6 +5,7 @@ from multiprocessing import Process
 import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
+from datetime import datetime
 import time
 
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
@@ -15,6 +16,7 @@ GPIO.setup(22, GPIO.OUT) #22 = veg light
 
 def lcdDis(): #display function
   while True:
+    now = datetime.now()
     h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
     time.sleep(1)
     t1 = t * 9/5.0 + 32
@@ -29,7 +31,7 @@ def lcdDis(): #display function
 
     time.sleep(1)
     lcd.clear() # clear the lcd
-    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f}'.format(t, h, t1)) # print the DHT22 values in the lcd
+    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second)) # print the DHT22 values in the lcd
 
 def lcdBut(): #button functions
   while True:
