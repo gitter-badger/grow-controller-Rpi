@@ -26,6 +26,8 @@ def lcdDis(): #display function
         lcd.set_color(0.0, 1.0, 0.0) # green = good temp
     elif t > 29: # explains itself
       lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
+      lcd.message(' TEMP TOO HIGH \n')
+      time.sleep(5)
     elif t < 20:
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
 
