@@ -2,7 +2,7 @@
 
 the above title reflects the state of this project
 
-project picts at http://www.growmaster420.com
+project picts at http://www.growmaster420.com/grow.html
 
 ***************************************************************************
 "THE WEED-WARE LICENSE" :
