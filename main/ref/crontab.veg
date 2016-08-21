@@ -1,4 +1,6 @@
 @reboot python /home/pi/grow-controller-Rpi/main/ref/boot.py 
 @reboot python /home/pi/grow-controller-Rpi/main/ref/lcd.py &
-0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t on  # Light on at 6pm
-0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t off  # Light off at 1pm
+0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t on  # Main Light on at 7pm
+0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -t off  # Main Light off at 1pm
+0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b on  # Ballast Fan on at 7pm
+0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b off  # Ballast Fan off at 1pm
