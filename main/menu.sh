@@ -23,11 +23,11 @@ read yourch
 case $yourch in
 	1) bash /home/pi/grow-controller-Rpi/main/ref/update.sh && echo -n "Enter to continue"
                 read yourch ;;
-#	2) sudo apt-get upgrade && echo -n "Enter to continue"
+#	2) <command> && echo -n "Enter to continue"
 #                read yourch ;;
-#	3) sudo apt-get dist-upgrade && echo -n "Enter to continue"
+#	3) <command> && echo -n "Enter to continue"
 #                read yourch ;;
-#	4) sudo apt-get autoremove && echo -n "Enter to continue"
+#	4) <command> && echo -n "Enter to continue"
 #                read yourch ;;
 	5) crontab -e &&  echo -n "Enter to continue"
                 read yourch ;;
