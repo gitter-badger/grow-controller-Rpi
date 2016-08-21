@@ -10,20 +10,20 @@ GPIO.setup(22, GPIO.OUT)
 
 while True:
   os.system('clear')
-  print "!------------------------!"
-  print "!  TOOLS                 !"
-  print "!------------------------!"
-  print "! [1]                    !"
-  print "! [2] 400HPS on          !"
-  print "! [3] 400HPS off         !"
-  print "! [4] GPIO 22 on         !"
-  print "! [5] GPIO 22 off        !"
-  print "! [6] GPIO 18 on         !"
-  print "! [7] GPIO 18 off        !"
-  print "! [8] GPIO 23 on         !"
-  print "! [9] GPIO 23 off        !"
-  print "! [0] Exit               !"
-  print "!------------------------!"
+  print "!-------------------------------!"
+  print "!  Relay Menu            (GPIO) !"
+  print "!-------------------------------!"
+  print "! [1]                           !"
+  print "! [2] Main Light on        (27) !"
+  print "! [3] Main Light off       (27) !"
+  print "! [4] Ballast Fan on       (22) !"
+  print "! [5] Ballast Fan off      (22) !"
+  print "! [6] GPIO 18 on           (18) !"
+  print "! [7] GPIO 18 off          (18) !"
+  print "! [8] Oscillating Fan on   (23) !"
+  print "! [9] Oscillating Fan off  (23) !"
+  print "! [0] Exit                      !"
+  print "!-------------------------------!"
   var = input("[1-0,a-k]: ")
 #  if var == 1:
   if var == 2:
