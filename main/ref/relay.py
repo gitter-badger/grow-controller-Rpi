@@ -5,16 +5,16 @@ import RPi.GPIO as GPIO
 parser = argparse.ArgumentParser()
 parser.add_argument("-w", "--wiring", choices=['on', 'off'], help="wiring light")
 parser.add_argument("-f", "--fan", choices=['on', 'off'], help="fans")
-parser.add_argument("-t", "--tlight", choices=['on', 'off'], help="t5 light")
+parser.add_argument("-b", "--ballastfan", choices=['on', 'off'], help="Ballast Fan")
 parser.add_argument("-m", "--main", choices=['on', 'off'], help="HPS")
 
 args = parser.parse_args()
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(18, GPIO.OUT)#wiring light
+GPIO.setup(18, GPIO.OUT)#empty
 GPIO.setup(23, GPIO.OUT)#fans
-GPIO.setup(22, GPIO.OUT)#FL
+GPIO.setup(22, GPIO.OUT)#ballast fan
 GPIO.setup(27, GPIO.OUT)#HPS
 
 def won():
@@ -25,9 +25,9 @@ def fanon():
   GPIO.output(23, GPIO.LOW)#on
 def fanoff():
   GPIO.output(23, GPIO.HIGH)#off
-def flon():
+def bon():
   GPIO.output(22, GPIO.LOW)#on
-def floff():
+def boff():
   GPIO.output(22, GPIO.HIGH)#off
 def hon():
   GPIO.output(27, GPIO.LOW)#on
@@ -48,12 +48,12 @@ elif args.fan:
   elif args.fan == 'off':
     fanoff()
     exit()
-elif args.tlight:
-  if args.tlight == 'on':
-    flon()
+elif args.ballastfan:
+  if args.ballastfan == 'on':
+    bon()
     exit()
-  elif args.tlight == 'off':
-    floff()
+  elif args.ballastfan == 'off':
+    boff()
     exit()
 elif args.main:
   if args.main == 'on':
