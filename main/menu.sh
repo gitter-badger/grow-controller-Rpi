@@ -7,7 +7,7 @@ echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller    !"
 echo "︻╦╤─--------------------!--------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a    ! [a] Light menu         !"
-echo "! [2]                    ! [b] Light Cycle        !"
+echo "! [2] calculate V/A      ! [b] Light Cycle        !"
 echo "! [3]                    ! [c]                    !"
 echo "! [4]                    ! [d]                    !"
 echo "! [5] crontab -e         ! [e] HDMI OFF           !"
@@ -23,8 +23,8 @@ read yourch
 case $yourch in
 	1) bash /home/pi/grow-controller-Rpi/main/ref/update.sh && echo -n "Enter to continue"
                 read yourch ;;
-#	2) <command> && echo -n "Enter to continue"
-#                read yourch ;;
+	2) python /home/pi/grow-controller-Rpi/main/ref/calu.py && echo -n "Enter to continue"
+                read yourch ;;
 #	3) <command> && echo -n "Enter to continue"
 #                read yourch ;;
 #	4) <command> && echo -n "Enter to continue"
