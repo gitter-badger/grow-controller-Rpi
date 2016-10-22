@@ -35,22 +35,22 @@ def lcdDis(): #display function
     lcd.clear() # clear the lcd
     lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second)) # print the DHT22 values in the lcd
 
-def lcdBut(): #button functions
-  while True:
-    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
+#def lcdBut(): #button functions
+#  while True:
+#    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
 #    if lcd.is_pressed(LCD.SELECT):
-    if lcd.is_pressed(LCD.UP):
-      GPIO.output(18, GPIO.LOW)
-    elif lcd.is_pressed(LCD.DOWN):
-      GPIO.output(18, GPIO.HIGH)
-    elif lcd.is_pressed(LCD.LEFT):
-      GPIO.output(22, GPIO.LOW)
-    elif lcd.is_pressed(LCD.RIGHT):
-      GPIO.output(22, GPIO.HIGH)
+#    if lcd.is_pressed(LCD.UP):
+#      GPIO.output(18, GPIO.LOW)
+#    elif lcd.is_pressed(LCD.DOWN):
+#      GPIO.output(18, GPIO.HIGH)
+#    elif lcd.is_pressed(LCD.LEFT):
+#      GPIO.output(22, GPIO.LOW)
+#    elif lcd.is_pressed(LCD.RIGHT):
+#      GPIO.output(22, GPIO.HIGH)
 
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=lcdDis).start()
-  Process(target=lcdBut).start()
+#  Process(target=lcdBut).start()
 
 
