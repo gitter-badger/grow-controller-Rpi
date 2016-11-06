@@ -1,5 +1,7 @@
 #  Adafruit 16x2 I2C PiPlate / simple, buttons and display script
 #  simple lcd control
+# buttons currently not in use
+# more intergrations into this file must be made
 
 from multiprocessing import Process
 import RPi.GPIO as GPIO
