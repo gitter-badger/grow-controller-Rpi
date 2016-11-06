@@ -24,17 +24,18 @@ def lcdDis(): #display function
     if t > 20:
       if t < 29:
         lcd.set_color(0.0, 1.0, 0.0) # green = good temp
-    elif t > 29: # explains itself
+    if t > 29: # explains itself
       lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
+      lcd.clear()
       lcd.message(' TEMP TOO HIGH \n')
       time.sleep(5)
-    elif t < 20:
+    if t < 20:
      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
 
     time.sleep(1)
     lcd.clear() # clear the lcd
     lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second)) # print the DHT22 values in the lcd
-
+    time.sleep(5)
 #def lcdBut(): #button functions
 #  while True:
 #    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
