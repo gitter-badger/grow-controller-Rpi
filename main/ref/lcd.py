@@ -24,7 +24,7 @@ def lcdDis(): #display function
     if t > 20:
       if t < 29:
         lcd.set_color(0.0, 1.0, 0.0) # green = good temp
-    if t > 29: # explains itself
+    if t > 35: # explains itself
       lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
       lcd.clear()
       lcd.message(' TEMP TOO HIGH \n')
