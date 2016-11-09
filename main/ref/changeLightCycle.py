@@ -22,7 +22,7 @@ if t == 2:
   os.system("crontab /home/pi/grow-controller-Rpi/main/ref/crontab.tworoom")
 if t == 9:
   print"select file to edit; 12,18,or 2 "
-  s = input("12, 18 or 2")
+  s = input("12, 18 or 2\n$")
   if s == 12:
     os.system("nano /home/pi/grow-controller-Rpi/main/ref/crontab.flower")
   if s == 18:
