@@ -23,7 +23,7 @@ read yourch
 case $yourch in
 	1) bash /home/pi/grow-controller-Rpi/main/ref/update.sh && echo -n "Enter to continue"
                 read yourch ;;
-	2) python /home/pi/grow-controller-Rpi/main/ref/calu.py && echo -n "Enter to continue"
+	2) python /home/pi/grow-controller-Rpi/main/ref/calc.py && echo -n "Enter to continue"
                 read yourch ;;
 #	3) <command> && echo -n "Enter to continue"
 #                read yourch ;;
