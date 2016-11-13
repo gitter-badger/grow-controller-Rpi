@@ -18,3 +18,4 @@ git clone https://github.com/growmaster420/grow-controller-Rpi.git
 crontab /home/pi/grow-controller-Rpi/main/ref/crontab.flower 
 sudo dpkg-reconfigure tzdata &&
 sudo raspi-config #i2c enable
+alias menu="sh ~/grow-controller-Rpi/main/menu.sh" >> ~/.bashrc
