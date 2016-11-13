@@ -9,7 +9,7 @@ project picts at http://www.growmaster420.com/grow.html
  <scott snyder> scott@growmaster420.com wrote these files.  As long as you
  retain this notice you can do whatever you want with this stuff. 
  If we meet some day, and you think this stuff is worth it,
- you can smoke me a bowl in return.
+ you can smoke me a dab in return.
 ***************************************************************************
 
 Raspberry Pi Zero v1.3
