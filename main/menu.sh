@@ -8,7 +8,7 @@ echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420      
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           !                        !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          !                        !"
-echo "! [3]                    ! [c]                      !                        !"
+echo "! [3] w & last           ! [c]                      !                        !"
 echo "! [4]                    ! [d]                      !                        !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             !                        !"
 echo "! [6] htop               ! [f] network info         !                        !"
@@ -25,8 +25,8 @@ case $yourch in
                 read yourch ;;
 	2) python /home/pi/grow-controller-Rpi/main/ref/calc.py && echo -n "Enter to continue"
                 read yourch ;;
-#	3) <command> && echo -n "Enter to continue"
-#                read yourch ;;
+	3) W && last && echo -n "Enter to continue"
+                read yourch ;;
 #	4) <command> && echo -n "Enter to continue"
 #                read yourch ;;
 	5) crontab -e &&  echo -n "Enter to continue"
