@@ -6,7 +6,7 @@ fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "! [1] apt-get u/g/d/a    ! [a] Light menu           !                        !"
+echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           !                        !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          !                        !"
 echo "! [3]                    ! [c]                      !                        !"
 echo "! [4]                    ! [d]                      !                        !"
