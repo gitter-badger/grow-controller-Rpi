@@ -7,17 +7,17 @@ date +%F_%T
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           !                        !"
-echo "! [2] calculate V/A      ! [b] Light Cycle          !                        !"
-echo "! [3] w & last           ! [c]                      !                        !"
-echo "! [4]                    ! [d]                      !                        !"
-echo "! [5] crontab -e         ! [e] HDMI OFF             !                        !"
-echo "! [6] htop               ! [f] network info         !                        !"
-echo "! [7] processor temp     ! [g] watch DHT22          !                        !"
-echo "! [8] Check Space        ! [h] auth log             !                        !"
-echo "! [9] tail syslog        ! [i] Edit this Menu       !                        !"
-echo "! [0] Exit               ! [j] Shutdown             !                        !"
-echo "! [ ]                    ! [k] date                 !                        !"
+echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l]                     !"
+echo "! [2] calculate V/A      ! [b] Light Cycle          ! [m]                     !"
+echo "! [3] w & last           ! [c]                      ! [n]                     !"
+echo "! [4]                    ! [d]                      ! [o]                     !"
+echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
+echo "! [6] htop               ! [f] network info         ! [q]                     !"
+echo "! [7] processor temp     ! [g] watch DHT22          ! [r]                     !"
+echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
+echo "! [9] tail syslog        ! [i] Edit this Menu       ! [t]                     !"
+echo "! [0] Exit               ! [j] Shutdown             ! [u]                     !"
+echo "! [ ]                    ! [k] date                 ! [v]                     !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo -n "[1-0,a-k]: "
 read yourch
@@ -52,10 +52,16 @@ case $yourch in
                 read yourch ;;
 	h) tail /var/log/auth.log && echo -n "Enter to continue"
                 read yourch ;;
-	i) sudo nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
+	i) nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
                 read yourch ;;
-	j) sudo shutdown -h -P now ;;
-	k) date && echo -n "Enter to continue"
+	j) echo -n 'shutdown? [y/n]'
+           read Var1 -n 1
+           if [ $Var1 = 'y' ] ; then
+             echo 'sudo shutdown -h -P now'
+             sleep 5
+             sudo shutdown -h -P now
+           fi ;;
+        k) date && echo -n "Enter to continue"
                 read yourch ;;
 	0) exit 0 ;;
 *) echo "really?";
