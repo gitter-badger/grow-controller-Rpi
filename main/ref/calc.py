@@ -1,5 +1,5 @@
 import os
-
+#MATH
 os.system('clear')
 print 'Area calculator\n'
 print "enter height"
