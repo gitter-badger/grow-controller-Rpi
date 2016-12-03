@@ -1,5 +1,14 @@
+# set default gpio values
 @reboot python /home/pi/grow-controller-Rpi/main/ref/boot.py 
+
+#run lcd.py in  background
 @reboot python /home/pi/grow-controller-Rpi/main/ref/lcd.py &
+
+#set up export of system gpio control
+@reboot echo 22 > /sys/class/gpio/export
+@reboot echo 18 > /sys/class/gpio/export
+@reboot echo 27 > /sys/class/gpio/export
+@reboot echo 23 > /sys/class/gpio/export
 
 ############Flower room ################
 0 22 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m on  # Main Light on at 22:00
