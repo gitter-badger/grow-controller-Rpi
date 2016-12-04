@@ -12,7 +12,7 @@ def relay22():
   if var22 == 0:
     print "on"
   elif var22 == 1:
-  print "off"
+    print "off"
 
 def relay23():  
   with open('/sys/class/gpio/gpio22/value') as gpio23:
@@ -20,7 +20,7 @@ def relay23():
   if var23 == 0:
     print "on"
   elif var23 == 1:
-  print "off"
+    print "off"
 
 def relay27():  
   with open('/sys/class/gpio/gpio22/value') as gpio27:
@@ -28,5 +28,5 @@ def relay27():
   if var27 == 0:
     print "on"
   elif var27 == 1:
-  print "off"
+    print "off"
 
