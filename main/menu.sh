@@ -9,7 +9,7 @@ echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420      
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l]                     !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          ! [m]                     !"
-echo "! [3] w & last           ! [c]                      ! [n]                     !"
+echo "! [3] w & last           ! [c] GPIO state           ! [n]                     !"
 echo "! [4]                    ! [d]                      ! [o]                     !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
@@ -43,6 +43,8 @@ case $yourch in
 	a) python /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
                 read yourch ;;
 	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
+                read yourch ;;
+	c) python /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
                 read yourch ;;
         e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
                 read yourch ;;
