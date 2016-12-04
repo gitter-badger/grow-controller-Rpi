@@ -36,6 +36,7 @@ while True:
     print "relay27, Main Light"
     relay27()
     input("Press Enter to continue...")
+    os.system('clear')
   elif var == 2:
     GPIO.output(27, GPIO.LOW)#on
   elif var == 3:
