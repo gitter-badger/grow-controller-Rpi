@@ -6,9 +6,9 @@ print"Set light cycle"
 print"!!!! WARNING  REPLACES   CURRENT  CRONTAB !!!!"
 print"!!!! CHECK YOUR CRONTAB WITH $ crontab -l !!!!"
 print"Ctrl-C to EXIT"
-print"12 is flower ON=11:00 OFF=23:00"
-print"18 is veg ON=19:00 OFF=13:00"
-print"2 = two room setup"
+print"12 = crontab.flower"
+print"18 = crottab.veg"
+print"2 = crontab.tworoom"
 print"press 9 to edit files"
 t = input("12, 18, 2, or 9\n$")
 if t == 12:
