@@ -26,7 +26,7 @@ while True:
   print "! [9] Oscillating Fan off  (23) !"
   print "! [0] Exit                      !"
   print "!-------------------------------!"
-  var = input("[1-0,a-k]: ")
+  var = input("[1-0]: ")
   if var == 1:
     print "relay18, "
     relay18()
