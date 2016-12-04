@@ -1,3 +1,4 @@
+from gpioState import relay18, relay22, relay23 ,relay27
 import RPi.GPIO as GPIO
 import os
 
@@ -13,10 +14,10 @@ while True:
   print "!-------------------------------!"
   print "!  Relay Menu            (GPIO) !"
   print "!-------------------------------!"
-  print "! [1]                           !"
-  print "! [2] Main Light on        (27) !"
-  print "! [3] Main Light off       (27) !"
-  print "! [4] Ballast Fan on       (22) !"
+  print "! [1] States                    !"
+  print "! [2] Main Light on        (27) !"  
+  print "! [3] Main Light off       (27) !" 
+  print "! [4] Ballast Fan on       (22) !"  
   print "! [5] Ballast Fan off      (22) !"
   print "! [6] GPIO 18 on           (18) !"
   print "! [7] GPIO 18 off          (18) !"
@@ -25,8 +26,16 @@ while True:
   print "! [0] Exit                      !"
   print "!-------------------------------!"
   var = input("[1-0,a-k]: ")
-#  if var == 1:
-  if var == 2:
+  if var == 1:
+    print "relay18, "
+    relay18()
+    print "relay22, Ballast Fan"
+    relay22()
+    print "relay23, Oscillating Fan"
+    relay23()
+    print "relay27, Main Light"
+    relay27()
+  elif var == 2:
     GPIO.output(27, GPIO.LOW)#on
   elif var == 3:
     GPIO.output(27, GPIO.HIGH)#off
