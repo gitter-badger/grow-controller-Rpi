@@ -10,7 +10,8 @@
 @reboot sudo echo 27 > /sys/class/gpio/export
 @reboot sudo echo 23 > /sys/class/gpio/export
 
-0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m on  # Main Light on at 7pm
-0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m off  # Main Light off at 1pm
-0 19 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b on  # Ballast Fan on at 7pm
-0 13 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b off  # Ballast Fan off at 1pm
+0 8 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m on  # Main Light on at 7pm
+0 8 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b on  # Ballast Fan on at 7pm
+
+0 20 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m off  # Main Light off at 1pm
+0 20 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b off  # Ballast Fan off at 1pm
