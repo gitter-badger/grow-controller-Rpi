@@ -1,5 +1,5 @@
 def relay18():
-  with open('/sys/class/gpio/gpio22/value') as gpio18:
+  with open('/sys/class/gpio/gpio18/value') as gpio18:
     var18 = int(gpio18.read())
   if var18 == 0:
     print "on"
@@ -15,7 +15,7 @@ def relay22():
     print "off"
 
 def relay23():  
-  with open('/sys/class/gpio/gpio22/value') as gpio23:
+  with open('/sys/class/gpio/gpio23/value') as gpio23:
     var23 = int(gpio23.read())
   if var23 == 0:
     print "on"
@@ -23,7 +23,7 @@ def relay23():
     print "off"
 
 def relay27():  
-  with open('/sys/class/gpio/gpio22/value') as gpio27:
+  with open('/sys/class/gpio/gpio27/value') as gpio27:
     var27 = int(gpio27.read())
   if var27 == 0:
     print "on"
