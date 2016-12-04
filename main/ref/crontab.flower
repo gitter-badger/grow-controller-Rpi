@@ -5,10 +5,10 @@
 @reboot python /home/pi/grow-controller-Rpi/main/ref/lcd.py &
 
 #set up export of system gpio control
-@reboot echo 22 > /sys/class/gpio/export
-@reboot echo 18 > /sys/class/gpio/export
-@reboot echo 27 > /sys/class/gpio/export
-@reboot echo 23 > /sys/class/gpio/export
+@reboot sudo echo 22 > /sys/class/gpio/export
+@reboot sudo echo 18 > /sys/class/gpio/export
+@reboot sudo echo 27 > /sys/class/gpio/export
+@reboot sudo echo 23 > /sys/class/gpio/export
 
 # MAIN LIGHT
 0 22 * * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m on  # Main Light on at 11:00
