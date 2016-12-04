@@ -14,11 +14,7 @@ GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 time.sleep(0.2)
 
 while True:
-    button_1 = GPIO.input(26)
-
-    
-    if button_1 == False:
-        os.system("sudo apt-get update && sudo apt-get upgrade -y")
-        time.sleep(2)
-        os.system("sudo shutdown -h -P now")
-    time.sleep(0.2)
+  button_1 = GPIO.input(26)
+  if button_1 == False:
+    os.system("sudo shutdown -h -P now")
+  time.sleep(0.2)
