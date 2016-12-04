@@ -1,6 +1,7 @@
 from gpioState import relay18, relay22, relay23 ,relay27
 import RPi.GPIO as GPIO
 import os
+import time
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -35,8 +36,7 @@ while True:
     relay23()
     print "relay27, Main Light"
     relay27()
-    input("Press Enter to continue...")
-    os.system('clear')
+    time.sleep(5)
   elif var == 2:
     GPIO.output(27, GPIO.LOW)#on
   elif var == 3:
