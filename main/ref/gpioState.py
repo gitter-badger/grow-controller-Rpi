@@ -1,3 +1,6 @@
+# make more useful 
+# relay menu depends on this for state, must update for future changes
+
 def relay18():
   with open('/sys/class/gpio/gpio18/value') as gpio18:
     var18 = int(gpio18.read())
