@@ -32,11 +32,11 @@ def relay27():
 
     
 if __name__ == "__main__":
-  print "relay18"
+  print "relay18, "
   relay18()
-  print "relay22"
+  print "relay22, Ballast Fan"
   relay22()
-  print "relay23"
+  print "relay23, Oscillating Fan"
   relay23()
-  print "relay27"
+  print "relay27, Main Light"
   relay27()
