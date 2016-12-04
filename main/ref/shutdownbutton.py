@@ -1,7 +1,7 @@
 ###This button script is for gpio pin>button>ground connection
 ### requires no resistors..
-###
-###
+### USED 4 TESTING HARDWARE
+###crontab ## @reboot /home/pi/grow-controller-Rpi/main/ref/shutdownbutton.py &
 import RPi.GPIO as GPIO
 import time
 import os
