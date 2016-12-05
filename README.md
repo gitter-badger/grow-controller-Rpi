@@ -2,6 +2,8 @@
 
 the above title reflects the state of this project
 
+the rest of the project will be completed with electronics engineering
+
 project picts at http://www.growmaster420.com/grow.html
 
 ***************************************************************************
