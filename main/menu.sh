@@ -10,7 +10,7 @@ echo "︻╦╤─--------------------*==========================*--------------
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l]                     !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          ! [m]                     !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n]                     !"
-echo "! [4]                    ! [d]                      ! [o]                     !"
+echo "! [4] crontab -l         ! [d]                      ! [o]                     !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
 echo "! [7] processor temp     ! [g] watch DHT22          ! [r]                     !"
@@ -28,8 +28,8 @@ case $yourch in
                 read yourch ;;
 	3) W && last && echo -n "Enter to continue"
                 read yourch ;;
-#	4) <command> && echo -n "Enter to continue"
-#                read yourch ;;
+	4) crontab -l && echo -n "Enter to continue"
+                read yourch ;;
 	5) crontab -e &&  echo -n "Enter to continue"
                 read yourch ;;
 	6) htop && echo -n "Enter to continue"
