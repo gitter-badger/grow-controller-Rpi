@@ -35,7 +35,7 @@ def relay27():
 
     
 if __name__ == "__main__":
-  print "relay18, "
+  print "relay18, Heater "
   relay18()
   print "relay22, Ballast Fan"
   relay22()
