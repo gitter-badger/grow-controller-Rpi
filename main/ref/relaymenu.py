@@ -10,6 +10,10 @@ GPIO.setup(27, GPIO.OUT)
 GPIO.setup(23, GPIO.OUT)
 GPIO.setup(22, GPIO.OUT)
 
+yes = set(['yes','y', 'ye', ''])
+no = set(['no','n'])
+
+
 while True:
   os.system('clear')
   print "!-------------------------------!"
@@ -38,9 +42,19 @@ while True:
     relay27()
     time.sleep(5)
   elif var == 2:
-    GPIO.output(27, GPIO.LOW)#on
+    print "TURN ON MAIN LIGHT!!!![y/n]:"
+    choice = raw_input().lower()
+    if choice in yes:
+      GPIO.output(27, GPIO.LOW)#on
+    elif choice in no:
+      print "Think Before U Fuck Everything Up"
   elif var == 3:
-    GPIO.output(27, GPIO.HIGH)#off
+    print "TURN OFF MAIN LIGHT!!!![y/n]:"
+    choice = raw_input().lower()
+    if choice in yes:
+      GPIO.output(27, GPIO.HIGH)#off
+    elif choice in no:
+      print "Think Before U Fuck Everything Up"
   elif var == 4:
     GPIO.output(22, GPIO.LOW)#on
   elif var == 5:
