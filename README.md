@@ -5,6 +5,11 @@ the above title reflects the state of this project
 the rest of the project will be completed with electronics engineering
 
 ***********************************************************************************
+##NOTE
+#lastest raspbian ssh server is off by default(STUPID)
+#and change passwd is only one enter attempt(STUPID)
+#Are the devs of Raspbian, NOOBS , yes
+
 Raspberry Pi Zero v1.3
 
 using OS: Raspbian jessie lite
