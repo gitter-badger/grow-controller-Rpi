@@ -3,7 +3,7 @@
 # buttons currently not in use
 # sqlite3 logging added
 # more intergrations into this file must be made
-# part of this file was copied from https://github.com/adafruit/Raspberry_Pi_SQLite_Sensors
+# part of this file was copied from https://github.com/adafruit/Raspberry_Pi_SQLite_Sensors #thx TONY!D
 from multiprocessing import Process
 import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
