@@ -22,7 +22,7 @@ c.execute('SELECT name, type, pin FROM sensors')
 sensors = []
 for row in c:
     name, dht_type, pin = row
-    print('Configuring sensor: {0} of type: {1} on pin: {2}'.format(name, dht_type, pin))
+    # print('Configuring sensor: {0} of type: {1} on pin: {2}'.format(name, dht_type, pin))
     # Convert DHT type from string to DHT library value.
     if dht_type == 'DHT22':
         dht_type = Adafruit_DHT.DHT22
