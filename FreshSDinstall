@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get upgrade -y 
 sudo apt-get dist-upgrade -y 
 sudo apt-get autoremove -y 
-sudo apt-get install build-essential python-dev python-smbus python-pip git rpi-update -y 
+sudo apt-get install build-essential python-dev python-smbus python-pip git rpi-update sqlite3 -y 
 sudo rpi-update
 sudo apt-get install cowsay fortune -y
 
