@@ -7,8 +7,11 @@ the rest of the project will be completed with electronics engineering
 ***********************************************************************************
 ##NOTE
 #lastest raspbian ssh server is off by default(STUPID)
+create a file in "boot" partition named "ssh"
 #and change passwd is only one enter attempt(STUPID)
+be carful or nuke and pave is required 
 #Are the devs of Raspbian, NOOBS , yes
+is ok they are from the UK
 
 Raspberry Pi Zero v1.3
 
