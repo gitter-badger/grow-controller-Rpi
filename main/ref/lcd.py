@@ -1,9 +1,8 @@
 #  Adafruit 16x2 I2C PiPlate / simple, buttons and display script
 #  simple lcd control
 # buttons currently not in use
+# sqlite3 logging added
 # more intergrations into this file must be made
-
-
 
 from multiprocessing import Process
 import RPi.GPIO as GPIO
@@ -22,8 +21,6 @@ c.execute('SELECT name, type, pin FROM sensors')
 sensors = []
 for row in c:
     name, dht_type, pin = row
-    # print('Configuring sensor: {0} of type: {1} on pin: {2}'.format(name, dht_type, pin))
-    # Convert DHT type from string to DHT library value.
     if dht_type == 'DHT22':
         dht_type = Adafruit_DHT.DHT22
     elif dht_type == 'DHT11':
@@ -93,7 +90,6 @@ def lcdBut(): #button functions !!!NOT IN USE!!!
     elif lcd.is_pressed(LCD.RIGHT):
       GPIO.output(22, GPIO.HIGH)
 '''
-
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=logVal).start()
