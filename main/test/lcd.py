@@ -9,6 +9,7 @@ from multiprocessing import Process
 import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
+import Adafruit_DHT
 import sqlite3
 from datetime import datetime
 import time
