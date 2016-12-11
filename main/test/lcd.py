@@ -1,36 +1,63 @@
-
-import datetime
-import time
-
+#  Adafruit 16x2 I2C PiPlate / simple, buttons and display script
+#  simple lcd control
+# buttons currently not in use
+# sqlite3 logging added
+# more intergrations into this file must be made
+# part of this file was copied from https://github.com/adafruit/Raspberry_Pi_SQLite_Sensors #thx TONY!D
+from multiprocessing import Process
+import RPi.GPIO as GPIO
+import Adafruit_CharLCD as LCD
+import Adafruit_DHT as dht
 import Adafruit_DHT
 
-import model
+from datetime import datetime
+import time
+
+lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18, GPIO.OUT) #18 = wiring light 
+GPIO.setup(22, GPIO.OUT) #22 = veg light
+
+def lcdDis(): #display function
+  while True:
+    now = datetime.now()
+    h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
+    time.sleep(1)
+    t1 = t * 9/5.0 + 32
+    if t > 20:
+      if t < 35:
+        lcd.set_color(0.0, 1.0, 0.0) # green = good temp
+    if t > 35: # explains itself
+      lcd.set_color(1.0, 0.0, 0.0) # red = too hot turn off extra lighting, fan at max
+      lcd.clear()
+      lcd.message(' TEMP TOO HIGH \n')
+      time.sleep(5)
+    if t < 20:
+      lcd.set_color(0.0, 0.0, 1.0) # Blue = cold shut off a/c
+      lcd.message('TEMP TOO LOW\n')
+      time.sleep(5)
+    time.sleep(1)
+    lcd.clear() # clear the lcd
+    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second)) # print the DHT22 values in the lcd
+    time.sleep(5)
 
 
-# Create an instance of our data model access layer object.
-# This object takes care of all the Peewee ORM and DB access so our code in this
-# file is very simple and just calls function on the model access layer object.
-data = model.DHTData()
+''' 
+def lcdBut(): #button functions !!!NOT IN USE!!!
+  while True:
+    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
+    if lcd.is_pressed(LCD.SELECT):
+    if lcd.is_pressed(LCD.UP):
+      GPIO.output(18, GPIO.LOW)
+    elif lcd.is_pressed(LCD.DOWN):
+      GPIO.output(18, GPIO.HIGH)
+    elif lcd.is_pressed(LCD.LEFT):
+      GPIO.output(22, GPIO.LOW)
+    elif lcd.is_pressed(LCD.RIGHT):
+      GPIO.output(22, GPIO.HIGH)
+'''
 
-# Define which sensors we expect to be connected to the Pi.
-data.define_sensor('DHT1', Adafruit_DHT.DHT22, 18)
-data.define_sensor('DHT2', Adafruit_DHT.DHT22, 25)
-
-# Main loop to take sensor readings every two seconds.
-try:
-    while True:
-        # Get the current time for this batch of sensor readings.
-        reading_time = datetime.datetime.now()
-        # Go through each sensor and get its current reading.
-        for sensor in data.get_sensors():
-            # Get a DHT sensor reading and print it out.
-            humidity, temperature = Adafruit_DHT.read_retry(sensor.dht_type, sensor.pin)
-            print('Read sensor: {0} humidity: {1:0.2f}% temperature: {2:0.2f}C'.format(sensor.name, humidity, temperature))
-            # Add the sensor reading to the database.
-            data.add_reading(time=reading_time, name='{0} Humidity'.format(sensor.name), value=humidity)
-            data.add_reading(time=reading_time, name='{0} Temperature'.format(sensor.name), value=temperature)
-        # Wait 2 seconds and repeat.
-        time.sleep(2.0)
-finally:
-    # Finally close the connection to the database when done.
-data.close()
+if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
+  Process(target=lcdDis).start()
+#  Process(target=lcdBut).start() #NOT IN USE
