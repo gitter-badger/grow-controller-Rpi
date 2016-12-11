@@ -13,6 +13,8 @@ be carful or nuke and pave is required
 #Are the devs of Raspbian, NOOBS , yes
 is ok they are from the UK
 
+************************************************************************************
+
 Raspberry Pi Zero v1.3
 
 using OS: Raspbian jessie lite
