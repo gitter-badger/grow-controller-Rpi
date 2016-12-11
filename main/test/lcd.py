@@ -77,19 +77,22 @@ def logVal():
                   (reading_time, '{0} Temperature'.format(name), temperature))
         conn.commit()
     time.sleep(10.0)
- 
-#def lcdBut(): #button functions !!!NOT IN USE!!!
-#  while True:
-#    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
-#    if lcd.is_pressed(LCD.SELECT):
-#    if lcd.is_pressed(LCD.UP):
-#      GPIO.output(18, GPIO.LOW)
-#    elif lcd.is_pressed(LCD.DOWN):
-#      GPIO.output(18, GPIO.HIGH)
-#    elif lcd.is_pressed(LCD.LEFT):
-#      GPIO.output(22, GPIO.LOW)
-#    elif lcd.is_pressed(LCD.RIGHT):
-#      GPIO.output(22, GPIO.HIGH)
+
+''' 
+def lcdBut(): #button functions !!!NOT IN USE!!!
+  while True:
+    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
+    if lcd.is_pressed(LCD.SELECT):
+    if lcd.is_pressed(LCD.UP):
+      GPIO.output(18, GPIO.LOW)
+    elif lcd.is_pressed(LCD.DOWN):
+      GPIO.output(18, GPIO.HIGH)
+    elif lcd.is_pressed(LCD.LEFT):
+      GPIO.output(22, GPIO.LOW)
+    elif lcd.is_pressed(LCD.RIGHT):
+      GPIO.output(22, GPIO.HIGH)
+'''
+
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=logVal).start()
