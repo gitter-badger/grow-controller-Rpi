@@ -10,7 +10,7 @@ echo "︻╦╤─--------------------*==========================*--------------
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l]                     !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          ! [m]                     !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n]                     !"
-echo "! [4] crontab -l         ! [d]                      ! [o]                     !"
+echo "! [4] crontab -l         ! [d] Start LCD            ! [o]                     !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
 echo "! [7] processor temp     ! [g] watch DHT22          ! [r]                     !"
@@ -42,11 +42,13 @@ case $yourch in
                 read yourch ;;
 	a) python /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
                 read yourch ;;
-	b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
+        b) python /home/pi/grow-controller-Rpi/main/ref/changeLightCycle.py && echo -n "Enter to continue"
                 read yourch ;;
 	c) python /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
                 read yourch ;;
-        e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
+        d) python /home/pi/grow-controller-Rpi/main/ref/lcd.py & && echo -n "Enter to continue"
+	        read youch ;;	
+	e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
                 read yourch ;;
         f) ifconfig && iwconfig wlan0 && echo -n "Enter to continue"
                 read yourch ;;
