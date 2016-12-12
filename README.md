@@ -6,11 +6,8 @@ the rest of the project will be completed with electronics engineering
 
 ***********************************************************************************
 ##NOTE
-#lastest raspbian ssh server is off by default(STUPID)
+#lastest raspbian ssh server is off by default
 create a file in "boot" partition named "ssh"
-
-#Are the devs of Raspbian, NOOBS , yes
-is ok they are from the UK, and to think of it there is probably UK gov spyware in this latest release, the new laws mandate it LOL
 
 ************************************************************************************
 
