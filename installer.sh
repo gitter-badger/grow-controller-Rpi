@@ -1,3 +1,4 @@
+#do not run as sh file
 #installer
 sudo apt update
 sudo apt upgrade -y
