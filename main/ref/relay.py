@@ -3,7 +3,7 @@ import argparse
 import RPi.GPIO as GPIO
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-h", "--heater", choices=['on', 'off'], help="wiring light")
+parser.add_argument("-t", "--thermo", choices=['on', 'off'], help="thermo")
 parser.add_argument("-f", "--fan", choices=['on', 'off'], help="fans")
 parser.add_argument("-b", "--ballastfan", choices=['on', 'off'], help="Ballast Fan")
 parser.add_argument("-m", "--main", choices=['on', 'off'], help="HPS")
@@ -34,11 +34,11 @@ def mon():
 def moff():
   GPIO.output(27, GPIO.HIGH)#off
 
-if args.wiring:
-  if args.wiring == 'on':
+if args.thermo:
+  if args.thermo == 'on':
     hon()
     exit()
-  elif args.wiring == 'off':
+  elif args.thermo == 'off':
     hoff()
     exit()
 elif args.fan:
