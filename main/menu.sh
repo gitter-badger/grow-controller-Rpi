@@ -46,7 +46,7 @@ case $yourch in
                 read yourch ;;
 	c) python /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
                 read yourch ;;
-        d) python /home/pi/grow-controller-Rpi/main/ref/lcd.py & && echo -n "Enter to continue"
+        d) python /home/pi/grow-controller-Rpi/main/ref/lcd.py & echo -n "Enter to continue"
 	        read youch ;;	
 	e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
                 read yourch ;;
