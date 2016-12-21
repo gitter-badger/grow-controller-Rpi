@@ -5,8 +5,7 @@ the above title reflects the state of this project
 the rest of the project will be completed with electronics engineering
 
 ***********************************************************************************
-##NOTE
-needs debugging
+
 #lastest raspbian ssh server is off by default
 create a file in "boot" partition named "ssh"
 
