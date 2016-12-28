@@ -1,5 +1,7 @@
 #do not run as sh file
 #installer
+echo"this script fails"
+exit
 sudo apt update
 sudo apt upgrade -y
 sudo apt install 
