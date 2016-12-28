@@ -7,7 +7,7 @@ date +%F_%T
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l]                     !"
+echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] Light Cycle          ! [m]                     !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n]                     !"
 echo "! [4] crontab -l         ! [d] Start LCD            ! [o]                     !"
@@ -65,7 +65,9 @@ case $yourch in
              sleep 5
              sudo shutdown -h -P now
            fi ;;
-        k) date && echo -n "Enter to continue"
+    k) date && echo -n "Enter to continue"
+               read yourch ;;
+    l) nano /home/pi/grow-controller-Rpi/main/ref/settings.py && echo -n "Enter to continue"
                 read yourch ;;
 	0) exit 0 ;;
 *) echo "really?";
