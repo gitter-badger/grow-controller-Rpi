@@ -3,10 +3,8 @@
 # buttons currently not in use
 # file relies on settings.py
 from multiprocessing import Process
-
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
-import Adafruit_DHT
 import settings
 from datetime import datetime
 import time
