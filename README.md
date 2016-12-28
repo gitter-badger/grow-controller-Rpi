@@ -1,10 +1,3 @@
-#Glorified RPi Timer
-
-the above title reflects the state of this project
-
-the rest of the project will be completed with electronics engineering
-
-***********************************************************************************
 
 #lastest raspbian ssh server is off by default
 create a file in "boot" partition named "ssh"
