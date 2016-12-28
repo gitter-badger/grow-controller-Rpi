@@ -9,7 +9,7 @@ import os
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-#GPIO.setup(?, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
 
 time.sleep(0.2)
 
