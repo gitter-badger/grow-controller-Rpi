@@ -9,13 +9,15 @@ import settings
 from datetime import datetime
 import time
 settings.temps()
+settings.pins()
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
+pin5 = settings.dhtsensor
 def lcdDis(): #display function
   while True:
     now = datetime.now()
-    h,t = dht.read_retry(dht.DHT22, 17) #read DHT22
+    h,t = dht.read_retry(dht.DHT22, pin5) #read DHT22
     time.sleep(1)
     t1 = t * 9/5.0 + 32
     if t > temp2:
