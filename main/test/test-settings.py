@@ -1,3 +1,4 @@
+###testing###
 import settings
 
 ###call the functions###
@@ -10,13 +11,11 @@ pin1 = settings.ballast
 pin2 = settings.ballastfan
 pin3 = settings.heater
 pin4 = settings.ocfan
+pin5 = settings.dhtsensor
 
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
 #######################
-
-
-###testing###
 
 ###Relay Pins###
 print("--pin settings--")
