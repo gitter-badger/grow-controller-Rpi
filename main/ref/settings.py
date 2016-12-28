@@ -7,8 +7,9 @@ def temps():
 ###set pins here###
 ##not yet intergrated project wide##
 def pins():
-    global ballast, ballastfan, heater, ocfan
+    global ballast, ballastfan, heater, ocfan, dhtsensor
     ballast = 27
     ballastfan = 22
     heater = 18
     ocfan = 23
+    dhtsensor = 17
