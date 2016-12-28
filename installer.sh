@@ -5,7 +5,7 @@ exit
 sudo apt update
 sudo apt upgrade -y
 sudo apt install 
-sudo apt-get install build-essential python-dev python-smbus python-pip git cowsay fortune rpi-update -y
+sudo apt install build-essential python-dev python-smbus python-pip git cowsay fortune rpi-update -y
 sudo rpi-update
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git /home/pi
 git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git /home/pi
