@@ -27,7 +27,7 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 $ sudo apt-get update && sudo apt-get upgrade -y 
 
 
-$ sudo apt-get install build-essential python-dev python-smbus git sqlite3 -y
+$ sudo apt install build-essential python-dev python-smbus python-pip git cowsay fortune rpi-update -y
 
 #DHT22
 
