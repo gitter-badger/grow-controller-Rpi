@@ -18,27 +18,41 @@ args = parser.parse_args()
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
+GPIO.setup(pin1, GPIO.OUT)#HPS
+GPIO.setup(pin2, GPIO.OUT)#ballast fan
 GPIO.setup(pin3, GPIO.OUT)#heater
 GPIO.setup(pin4, GPIO.OUT)#ocfan
-GPIO.setup(pin2, GPIO.OUT)#ballast fan
-GPIO.setup(pin1, GPIO.OUT)#HPS
 
-def heateron():
-  GPIO.output(pin3, GPIO.LOW)#on
-def heateroff():
-  GPIO.output(pin3, GPIO.HIGH)#off
-def fanon():
-  GPIO.output(pin4, GPIO.LOW)#on
-def fanoff():
-  GPIO.output(pin4, GPIO.HIGH)#off
-def ballaston():
-  GPIO.output(pin2, GPIO.LOW)#on
-def bballastoff():
-  GPIO.output(pin2, GPIO.HIGH)#off
 def mainon():
   GPIO.output(pin1, GPIO.LOW)#on
 def mainoff():
   GPIO.output(pin1, GPIO.HIGH)#off
+
+if args.main:
+  if args.main == 'on':
+    mainon()
+    exit()
+  elif args.main == 'off':
+    mainoff()
+    exit()
+  
+def ballaston():
+  GPIO.output(pin2, GPIO.LOW)#on
+def bballastoff():
+  GPIO.output(pin2, GPIO.HIGH)#off
+
+if args.ballfan:
+  if args.ballfan == 'on':
+    ballaston()
+    exit()
+  elif args.ballfan == 'off':
+    ballastoff()
+    exit()
+  
+def heateron():
+  GPIO.output(pin3, GPIO.LOW)#on
+def heateroff():
+  GPIO.output(pin3, GPIO.HIGH)#off
 
 if args.thermo:
   if args.thermo == 'on':
@@ -47,26 +61,18 @@ if args.thermo:
   elif args.thermo == 'off':
     heateroff()
     exit()
-elif args.fan:
+  
+def fanon():
+  GPIO.output(pin4, GPIO.LOW)#on
+def fanoff():
+  GPIO.output(pin4, GPIO.HIGH)#off
+
+if args.fan:
   if args.fan == 'on':
     fanon()
     exit()
   elif args.fan == 'off':
     fanoff()
-    exit()
-elif args.ballfan:
-  if args.ballfan == 'on':
-    ballaston()
-    exit()
-  elif args.ballfan == 'off':
-    ballastoff()
-    exit()
-elif args.main:
-  if args.main == 'on':
-    mainon()
-    exit()
-  elif args.main == 'off':
-    mainoff()
     exit()
 
 #print parser.parse_args() #4 testing
