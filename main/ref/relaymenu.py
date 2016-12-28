@@ -2,17 +2,19 @@ from gpioState import relay18, relay22, relay23 ,relay27
 import RPi.GPIO as GPIO
 import os
 import time
+import settings
 
-##########
-#
-############
-
+settings.pins()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(18, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
-GPIO.setup(23, GPIO.OUT)
-GPIO.setup(22, GPIO.OUT)
+pin1 = settings.ballast
+pin2 = settings.ballastfan
+pin3 = settings.heater
+pin4 = settings.ocfan
+GPIO.setup(pin1, GPIO.OUT)
+GPIO.setup(pin2, GPIO.OUT)
+GPIO.setup(pin3, GPIO.OUT)
+GPIO.setup(pin4, GPIO.OUT)
 
 yes = set(['yes','y', 'ye', ''])
 no = set(['no','n'])
@@ -49,27 +51,27 @@ while True:
     print "TURN ON MAIN LIGHT!!!![y/n]:"
     choice = raw_input().lower()
     if choice in yes:
-      GPIO.output(27, GPIO.LOW)#on
+      GPIO.output(pin1, GPIO.LOW)#on
     elif choice in no:
       print "Think Before U Fuck Everything Up"
   elif var == 3:
     print "TURN OFF MAIN LIGHT!!!![y/n]:"
     choice = raw_input().lower()
     if choice in yes:
-      GPIO.output(27, GPIO.HIGH)#off
+      GPIO.output(pin1, GPIO.HIGH)#off
     elif choice in no:
       print "Think Before U Fuck Everything Up"
   elif var == 4:
-    GPIO.output(22, GPIO.LOW)#on
+    GPIO.output(pin2, GPIO.LOW)#on
   elif var == 5:
-    GPIO.output(22, GPIO.HIGH)#off
+    GPIO.output(pin2, GPIO.HIGH)#off
   elif var == 6:
-    GPIO.output(18, GPIO.LOW)#on
+    GPIO.output(pin3, GPIO.LOW)#on
   elif var == 7:
-    GPIO.output(18, GPIO.HIGH)#off
+    GPIO.output(pin3, GPIO.HIGH)#off
   elif var == 8:
-    GPIO.output(23, GPIO.LOW)#on
+    GPIO.output(pin4, GPIO.LOW)#on
   elif var == 9:
-    GPIO.output(23, GPIO.HIGH)#off
+    GPIO.output(pin4, GPIO.HIGH)#off
   elif var == 0:
     exit()
