@@ -3,13 +3,13 @@ import RPi.GPIO as GPIO
 import settings
 
 settings.pins()
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-
 pin1 = settings.ballast
 pin2 = settings.ballastfan
 pin3 = settings.heater
 pin4 = settings.ocfan
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 
 GPIO.setup(pin1, GPIO.OUT)#HPS
 GPIO.setup(pin2, GPIO.OUT)#ballast fan
