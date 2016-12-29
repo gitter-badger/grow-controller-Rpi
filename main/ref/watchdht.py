@@ -8,8 +8,8 @@ pin5 = settings.dhtsensor
 
 while True:
   h,t = dht.read_retry(dht.DHT22, pin5) #read DHT22 value, set pi
-  print datetime.datetime.now().strftime("%H:%M:%S")
-  print 'T={0:0.1f}*C\nH={1:0.1f}%'.format(t, h)
+  print(datetime.now().strftime("%H:%M:%S"))
+  print('T={0:0.1f}*C\nH={1:0.1f}%'.format(t, h))
   time.sleep(8.0)
   os.system('clear')
   temp()
