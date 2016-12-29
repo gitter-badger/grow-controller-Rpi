@@ -3,7 +3,6 @@ def temps():
     global maxTemp, minTemp
     maxTemp = 30
     minTemp = 20
-
 ###set pins here###
 ##not yet intergrated project wide##
 def pins():
@@ -13,3 +12,8 @@ def pins():
     heater = 18
     ocfan = 23
     dhtsensor = 17
+###set light times here###
+def light():
+    global lightOn, lightOff
+    lightOn = 8
+    lightOff = 20
