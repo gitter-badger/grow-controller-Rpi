@@ -1,3 +1,5 @@
+###settings.py###
+
 ###set min max temps here###
 def temps():
     global maxTemp, minTemp
