@@ -25,7 +25,7 @@ read yourch
 case $yourch in
     1) bash /home/pi/grow-controller-Rpi/main/ref/update.sh && echo -n "Enter to continue"
         read yourch ;;
-    2) python /home/pi/grow-controller-Rpi/main/ref/calc.py && echo -n "Enter to continue"
+    2) python3 /home/pi/grow-controller-Rpi/main/ref/calc.py && echo -n "Enter to continue"
         read yourch ;;
     3) W && last && echo -n "Enter to continue"
         read yourch ;;
@@ -41,19 +41,19 @@ case $yourch in
         read yourch ;;
     9) tail -f /var/log/syslog && echo -n "Enter to continue"
         read yourch ;;
-    a) python /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
+    a) python3 /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
         read yourch ;;
     b) python3 /home/pi/grow-controller-Rpi/main/ref/cronmaker.py && echo -n "Enter to continue"
         read yourch ;;
-    c) python /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
+    c) python3 /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
         read yourch ;;
-    d) python /home/pi/grow-controller-Rpi/main/ref/lcd.py & echo -n "Enter to continue"
+    d) python3 /home/pi/grow-controller-Rpi/main/ref/lcd.py & echo -n "Enter to continue"
         read youch ;;	
     e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
         read yourch ;;
     f) ifconfig && iwconfig wlan0 && echo -n "Enter to continue"
         read yourch ;;
-    g) python /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
+    g) python3 /home/pi/grow-controller-Rpi/main/ref/watchdht.py && echo -n "Enter to continue"
         read yourch ;;
     h) tail /var/log/auth.log && echo -n "Enter to continue"
         read yourch ;;
