@@ -22,8 +22,6 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
   
   sudo apt upgrade -y
   
-  sudo apt install 
-  
   sudo apt install build-essential python3 python-dev python-smbus python-pip git cowsay fortune rpi-update -y
   
   sudo rpi-update
