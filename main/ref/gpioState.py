@@ -1,21 +1,10 @@
-# make more useful 
-# relay menu depends on this for state, must update for future changes
-### file depends on crontab opening system gpio
-
-###BROKEN###
-
 import settings
 
-settings.pins()
-
-pin1 = settings.ballast
-pin2 = settings.ballastfan
-pin3 = settings.heater
-pin4 = settings.ocfan
-pinvar1 = "/sys/class/gpio/gpio", pin1, "/value"
-pinvar2 = "/sys/class/gpio/gpio", pin2, "/value"
-pinvar3 = "/sys/class/gpio/gpio", pin3, "/value"
-pinvar4 = "/sys/class/gpio/gpio", pin4, "/value"
+settings.expGpio()
+pinvar1 = settings.gp1
+pinvar2 = settings.gp2
+pinvar3 = settings.gp3
+pinvar4 = settings.gp4
 
 def relay1():
   with open(pinvar1) as gpio1:
