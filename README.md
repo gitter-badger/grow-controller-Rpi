@@ -36,13 +36,13 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
   
   cd Adafruit_Python_DHT
   
-  sudo python /home/pi/Adafruit_Python_DHT/setup.py install 
+  sudo python setup.py install 
   
   cd ~
   
   cd Adafruit_Python_CharLCD
   
-  sudo python /home/pi/Adafruit_Python_CharLCD/setup.py install 
+  sudo python setup.py install 
   
   cd ~
   
