@@ -1,14 +1,14 @@
 import os
 #MATH
 os.system('clear')
-print 'Area calculator\n'
-print "enter height"
+print('Area calculator\n')
+print("enter height")
 varH = int(input())
-print 'enter width'
+print('enter width')
 varW = int(input())
-print 'enter depth'
+print('enter depth')
 varD = int(input())
-print 'calculating Volume'
-print (varD * varH * varW)
-print 'calculating Area'
-print (varW * varD)
+print('calculating Volume')
+print(varD * varH * varW)
+print('calculating Area')
+print(varW * varD)
