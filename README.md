@@ -1,5 +1,6 @@
-<p><code>
-  
+
+******************************************
+## install
   sudo apt update
   
   sudo apt upgrade -y
@@ -34,11 +35,9 @@
   
   cat /home/pi/grow-controller-Rpi/.bashrc > /home/pi/.bashrc
   
-  crontab /home/pi/grow-controller-Rpi/main/ref/crontab.flower
-  
   sudo raspi-config #i2c enable
   
-<\p><\code>
+set variables in settings.py in menu [l]
 
 ***********************************************************************************
 
