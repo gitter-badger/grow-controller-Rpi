@@ -22,45 +22,45 @@ no = set(['no','n'])
 
 while True:
   os.system('clear')
-  print "!-------------------------------!"
-  print "!  Relay Menu            (GPIO) !"
-  print "!-------------------------------!"
-  print "! [1] States                    !"
-  print "! [2] Main Light on        (27) !"  
-  print "! [3] Main Light off       (27) !" 
-  print "! [4] Ballast Fan on       (22) !"  
-  print "! [5] Ballast Fan off      (22) !"
-  print "! [6] Heater on            (18) !"
-  print "! [7] Heater off           (18) !"
-  print "! [8] Oscillating Fan on   (23) !"
-  print "! [9] Oscillating Fan off  (23) !"
-  print "! [0] Exit                      !"
-  print "!-------------------------------!"
+  print("!-------------------------------!")
+  print("!  Relay Menu            (GPIO) !")
+  print("!-------------------------------!")
+  print("! [1] States                    !")
+  print("! [2] Main Light on        (27) !") 
+  print("! [3] Main Light off       (27) !")
+  print("! [4] Ballast Fan on       (22) !") 
+  print("! [5] Ballast Fan off      (22) !")
+  print("! [6] Heater on            (18) !")
+  print("! [7] Heater off           (18) !")
+  print("! [8] Oscillating Fan on   (23) !")
+  print("! [9] Oscillating Fan off  (23) !")
+  print("! [0] Exit                      !")
+  print("!-------------------------------!")
   var = input("[1-0]: ")
   if var == 1:
-    print "relay1, "
+    print("relay1, ")
     relay1()
-    print "relay2, Ballast Fan"
+    print("relay2, Ballast Fan")
     relay2()
-    print "relay3, Oscillating Fan"
+    print("relay3, Oscillating Fan")
     relay3()
-    print "relay4, Main Light"
+    print("relay4, Main Light")
     relay4()
     time.sleep(5)
   elif var == 2:
-    print "TURN ON MAIN LIGHT!!!![y/n]:"
+    print("TURN ON MAIN LIGHT!!!![y/n]:")
     choice = raw_input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.LOW)#on
     elif choice in no:
-      print "Think Before U Fuck Everything Up"
+      print("Think Before U Fuck Everything Up")
   elif var == 3:
-    print "TURN OFF MAIN LIGHT!!!![y/n]:"
+    print("TURN OFF MAIN LIGHT!!!![y/n]:")
     choice = raw_input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.HIGH)#off
     elif choice in no:
-      print "Think Before U Fuck Everything Up"
+      print("Think Before U Fuck Everything Up")
   elif var == 4:
     GPIO.output(pin2, GPIO.LOW)#on
   elif var == 5:
