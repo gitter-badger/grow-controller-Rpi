@@ -6,7 +6,7 @@
   
   sudo apt install 
   
-  sudo apt install build-essential python-dev python-smbus python-pip git cowsay fortune rpi-update -y
+  sudo apt install build-essential python3 python-dev python-smbus python-pip git cowsay fortune rpi-update -y
   
   sudo rpi-update
   
