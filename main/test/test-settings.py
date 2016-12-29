@@ -5,6 +5,7 @@ import settings
 settings.pins()
 settings.temps()
 settings.light()
+settings.expGpio()
 #######################
 
 ###Set Variables######
@@ -17,6 +18,10 @@ lightOn = settings.lightOn
 lightOff = settings.lightOff
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
+pinvar1 = settings.gp1
+pinvar2 = settings.gp2
+pinvar3 = settings.gp3
+pinvar4 = settings.gp4
 #######################
 
 ###Relay Pins###
@@ -33,3 +38,8 @@ print("Min Temp", temp2)
 #################
 print("light on", lightOn)
 print("light off", lightOff)
+#################
+print("pinvar1", pinvar1)
+print("pinvar2", pinvar2)
+print("pinvar3", pinvar3)
+print("pinvar4", pinvar4)
