@@ -12,10 +12,10 @@ pin1 = settings.ballast
 pin2 = settings.ballastfan
 pin3 = settings.heater
 pin4 = settings.ocfan
-pinvar1 = "/sys/class/gpio/gpio", pin1"/value"
-pinvar2 = "/sys/class/gpio/gpio", pin2"/value"
-pinvar3 = "/sys/class/gpio/gpio", pin3"/value"
-pinvar4 = "/sys/class/gpio/gpio", pin4"/value"
+pinvar1 = "/sys/class/gpio/gpio", pin1, "/value"
+pinvar2 = "/sys/class/gpio/gpio", pin2, "/value"
+pinvar3 = "/sys/class/gpio/gpio", pin3, "/value"
+pinvar4 = "/sys/class/gpio/gpio", pin4, "/value"
 
 def relay1():
   with open(pinvar1) as gpio1:
