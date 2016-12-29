@@ -8,8 +8,8 @@ pin3 = settings.heater
 pin4 = settings.ocfan
 lightOn = settings.lightOn
 lightOff = settings.lightOff
-print("@reboot python /home/pi/grow-controller-Rpi/main/ref/boot.py")
-print("@reboot python /home/pi/grow-controller-Rpi/main/ref/lcd.py &")
+print("@reboot python3 /home/pi/grow-controller-Rpi/main/ref/boot.py")
+print("@reboot python3 /home/pi/grow-controller-Rpi/main/ref/lcd.py &")
 print("@reboot sudo echo", pin1, "/sys/class/gpio/export")
 print("@reboot sudo echo", pin2, "/sys/class/gpio/export")
 print("@reboot sudo echo", pin3, "/sys/class/gpio/export")
