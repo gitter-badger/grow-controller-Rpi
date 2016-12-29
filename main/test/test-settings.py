@@ -4,6 +4,7 @@ import settings
 ###call the functions###
 settings.pins()
 settings.temps()
+settings.light()
 #######################
 
 ###Set Variables######
@@ -12,7 +13,8 @@ pin2 = settings.ballastfan
 pin3 = settings.heater
 pin4 = settings.ocfan
 pin5 = settings.dhtsensor
-
+lightOn = settings.lightOn
+lightOff = settings.lightOff
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
 #######################
@@ -29,3 +31,5 @@ print("\n--temp settings--")
 print("Max temp", temp1)
 print("Min Temp", temp2)
 #################
+print("light on", lightOn)
+print("light off", lightOff)
