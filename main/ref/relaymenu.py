@@ -25,7 +25,7 @@ while True:
   print "!-------------------------------!"
   print "!  Relay Menu            (GPIO) !"
   print "!-------------------------------!"
-  print "! [1] States*******BROKEN*******!"
+  print "! [1] States                    !"
   print "! [2] Main Light on        (27) !"  
   print "! [3] Main Light off       (27) !" 
   print "! [4] Ballast Fan on       (22) !"  
