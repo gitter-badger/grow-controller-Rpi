@@ -2,7 +2,7 @@
 # relay menu depends on this for state, must update for future changes
 ### file depends on crontab opening system gpio
 
-
+###BROKEN###
 
 import settings
 
