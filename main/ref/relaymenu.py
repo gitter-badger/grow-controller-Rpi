@@ -1,4 +1,4 @@
-from gpioState import relay18, relay22, relay23 ,relay27
+from gpioState import relay1, relay2, relay3 ,relay4
 import RPi.GPIO as GPIO
 import os
 import time
@@ -38,14 +38,14 @@ while True:
   print "!-------------------------------!"
   var = input("[1-0]: ")
   if var == 1:
-    print "relay18, "
-    relay18()
-    print "relay22, Ballast Fan"
-    relay22()
-    print "relay23, Oscillating Fan"
-    relay23()
-    print "relay27, Main Light"
-    relay27()
+    print "relay1, "
+    relay1()
+    print "relay2, Ballast Fan"
+    relay2()
+    print "relay3, Oscillating Fan"
+    relay3()
+    print "relay4, Main Light"
+    relay4()
     time.sleep(5)
   elif var == 2:
     print "TURN ON MAIN LIGHT!!!![y/n]:"
