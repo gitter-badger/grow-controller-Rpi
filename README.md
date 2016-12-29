@@ -13,9 +13,8 @@ Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_P
 
 Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
 
-
-
 ***************************************************************************************
+![Menu](/main/test/git-assets/menu.PNG)
 ***************************************************************************************
 ## install
   sudo apt update
