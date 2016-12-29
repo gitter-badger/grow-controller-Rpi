@@ -70,7 +70,7 @@ case $yourch in
         read yourch ;;
     l) nano /home/pi/grow-controller-Rpi/main/ref/settings.py && echo -n "Enter to continue"
         read yourch ;;
-    m) python /home/pi/grow-controller-Rpi/main/ref/selectEditor.py && echo -n "Enter to continue"
+    m) python3 /home/pi/grow-controller-Rpi/main/ref/selectEditor.py && echo -n "Enter to continue"
         read yourch ;;
 	0) exit 0 ;;
 *) echo "really?";
