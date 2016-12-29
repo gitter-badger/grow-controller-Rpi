@@ -49,7 +49,11 @@ def relay4():
 
     
 if __name__ == "__main__":
+  print "relay1"
   relay1()
+  print "relay2"
   relay2()
+  print "relay3"
   relay3()
+  print "relay4"
   relay4()
