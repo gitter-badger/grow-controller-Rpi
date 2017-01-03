@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import Adafruit_DHT as dht
 import time
 import os
