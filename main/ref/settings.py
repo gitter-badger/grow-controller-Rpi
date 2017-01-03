@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ###settings.py###
 
 ###set min max temps here###
