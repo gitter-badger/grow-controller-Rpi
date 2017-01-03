@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 while True:
     print("Select Default Editor")
     print("1) emacs")
