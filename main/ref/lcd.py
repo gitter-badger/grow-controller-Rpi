@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #  Adafruit 16x2 I2C PiPlate / simple, buttons and display script
 #  simple lcd control
 # buttons currently not in use
