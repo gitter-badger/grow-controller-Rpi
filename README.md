@@ -46,9 +46,7 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
   git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi
   
   sudo dpkg-reconfigure tzdata
-  
-  cat /home/pi/grow-controller-Rpi/.bashrc > /home/pi/.bashrc
-  
+    
   sudo raspi-config #i2c enable
   
 set variables in settings.py in menu [l]
