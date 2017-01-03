@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # boot set default relay values
 import RPi.GPIO as GPIO
 import settings
