@@ -7,7 +7,7 @@ create a file in "boot" partition named "ssh"
 
 Raspberry Pi Zero v1.3
 
-Python v3.6
+Python v3
 
 using OS: Raspbian jessie lite
 
