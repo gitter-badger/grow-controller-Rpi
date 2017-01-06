@@ -50,14 +50,14 @@ while True:
     time.sleep(5)
   elif var == 2:
     print("TURN ON MAIN LIGHT!!!![y/n]:")
-    choice = raw_input().lower()
+    choice = input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.LOW)#on
     elif choice in no:
       print("Think Before U Fuck Everything Up")
   elif var == 3:
     print("TURN OFF MAIN LIGHT!!!![y/n]:")
-    choice = raw_input().lower()
+    choice = input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.HIGH)#off
     elif choice in no:
