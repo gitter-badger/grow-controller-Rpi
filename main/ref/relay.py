@@ -33,7 +33,7 @@ pin2 = settings.ballastfan
 GPIO.setup(pin2, GPIO.OUT)#ballast fan
 def ballaston():
   GPIO.output(pin2, GPIO.LOW)#on
-def bballastoff():
+def ballastoff():
   GPIO.output(pin2, GPIO.HIGH)#off
 if args.ballfan:
   if args.ballfan == 'on':
