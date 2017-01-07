@@ -1,6 +1,6 @@
 #python3 rewrite
 ## what is done
-    watchdht.py-----------yes----runs,partly done, print time broke
+    watchdht.py-----------yes
     settings.py-----------yes
     selectEditor.py-------yes
     relaymenu.py----------yes 
@@ -13,5 +13,4 @@
 
 #conclusion 
     runs 
-##what does not work
-    watchdht.py needs timestamp fixed
+
