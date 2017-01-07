@@ -7,6 +7,7 @@ from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import settings
+import RPi.GPIO as GPIO
 from datetime import datetime
 import time
 settings.temps()
@@ -15,6 +16,8 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
 pin5 = settings.dhtsensor
+pin1 = settings.ballast
+GPIO.setup(pin1, GPIO.OUT)#HPS
 def lcdDis(): #display function
   while True:
     now = datetime.now()
@@ -39,21 +42,22 @@ def lcdDis(): #display function
     time.sleep(5)
 
 
-''' 
-def lcdBut(): #button functions !!!NOT IN USE!!!
+
+def lcdBut():
   while True:
-    time.sleep(0.1) # without this time.sleep, 23% cpu usage. with 3%
+    time.sleep(0.5) # without this time.sleep, 23% cpu usage. with 3%
     if lcd.is_pressed(LCD.SELECT):
+      lcd.message('ouch')
     if lcd.is_pressed(LCD.UP):
-      
-    elif lcd.is_pressed(LCD.DOWN):
-     
-    elif lcd.is_pressed(LCD.LEFT):
-      
-    elif lcd.is_pressed(LCD.RIGHT):
-      
-'''
+      GPIO.output(pin1, GPIO.LOW)#on
+    if lcd.is_pressed(LCD.DOWN):
+      GPIO.output(pin1, GPIO.HIGH)#off
+    if lcd.is_pressed(LCD.LEFT):
+      lcd.message('stop that')
+    if lcd.is_pressed(LCD.RIGHT):
+      lcd.message('self destructing\n  in * sec')
+
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=lcdDis).start()
-#  Process(target=lcdBut).start() #NOT IN USE
+  Process(target=lcdBut).start()
