@@ -46,23 +46,10 @@ def lcdDis(): #display function
 def lcdBut():
   while True:
     time.sleep(0.5) # without this time.sleep, 23% cpu usage. with 3%
-#    if lcd.is_pressed(LCD.SELECT):
-#      lcd.set_color(1.0, 1.0, 1.0)
-#      lcd.clear()
-#      lcd.message('ouch')
     if lcd.is_pressed(LCD.UP):
       GPIO.output(pin1, GPIO.LOW)#on
     if lcd.is_pressed(LCD.DOWN):
       GPIO.output(pin1, GPIO.HIGH)#off
-#    if lcd.is_pressed(LCD.LEFT):
-#      lcd.set_color(1.0, 1.0, 1.0)
-#      lcd.clear()
-#      lcd.message('stop that')
- #   if lcd.is_pressed(LCD.RIGHT):
- #     lcd.set_color(1.0, 1.0, 1.0)
- #     lcd.clear()
- #     lcd.message('self destructing\n  in * sec')
-
 
 if __name__ == '__main__': #run the above functions in the background, FOREVER!!!!!!!!!!!!!!!!!!!!!
   Process(target=lcdDis).start()
