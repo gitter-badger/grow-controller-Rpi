@@ -23,10 +23,10 @@ if now_time >= time(lightOn, 0) and now_time <= time(lightOff, 0): #light ON
     GPIO.output(pin1, GPIO.LOW)  # main light on
     GPIO.output(pin2, GPIO.LOW)  # ballast fan on
     GPIO.output(pin3, GPIO.HIGH)  # off
-    GPIO.output(pin4, GPIO.HIGH)  # on
+    GPIO.output(pin4, GPIO.HIGH)  # off
 if now_time <= time(lightOn, 0) and now_time >= time(lightOff, 0):  # light OFF
     GPIO.output(pin1, GPIO.HIGH)  # off
     GPIO.output(pin2, GPIO.HIGH)  # off
     GPIO.output(pin3, GPIO.HIGH)  # off
-    GPIO.output(pin4, GPIO.HIGH)  # on
+    GPIO.output(pin4, GPIO.HIGH)  # off
 exit()
