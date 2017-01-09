@@ -10,7 +10,7 @@ echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420      
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
-echo "! [3] w & last           ! [c] GPIO state           ! [n]                     !"
+echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus       !"
 echo "! [4] crontab -l         ! [d] Start LCD            ! [o]                     !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
@@ -72,7 +72,9 @@ case $yourch in
         read yourch ;;
     m) python3 /home/pi/grow-controller-Rpi/main/ref/selectEditor.py && echo -n "Enter to continue"
         read yourch ;;
-	0) exit 0 ;;
+    n) sudo modprobe -r i2c_bcm2708 && sudo modprobe i2c_bcm2708 baudrate=100010
+
+    0) exit 0 ;;
 *) echo "really?";
 echo "Press Enter to continue. . ." ; read ;;
 esac
