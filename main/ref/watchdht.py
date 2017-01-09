@@ -11,7 +11,8 @@ now = datetime.now()
 now_time = now.time()
 while True:
     h,t = dht.read_retry(dht.DHT22, pin5) #read DHT22 value, set pi
+    os.system('clear')
     print(now_time)
     print("temp", t, "\nhum", h)
     time.sleep(8.0)
-    os.system('clear')
+
