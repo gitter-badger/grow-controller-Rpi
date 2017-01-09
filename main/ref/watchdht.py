@@ -12,6 +12,6 @@ now_time = now.time()
 while True:
     h,t = dht.read_retry(dht.DHT22, pin5) #read DHT22 value, set pi
     print(now_time)
-    print("temp", t "hum", h)
+    print("temp", t, "hum", h)
     time.sleep(8.0)
     os.system('clear')
