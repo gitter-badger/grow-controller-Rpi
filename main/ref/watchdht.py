@@ -14,4 +14,3 @@ while True:
   print(now_time)
   time.sleep(8.0)
   os.system('clear')
-  temp()
