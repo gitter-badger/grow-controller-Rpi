@@ -48,31 +48,31 @@ while True:
     print("relay4, Main Light")
     relay4()
     time.sleep(5)
-  elif var == 2:
+  if var == 2:
     print("TURN ON MAIN LIGHT!!!![y/n]:")
     choice = input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.LOW)#on
-    elif choice in no:
+    if choice in no:
       print("Think Before U Fuck Everything Up")
-  elif var == 3:
+  if var == 3:
     print("TURN OFF MAIN LIGHT!!!![y/n]:")
     choice = input().lower()
     if choice in yes:
       GPIO.output(pin1, GPIO.HIGH)#off
-    elif choice in no:
+    if choice in no:
       print("Think Before U Fuck Everything Up")
-  elif var == 4:
+  if var == 4:
     GPIO.output(pin2, GPIO.LOW)#on
-  elif var == 5:
+  if var == 5:
     GPIO.output(pin2, GPIO.HIGH)#off
-  elif var == 6:
+  if var == 6:
     GPIO.output(pin3, GPIO.LOW)#on
-  elif var == 7:
+  if var == 7:
     GPIO.output(pin3, GPIO.HIGH)#off
-  elif var == 8:
+  if var == 8:
     GPIO.output(pin4, GPIO.LOW)#on
-  elif var == 9:
+  if var == 9:
     GPIO.output(pin4, GPIO.HIGH)#off
-  elif var == 0:
+  if var == 0:
     exit()
