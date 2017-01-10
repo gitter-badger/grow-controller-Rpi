@@ -10,6 +10,7 @@
     cronmaker.py----------yes-----nt
     calc.py---------------yes-----nt
     boot.py---------------yes-----nt
+    alloff.py-------------n/a-----nt
 
 #conclusion 
     runs 
