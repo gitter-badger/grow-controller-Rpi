@@ -3,6 +3,7 @@
 import RPi.GPIO as GPIO
 import settings
 from datetime import datetime, time
+from time import sleep
 settings.pins()
 settings.light()
 pin1 = settings.ballast
@@ -20,6 +21,7 @@ GPIO.setup(pin2, GPIO.OUT)  #ballast fan
 GPIO.setup(pin3, GPIO.OUT)  #water pump
 GPIO.setup(pin4, GPIO.OUT)  #oc fan
 if now_time >= time(lightOn, 0) and now_time <= time(lightOff, 0): #light ON
+    sleep(15) # if power outage was short give the bulb a little time to cool
     GPIO.output(pin1, GPIO.LOW)  # main light on
     GPIO.output(pin2, GPIO.LOW)  # ballast fan on
     GPIO.output(pin3, GPIO.HIGH)  # off
