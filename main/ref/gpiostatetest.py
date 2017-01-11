@@ -12,7 +12,7 @@ gpstate3 = gpioState.state3  # heater
 gpstate4 = gpioState.state4  # ocfan
 
 ###Print Variables######
-print(gpstate1)
-print(gpstate2)
-print(gpstate3)
-print(gpstate4)
+print(gpstate1)  # 0 == on, 1 == off
+print(gpstate2)  # 0 == on, 1 == off
+print(gpstate3)  # 0 == on, 1 == off
+print(gpstate4)  # 0 == on, 1 == off

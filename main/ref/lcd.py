@@ -39,22 +39,26 @@ def lcdDis():  # display function
             if t < temp1:
                 lcd.set_color(0.0, 1.0, 0.0) # green = good temp
                 if heatvar == 1:
-                    GPIO.output(pin3, GPIO.HIGH)  # off
+                    if gpstate3 == 0:
+                        GPIO.output(pin3, GPIO.HIGH)  # off
                 if coolvar == 1:
-                    GPIO.output(pin4, GPIO.HIGH)  # off
+                    if gpstate4 == 0:
+                        GPIO.output(pin4, GPIO.HIGH)  # off
         if t > temp1:  # explains itself
             lcd.set_color(1.0, 0.0, 0.0)  # high heat
             lcd.clear()
             lcd.message(' TEMP TOO HIGH \n')
             time.sleep(5)
             if coolvar == 1:
-                GPIO.output(pin4, GPIO.LOW)  # on
+                if gpstate4 == 1:
+                    GPIO.output(pin4, GPIO.LOW)  # on
         if t < temp2:
             lcd.set_color(0.0, 0.0, 1.0)  # Blue = cold shut off a/c
             lcd.message('TEMP TOO LOW\n')
             time.sleep(5)
             if heatvar == 1:
-                GPIO.output(pin3, GPIO.LOW)  # on
+                if gpstate3 == 1:
+                    GPIO.output(pin3, GPIO.LOW)  # on
         time.sleep(1)
         lcd.clear()  # clear the lcd
         lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
