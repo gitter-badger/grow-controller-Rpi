@@ -39,14 +39,7 @@ while True:
   print("!-------------------------------!")
   var = input("[1-0]: ")
   if var == "1":
-    print("relay1, ")
-    relay1()
-    print("relay2, Ballast Fan")
-    relay2()
-    print("relay3, Oscillating Fan")
-    relay3()
-    print("relay4, Main Light")
-    relay4()
+
     time.sleep(5)
   if var == "2":
     print("TURN ON MAIN LIGHT!!!![y/n]:")
