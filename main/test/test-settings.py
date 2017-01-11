@@ -6,6 +6,8 @@ settings.pins()
 settings.temps()
 settings.light()
 settings.expGpio()
+settings.heat()
+settings.cooling()
 #######################
 
 ###Set Variables######
@@ -22,6 +24,8 @@ pinvar1 = settings.gp1
 pinvar2 = settings.gp2
 pinvar3 = settings.gp3
 pinvar4 = settings.gp4
+heatvar = settings.heat1
+coolvar = settings.cool1
 #######################
 
 ###Relay Pins###
@@ -43,3 +47,6 @@ print("pinvar1", pinvar1)
 print("pinvar2", pinvar2)
 print("pinvar3", pinvar3)
 print("pinvar4", pinvar4)
+#################
+print("heatvar", heatvar)
+print("coolvar", coolvar)

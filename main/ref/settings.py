@@ -27,3 +27,11 @@ def light():
     lightOn = 8
     lightOff = 20
 
+#heat/ handled in lcd.py#0 = no heat, 1 = heat
+def heat():
+    global heat1
+    heat1 = 0
+
+def cooling():
+    global cool1
+    cool1 = 0
