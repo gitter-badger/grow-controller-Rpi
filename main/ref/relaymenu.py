@@ -47,22 +47,23 @@ while True:
     print("!-------------------------------!")
     var = input("[1-0]: ")
     if var == "1":
-        if gpstate1 == "0":
+        if gpstate1 == 0:
             print("ballast on")
-        if gpstate1 == "1":
+        if gpstate1 == 1:
             print("ballast off")
-        if gpstate2 == "0":
+        if gpstate2 == 0:
             print("ballast fan on")
-        if gpstate2 == "1":
+        if gpstate2 == 1:
             print("ballast fan off")
-        if gpstate3 == "0":
+        if gpstate3 == 0:
             print("heater on")
-        if gpstate3 == "1":
+        if gpstate3 == 1:
             print("heater off")
-        if gpstate4 == "0":
+        if gpstate4 == 0:
             print("oc fan on")
-        if gpstate4 == "1":
+        if gpstate4 == 1:
             print("ocfan off")
+        fakevar = input("enter to continue")
     if var == "2":
         print("TURN ON MAIN LIGHT!!!![y/n]:")
         choice = input().lower()
