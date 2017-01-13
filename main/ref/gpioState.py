@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+#
+#state 0 = on
+#state 1 = off
+
 import settings
 
 settings.expGpio()
