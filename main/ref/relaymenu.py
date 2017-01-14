@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-from gpioState import relay1, relay2, relay3 ,relay4
 import RPi.GPIO as GPIO
 import os
-import time
 import settings
 import gpioState
 

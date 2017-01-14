@@ -3,7 +3,7 @@ while :
 do
 clear
 fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
-date +%F_%T
+uptime
 echo "All settings are in setting.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420         !"
@@ -60,7 +60,7 @@ case $yourch in
     i) nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
         read yourch ;;
     j) echo -n 'shutdown? [y/n]'
-        read Var1 -n 1
+        read Var1 -n
            if [ $Var1 = 'y' ] ; then
              echo 'sudo shutdown -h -P now'
              sleep 5

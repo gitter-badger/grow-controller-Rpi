@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ###settings.py###
 
-###set min max temps here###
+###set min max temps here, in C###
 def temps():
     global maxTemp, minTemp
     maxTemp = 30
@@ -27,7 +27,7 @@ def light():
     lightOn = 8
     lightOff = 20
 
-#heat/ handled in lcd.py#0 = no heat, 1 = heat
+#  heat/ handled in lcd.py#0 = no heat, 1 = heat
 def heat():
     global heat1
     heat1 = 0
