@@ -2,7 +2,7 @@
 while :
 do
 clear
-fortune | cowsay -f tux #sudo apt-get install fortune cowsay -y
+fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
 echo "All settings are in setting.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"

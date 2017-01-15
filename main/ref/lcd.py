@@ -29,7 +29,7 @@ heatvar = settings.heat1
 gpstate3 = gpioState.state3  # heater
 gpstate4 = gpioState.state4  # ocfan
 GPIO.setup(pin1, GPIO.OUT)  # HPS
-def lcdDis():  # display function
+def lcdDis():   #  display function
     while True:
         now = datetime.now()
         h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22

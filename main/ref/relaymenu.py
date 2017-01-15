@@ -66,27 +66,27 @@ while True:
         print("TURN ON MAIN LIGHT!!!![y/n]:")
         choice = input().lower()
         if choice in yes:
-            GPIO.output(pin1, GPIO.LOW)#on
+            GPIO.output(pin1, GPIO.LOW)  #  on
         if choice in no:
             print("Think Before U Fuck Everything Up")
     if var == "3":
         print("TURN OFF MAIN LIGHT!!!![y/n]:")
         choice = input().lower()
         if choice in yes:
-            GPIO.output(pin1, GPIO.HIGH)#off
+            GPIO.output(pin1, GPIO.HIGH)  #  off
         if choice in no:
             print("Think Before U Fuck Everything Up")
     if var == "4":
-        GPIO.output(pin2, GPIO.LOW)#on
+        GPIO.output(pin2, GPIO.LOW)  #  on
     if var == "5":
-        GPIO.output(pin2, GPIO.HIGH)#off
+        GPIO.output(pin2, GPIO.HIGH)  #  off
     if var == "6":
-        GPIO.output(pin3, GPIO.LOW)#on
+        GPIO.output(pin3, GPIO.LOW)  #  on
     if var == "7":
-        GPIO.output(pin3, GPIO.HIGH)#off
+        GPIO.output(pin3, GPIO.HIGH)  #  off
     if var == "8":
-        GPIO.output(pin4, GPIO.LOW)#on
+        GPIO.output(pin4, GPIO.LOW)  #  on
     if var == "9":
-        GPIO.output(pin4, GPIO.HIGH)#off
+        GPIO.output(pin4, GPIO.HIGH)  #  off
     if var == "0":
         exit()

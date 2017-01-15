@@ -16,12 +16,12 @@ now = datetime.now()
 now_time = now.time()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(pin1, GPIO.OUT)  #HPS
-GPIO.setup(pin2, GPIO.OUT)  #ballast fan
-GPIO.setup(pin3, GPIO.OUT)  #water pump
-GPIO.setup(pin4, GPIO.OUT)  #oc fan
+GPIO.setup(pin1, GPIO.OUT)  #  HPS
+GPIO.setup(pin2, GPIO.OUT)  #  ballast fan
+GPIO.setup(pin3, GPIO.OUT)  #  water pump
+GPIO.setup(pin4, GPIO.OUT)  #  oc fan
 if now_time >= time(lightOn, 0) and now_time <= time(lightOff, 0): #light ON
-    sleep(15) # if power outage was short give the bulb a little time to cool
+    sleep(15)  # if power outage was short give the bulb a little time to cool
     GPIO.output(pin1, GPIO.LOW)  # main light on
     GPIO.output(pin2, GPIO.LOW)  # ballast fan on
     GPIO.output(pin3, GPIO.HIGH)  # off
