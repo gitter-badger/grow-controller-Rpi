@@ -13,7 +13,6 @@ args = parser.parse_args()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-
 ###(main/ballast)###
 pin1 = settings.ballast
 GPIO.setup(pin1, GPIO.OUT)#HPS
@@ -28,6 +27,7 @@ if args.main:
   elif args.main == 'off':
     mainoff()
     exit()
+
 ###(ballast cooling)###
 pin2 = settings.ballastfan
 GPIO.setup(pin2, GPIO.OUT)#ballast fan
@@ -42,6 +42,7 @@ if args.ballfan:
   elif args.ballfan == 'off':
     ballastoff()
     exit()
+
 ###(heater)###
 pin3 = settings.heater
 GPIO.setup(pin3, GPIO.OUT)#heater    
@@ -56,6 +57,7 @@ if args.thermo:
   elif args.thermo == 'off':
     heateroff()
     exit()
+
 ###(ocfan)###
 pin4 = settings.ocfan
 GPIO.setup(pin4, GPIO.OUT)#ocfan  
