@@ -11,8 +11,8 @@ echo "︻╦╤─--------------------*==========================*--------------
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus       !"
-echo "! [4] crontab -l         ! [d] Start main.py &      ! [o] All Relays Off      !"
-echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
+echo "! [4] root crontab -l    ! [d] Start main.py &      ! [o] All Relays Off      !"
+echo "! [5] root crontab -e    ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
 echo "! [7] processor temp     ! [g] watch DHT22          ! [r]                     !"
 echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
@@ -29,9 +29,9 @@ case $yourch in
         read yourch ;;
     3) W && last && echo -n "Enter to continue"
         read yourch ;;
-    4) crontab -l && echo -n "Enter to continue"
+    4) sudo crontab -l && echo -n "Enter to continue"
         read yourch ;;
-    5) crontab -e &&  echo -n "Enter to continue"
+    5) sudo crontab -e &&  echo -n "Enter to continue"
         read yourch ;;
     6) htop && echo -n "Enter to continue"
         read yourch ;;
