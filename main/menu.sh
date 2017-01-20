@@ -11,7 +11,7 @@ echo "︻╦╤─--------------------*==========================*--------------
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus       !"
-echo "! [4] crontab -l         ! [d] Start LCD            ! [o] All Relays Off      !"
+echo "! [4] crontab -l         ! [d] Start main.py &      ! [o] All Relays Off      !"
 echo "! [5] crontab -e         ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
 echo "! [7] processor temp     ! [g] watch DHT22          ! [r]                     !"
@@ -47,7 +47,7 @@ case $yourch in
         read yourch ;;
     c) python3 /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
         read yourch ;;
-    d) python3 /home/pi/grow-controller-Rpi/main/ref/lcd.py & echo -n "Enter to continue"
+    d) python3 /home/pi/grow-controller-Rpi/main/ref/main.py & echo -n "Enter to continue"
         read youch ;;	
     e) /opt/vc/bin/tvservice -o && echo -n "Enter to continue"
         read yourch ;;

@@ -1,8 +1,4 @@
 #! /usr/bin/env python3
-# Adafruit 16x2 I2C PiPlate / simple, buttons and display script
-# simple lcd control
-# 
-# file relies on settings.py
 from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
