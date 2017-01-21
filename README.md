@@ -1,4 +1,4 @@
-![build status](/main/test/git-assets/build-passing.PNG)
+![build status](/main/test/git-assets/build-passing.png)
 ***********************************************************************************
 
 #lastest raspbian ssh server is off by default
