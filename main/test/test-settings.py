@@ -40,13 +40,16 @@ print("\n--temp settings--")
 print("Max temp", temp1)
 print("Min Temp", temp2)
 #################
+print("\n--light no/off times--")
 print("light on", lightOn)
 print("light off", lightOff)
 #################
+print("\n--pinvars--")
 print("pinvar1", pinvar1)
 print("pinvar2", pinvar2)
 print("pinvar3", pinvar3)
 print("pinvar4", pinvar4)
 #################
+print("\n--is HVAC controlled (1=yes)--")
 print("heatvar", heatvar)
 print("coolvar", coolvar)
