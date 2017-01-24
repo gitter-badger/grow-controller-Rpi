@@ -10,8 +10,8 @@
     gpioState.py----------yes-----yes
     cronmaker.py----------yes-----yes
     calc.py---------------yes-----yes
-    boot.py---------------yes-----nt, will test at "power failure" or "crop out"
-    alloff.py-------------n/a-----nt
+    boot.py---------------yes-----yes
+    alloff.py-------------n/a-----yes
 
 #conclusion 
     runs  
