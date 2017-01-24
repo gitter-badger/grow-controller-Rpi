@@ -7,15 +7,15 @@ if [ $yourch = "y" ];
     then
         echo "what program would u like to install"
         read insch
-        sudo apt install $insch -y
-        sudo apt upgrade -y
-        sudo apt dist-upgrade -y
-        sudo apt autoremove -y
+        sudo apt install $insch
+        sudo apt upgrade
+        sudo apt dist-upgrade
+        sudo apt autoremove
 fi
 if [ $yourch != "y" ];
     then
-        sudo apt upgrade -y
-        sudo apt dist-upgrade -y
-        sudo apt autoremove -y
+        sudo apt upgrade
+        sudo apt dist-upgrade
+        sudo apt autoremove
 fi
 exit
