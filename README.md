@@ -1,3 +1,4 @@
+
 ***********************************************************************************
 
 #lastest raspbian ssh server is off by default
@@ -55,3 +56,5 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 set variables in settings.py in menu [l]
 
 *************************************
+
+I plan to continue development on this project until my death.
