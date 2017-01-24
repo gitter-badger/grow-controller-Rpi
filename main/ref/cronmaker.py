@@ -20,3 +20,4 @@ print("0", lightOn, "* * * python /home/pi/grow-controller-Rpi/main/ref/relay.py
 print("0", lightOff, "* * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -m off")
 print("0", lightOn, "* * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b on")
 print("0", lightOff, "* * * python /home/pi/grow-controller-Rpi/main/ref/relay.py -b off")
+print("0 0 * * * reboot")
