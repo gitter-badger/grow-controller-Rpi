@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+
 from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
@@ -7,6 +8,7 @@ import gpioState
 import RPi.GPIO as GPIO
 from datetime import datetime
 import time
+
 gpioState.relay3()
 gpioState.relay4()
 settings.temps()
@@ -24,7 +26,9 @@ coolvar = settings.cool1
 heatvar = settings.heat1
 gpstate3 = gpioState.state3  # heater
 gpstate4 = gpioState.state4  # ocfan
-GPIO.setup(pin1, GPIO.OUT)  # HPS
+GPIO.setup(pin1, GPIO.OUT)  #
+GPIO.setup(pin3, GPIO.OUT)  #
+GPIO.setup(pin4, GPIO.OUT)  #
 def lcdDis():   #  display function
     while True:
         now = datetime.now()
