@@ -25,25 +25,25 @@ def relay4():
         state4 = int(gpio4.read())
 if __name__ == "__main__":
     relay1()
-    print("Ballast", state1)
+    print("Ballast =", state1)
     if state1 == 1:
         print('off')
     if state1 == 0:
         print('on')
     relay2()
-    print("Ballast Fan", state2)
+    print("Ballast Fan =", state2)
     if state2 == 1:
         print('off')
     if state2 == 0:
         print('on')
     relay3()
-    print("Heater", state3)
+    print("Heater =", state3)
     if state3 == 1:
         print('off')
     if state3 == 0:
         print('on')
     relay4()
-    print("ac fan", state4)
+    print("ac fan =", state4)
     if state4 == 1:
         print('off')
     if state4 == 0:
