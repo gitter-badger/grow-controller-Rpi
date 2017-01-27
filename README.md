@@ -57,6 +57,8 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
     
   sudo raspi-config #i2c enable
   
+  put Adafruit.IO key in settings.py if enabled 
+  
 set variables in settings.py in menu [l]
 
 *************************************
