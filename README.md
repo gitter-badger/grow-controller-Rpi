@@ -67,8 +67,10 @@ I plan to continue development on this project until my death.
 ***************************************************************************************
 #Main Menu
 ![Menu](/main/test/git-assets/menu.PNG)
-#AdafruitIO
+#AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
+
+live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
 ***************************************************************************************
 
 4 more project info read comments in settings.py
