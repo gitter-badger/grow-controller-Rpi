@@ -4,7 +4,7 @@ do
 clear
 fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
-echo "All settings are in setting.py. Selection [l]"
+echo "All settings are in settings.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "!  MENU                  ! RPi Grow controller      !  GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
