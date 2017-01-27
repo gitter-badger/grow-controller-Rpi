@@ -10,6 +10,8 @@ Raspberry Pi Zero v1.3
 
 Python v3
 
+using BCM for GPIO values
+
 using OS: Raspbian jessie lite
 
 Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) 
