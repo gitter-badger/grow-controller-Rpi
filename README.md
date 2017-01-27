@@ -29,6 +29,8 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune rpi-update python3-rpi.gpio
  -y
   
+  sudo pip3 install adafruit-io
+  
   sudo rpi-update
   
   cd ~
@@ -36,6 +38,8 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   git clone https://github.com/adafruit/Adafruit_Python_DHT.git
   
   git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
+  
+  git clone https://github.com/growmaster420/grow-controller-Rpi.git
   
   cd Adafruit_Python_DHT
   
@@ -48,11 +52,7 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   sudo python3 setup.py install 
   
   cd ~
-  
-  git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi
-  
-  sudo pip3 install adafruit-io
-  
+    
   sudo dpkg-reconfigure tzdata
     
   sudo raspi-config #i2c enable
