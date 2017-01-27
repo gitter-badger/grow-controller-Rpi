@@ -49,6 +49,8 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
   
   git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi
   
+  sudo pip3 install adafruit-io
+  
   sudo dpkg-reconfigure tzdata
     
   sudo raspi-config #i2c enable
