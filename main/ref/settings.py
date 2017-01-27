@@ -21,7 +21,7 @@ def expGpio():
     gp3 = "/sys/class/gpio/gpio18/value"
     gp4 = "/sys/class/gpio/gpio23/value"
 
-###set light times here###
+###set light times here### 24hr time scale
 def light():
     global lightOn, lightOff
     lightOn = 8
