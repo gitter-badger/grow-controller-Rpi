@@ -1,4 +1,4 @@
-
+Writen with K.I.S.S. in mind 
 ***********************************************************************************
 
 #lastest raspbian ssh server is off by default
