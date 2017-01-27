@@ -16,21 +16,24 @@ ADAFRUIT_IO_KEY = settings.key1
 web = Client(ADAFRUIT_IO_KEY)
 ###GPIOstate###
 gpioState.relay3()
-gpioState.relay4()
 gpstate3 = gpioState.state3  # heater
+gpioState.relay4()
 gpstate4 = gpioState.state4  # ac
 ####Settings####
 settings.temps()
-settings.pins()
-settings.heat()
-settings.cooling()
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
+
+settings.pins()
 pin5 = settings.dhtsensor
 pin3 = settings.heater
 pin4 = settings.ocfan
-coolvar = settings.cool1
+
+settings.heat()
 heatvar = settings.heat1
+
+settings.cooling()
+coolvar = settings.cool1
 ###setup###
 GPIO.setup(pin3, GPIO.OUT)  # heater
 GPIO.setup(pin4, GPIO.OUT)  # ac
