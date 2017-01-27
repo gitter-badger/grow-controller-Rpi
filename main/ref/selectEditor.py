@@ -12,4 +12,5 @@ while True:
         print("good choice")
         exit()
     if var1 == "3":
-        print("please remove all of my code from your storage")
+        for x in range(1,100):
+            print("please remove all of my code from your storage")
