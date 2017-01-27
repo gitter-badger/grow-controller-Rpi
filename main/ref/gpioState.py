@@ -3,10 +3,10 @@
 #state 1 = off
 import settings
 settings.expGpio()
-pinvar1 = settings.gp1
-pinvar2 = settings.gp2
-pinvar3 = settings.gp3
-pinvar4 = settings.gp4
+pinvar1 = settings.gp1  # ballast
+pinvar2 = settings.gp2  # ballast fan
+pinvar3 = settings.gp3  # heater
+pinvar4 = settings.gp4  # ac
 def relay1():
     global state1
     with open(pinvar1) as gpio1:
@@ -25,25 +25,25 @@ def relay4():
         state4 = int(gpio4.read())
 if __name__ == "__main__":
     relay1()
-    print("relay1(1=off/0=on)", state1)
+    print("Ballast", state1)
     if state1 == 1:
         print('off')
     if state1 == 0:
         print('on')
     relay2()
-    print("relay2(1=off/0=on)", state2)
+    print("Ballast Fan", state2)
     if state2 == 1:
         print('off')
     if state2 == 0:
         print('on')
     relay3()
-    print("relay3(1=off/0=on)", state3)
+    print("Heater", state3)
     if state3 == 1:
         print('off')
     if state3 == 0:
         print('on')
     relay4()
-    print("relay4(1=off/0=on)", state4)
+    print("ac fan", state4)
     if state4 == 1:
         print('off')
     if state4 == 0:
