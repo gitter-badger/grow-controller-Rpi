@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-
+# expect this file to get infinitely more complex 
 from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
