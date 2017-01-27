@@ -9,16 +9,21 @@ from datetime import datetime
 import time
 from Adafruit_IO import Client
 
-
-###\/these need to be ordered correctally\/####
+###Adafruit.IO###
 settings.webgui()
+guienable = settings.enable1
+ADAFRUIT_IO_KEY = settings.key1
+web = Client(ADAFRUIT_IO_KEY)
+###GPIOstate###
 gpioState.relay3()
 gpioState.relay4()
+gpstate3 = gpioState.state3  # heater
+gpstate4 = gpioState.state4  # ac
+####Settings####
 settings.temps()
 settings.pins()
 settings.heat()
 settings.cooling()
-lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 temp1 = settings.maxTemp
 temp2 = settings.minTemp
 pin5 = settings.dhtsensor
@@ -26,13 +31,10 @@ pin3 = settings.heater
 pin4 = settings.ocfan
 coolvar = settings.cool1
 heatvar = settings.heat1
-gpstate3 = gpioState.state3  # heater
-gpstate4 = gpioState.state4  # ac
+###setup###
 GPIO.setup(pin3, GPIO.OUT)  # heater
 GPIO.setup(pin4, GPIO.OUT)  # ac
-guienable = settings.enable1
-ADAFRUIT_IO_KEY = settings.key1
-web = Client(ADAFRUIT_IO_KEY)
+lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 
 while True:
     now = datetime.now()
