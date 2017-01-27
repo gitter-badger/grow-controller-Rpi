@@ -26,9 +26,25 @@ def relay4():
 if __name__ == "__main__":
     relay1()
     print("relay1(1=off/0=on)", state1)
+    if state1 == 1:
+        print('off')
+    if state1 == 0:
+        print('on')
     relay2()
     print("relay2(1=off/0=on)", state2)
+    if state2 == 1:
+        print('off')
+    if state2 == 0:
+        print('on')
     relay3()
     print("relay3(1=off/0=on)", state3)
+    if state3 == 1:
+        print('off')
+    if state3 == 0:
+        print('on')
     relay4()
     print("relay4(1=off/0=on)", state4)
+    if state4 == 1:
+        print('off')
+    if state4 == 0:
+        print('on')
