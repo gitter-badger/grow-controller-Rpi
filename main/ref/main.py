@@ -41,7 +41,11 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 
 while True:
     now = datetime.now()
-    h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
+    try:
+        h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
+    except Exception:
+        time.sleep(5)
+        h, t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
     time.sleep(1)
     if guienable == 1:
         web.send('Temp', t)
