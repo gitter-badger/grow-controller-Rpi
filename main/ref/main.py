@@ -9,6 +9,9 @@ import RPi.GPIO as GPIO
 from datetime import datetime
 import time
 
+
+
+
 gpioState.relay3()
 gpioState.relay4()
 settings.temps()
@@ -29,6 +32,9 @@ gpstate4 = gpioState.state4  # ac
 GPIO.setup(pin1, GPIO.OUT)  #  ballast
 GPIO.setup(pin3, GPIO.OUT)  # heater
 GPIO.setup(pin4, GPIO.OUT)  # ac
+
+
+
 def lcdDis():   #  display function
     while True:
         now = datetime.now()

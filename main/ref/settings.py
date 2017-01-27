@@ -35,6 +35,6 @@ def cooling():
     global cool1
     cool1 = 0  # is a AC unit installed, 0 = no / 1 = yes
 def webgui():  #  requires a Adafruit.IO account(free)
-    global EDV, key1
-    EDV = 1   # webGui enable #  ## 0 = no / 1 = yes
+    global enable1, key1
+    enable1 = 1   # webGui enable #  ## 0 = no / 1 = yes
     key1 = 'your_adafruit_IO_key'

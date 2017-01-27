@@ -28,7 +28,7 @@ pinvar4 = settings.gp4
 heatvar = settings.heat1
 coolvar = settings.cool1
 ADAFRUIT_IO_KEY = settings.key1
-guienable = settings.EDV
+guienable = settings.enable1
 #######################
 
 ###Relay Pins###
