@@ -10,6 +10,8 @@ from datetime import datetime
 import time
 from Adafruit_IO import Client
 
+
+###\/these need to be ordered correctally\/####
 settings.webgui()
 gpioState.relay3()
 gpioState.relay4()
