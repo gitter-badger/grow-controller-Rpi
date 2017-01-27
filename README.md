@@ -64,6 +64,8 @@ set variables in settings.py in menu [l]
 I plan to continue development on this project until my death.
 
 ***************************************************************************************
+#Main Menu
 ![Menu](/main/test/git-assets/menu.PNG)
+#AdafruitIO
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 ***************************************************************************************
