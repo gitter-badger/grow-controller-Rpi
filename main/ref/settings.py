@@ -35,6 +35,6 @@ def cooling():
     global cool1
     cool1 = 0
 def webgui():
-    global EDV, ADAFRUIT_IO_KEY
+    global EDV, key1
     EDV = 1   # logging enable ##1 = yes, 0 = no
-    ADAFRUIT_IO_KEY = 'your_adafruit_IO_key'
+    key1 = 'your_adafruit_IO_key'

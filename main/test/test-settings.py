@@ -8,6 +8,7 @@ settings.light()
 settings.expGpio()
 settings.heat()
 settings.cooling()
+settings.webgui()
 #######################
 
 ###Set Variables######
@@ -26,6 +27,8 @@ pinvar3 = settings.gp3
 pinvar4 = settings.gp4
 heatvar = settings.heat1
 coolvar = settings.cool1
+ADAFRUIT_IO_KEY = settings.key1
+guienable = settings.EDV
 #######################
 
 ###Relay Pins###
@@ -53,3 +56,6 @@ print("pinvar4", pinvar4)
 print("\n--is HVAC controlled (1=yes)--")
 print("heatvar", heatvar)
 print("coolvar", coolvar)
+#################
+print('key1', ADAFRUIT_IO_KEY)
+print('gui enable', guienable)
