@@ -1,4 +1,4 @@
-Writen with K.I.S.S. in mind (https://en.wikipedia.org/wiki/KISS_principle)
+
 ***********************************************************************************
 
 #lastest raspbian ssh server is off by default
@@ -74,3 +74,5 @@ live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-r
 ***************************************************************************************
 
 4 more project info read comments in settings.py
+
+Writen with K.I.S.S. in mind (https://en.wikipedia.org/wiki/KISS_principle)
