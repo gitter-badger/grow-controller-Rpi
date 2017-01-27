@@ -1,4 +1,4 @@
-Writen with K.I.S.S. in mind 
+Writen with K.I.S.S. in mind (https://en.wikipedia.org/wiki/KISS_principle)
 ***********************************************************************************
 
 #lastest raspbian ssh server is off by default
