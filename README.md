@@ -69,3 +69,5 @@ I plan to continue development on this project until my death.
 #AdafruitIO
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 ***************************************************************************************
+
+4 more project info read comments in settings.py
