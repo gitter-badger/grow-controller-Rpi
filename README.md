@@ -21,8 +21,6 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
 ***************************************************************************************
-![Menu](/main/test/git-assets/menu.PNG)
-***************************************************************************************
 ## install
   sudo apt update
   
@@ -64,3 +62,8 @@ set variables in settings.py in menu [l]
 *************************************
 
 I plan to continue development on this project until my death.
+
+***************************************************************************************
+![Menu](/main/test/git-assets/menu.PNG)
+![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
+***************************************************************************************
