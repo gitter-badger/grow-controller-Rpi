@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 # expect this file to get infinitely more complex 
-from multiprocessing import Process
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import settings
@@ -34,8 +33,6 @@ GPIO.setup(pin4, GPIO.OUT)  # ac
 guienable = settings.enable1
 ADAFRUIT_IO_KEY = settings.key1
 web = Client(ADAFRUIT_IO_KEY)
-
-
 
 while True:
     now = datetime.now()
