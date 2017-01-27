@@ -14,19 +14,20 @@ def pins():
     heater = 18
     ocfan = 23
     dhtsensor = 17
-def expGpio():
+def expGpio(): 
     global gp1, gp2, gp3, gp4
     gp1 = "/sys/class/gpio/gpio27/value"
     gp2 = "/sys/class/gpio/gpio22/value"
     gp3 = "/sys/class/gpio/gpio18/value"
     gp4 = "/sys/class/gpio/gpio23/value"
-
-###set light times here###
+###SET PINs ABOVE###
+    
+###set light times here### 24hr time scale
 def light():
     global lightOn, lightOff
     lightOn = 8
     lightOff = 20
-
+## BELOW ARE OPTIONAL, 0 all to turn off
 #  heat/ handled in lcd.py#0 = no heat, 1 = heat
 def heat():
     global heat1

@@ -21,8 +21,6 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
 ***************************************************************************************
-![Menu](/main/test/git-assets/menu.PNG)
-***************************************************************************************
 ## install
   sudo apt update
   
@@ -31,6 +29,8 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune rpi-update python3-rpi.gpio
  -y
   
+  sudo pip3 install adafruit-io
+  
   sudo rpi-update
   
   cd ~
@@ -38,6 +38,8 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   git clone https://github.com/adafruit/Adafruit_Python_DHT.git
   
   git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
+  
+  git clone https://github.com/growmaster420/grow-controller-Rpi.git
   
   cd Adafruit_Python_DHT
   
@@ -50,11 +52,7 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   sudo python3 setup.py install 
   
   cd ~
-  
-  git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi
-  
-  sudo pip3 install adafruit-io
-  
+    
   sudo dpkg-reconfigure tzdata
     
   sudo raspi-config #i2c enable
@@ -64,3 +62,12 @@ set variables in settings.py in menu [l]
 *************************************
 
 I plan to continue development on this project until my death.
+
+***************************************************************************************
+#Main Menu
+![Menu](/main/test/git-assets/menu.PNG)
+#AdafruitIO
+![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
+***************************************************************************************
+
+4 more project info read comments in settings.py
