@@ -26,7 +26,7 @@ def light():
     global lightOn, lightOff
     lightOn = 8
     lightOff = 20
-
+## BELOW ARE OPTIONAL, 0 all to turn off
 #  heat/ handled in lcd.py#0 = no heat, 1 = heat
 def heat():
     global heat1
