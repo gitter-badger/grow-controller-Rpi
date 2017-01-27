@@ -30,11 +30,11 @@ def light():
 #  heat/ handled in lcd.py#0 = no heat, 1 = heat
 def heat():
     global heat1
-    heat1 = 0
+    heat1 = 0  # is a heater installed, 0 = no / 1 = yes
 def cooling():
     global cool1
-    cool1 = 0
-def webgui():
+    cool1 = 0  # is a AC unit installed, 0 = no / 1 = yes
+def webgui():  #  requires a Adafruit.IO account(free)
     global EDV, key1
-    EDV = 1   # logging enable ##1 = yes, 0 = no
+    EDV = 1   # webGui enable #  ## 0 = no / 1 = yes
     key1 = 'your_adafruit_IO_key'
