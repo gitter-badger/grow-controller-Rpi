@@ -8,7 +8,7 @@ from Adafruit_IO import Client
 settings.webgui()
 settings.pins()
 
-ADAFRUIT_IO_KEY = settings.key1
+ADAFRUIT_IO_KEY = settings.key
 web = Client(ADAFRUIT_IO_KEY)
 pin5 = settings.dhtsensor
 
