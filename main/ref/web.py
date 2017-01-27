@@ -5,10 +5,11 @@ import time
 import settings
 from Adafruit_IO import Client
 
-
-ADAFRUIT_IO_KEY = 'your_adafruit_IO_key'
-aio = Client(ADAFRUIT_IO_KEY)
+settings.webgui()
 settings.pins()
+
+ADAFRUIT_IO_KEY = settings.key1
+aio = Client(ADAFRUIT_IO_KEY)
 pin5 = settings.dhtsensor
 
 while True:
