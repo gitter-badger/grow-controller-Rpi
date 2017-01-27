@@ -22,42 +22,41 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
 ***************************************************************************************
 ## install
-  sudo apt update
+    sudo apt update
   
-  sudo apt upgrade -y
+    sudo apt upgrade -y
   
-  sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune rpi-update python3-rpi.gpio
- -y
+    sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune rpi-update python3-rpi.gpio  -y
   
-  sudo pip3 install adafruit-io
+    sudo pip3 install adafruit-io
   
-  sudo rpi-update
+    sudo rpi-update
   
-  cd ~
+    cd ~
   
-  git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+    git clone https://github.com/adafruit/Adafruit_Python_DHT.git
   
-  git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
+    git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
   
-  git clone https://github.com/growmaster420/grow-controller-Rpi.git
+    git clone https://github.com/growmaster420/grow-controller-Rpi.git
   
-  cd Adafruit_Python_DHT
+    cd Adafruit_Python_DHT
   
-  sudo python3 setup.py install 
+    sudo python3 setup.py install 
   
-  cd ~
+    cd ~
   
-  cd Adafruit_Python_CharLCD
+    cd Adafruit_Python_CharLCD
   
-  sudo python3 setup.py install 
+    sudo python3 setup.py install 
   
-  cd ~
+    cd ~
     
-  sudo dpkg-reconfigure tzdata
+    sudo dpkg-reconfigure tzdata
     
-  sudo raspi-config #i2c enable
+    sudo raspi-config #i2c enable
   
-  put Adafruit.IO key in settings.py if enabled 
+put Adafruit.IO key in settings.py if enabled 
   
 set variables in settings.py in menu [l]
 
