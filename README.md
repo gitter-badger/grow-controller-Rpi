@@ -16,6 +16,8 @@ Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_P
 
 Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
 
+Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
+
 ***************************************************************************************
 ![Menu](/main/test/git-assets/menu.PNG)
 ***************************************************************************************
@@ -48,6 +50,8 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
   cd ~
   
   git clone https://github.com/growmaster420/grow-controller-Rpi.git /home/pi
+  
+  sudo pip3 install adafruit-io
   
   sudo dpkg-reconfigure tzdata
     
