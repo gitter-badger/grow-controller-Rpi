@@ -8,21 +8,22 @@ gpioState.relay1()
 gpioState.relay2()
 gpioState.relay3()
 gpioState.relay4()
-settings.pins()
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-pin1 = settings.ballast
-pin2 = settings.ballastfan
-pin3 = settings.heater
-pin4 = settings.ocfan
-GPIO.setup(pin1, GPIO.OUT)
-GPIO.setup(pin2, GPIO.OUT)
-GPIO.setup(pin3, GPIO.OUT)
-GPIO.setup(pin4, GPIO.OUT)
 gpstate1 = gpioState.state1  # ballast
 gpstate2 = gpioState.state2  # ballast fan
 gpstate3 = gpioState.state3  # heater
 gpstate4 = gpioState.state4  # ocfan
+settings.pins()
+pin1 = settings.ballast
+pin2 = settings.ballastfan
+pin3 = settings.heater
+pin4 = settings.ocfan
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(pin1, GPIO.OUT)
+GPIO.setup(pin2, GPIO.OUT)
+GPIO.setup(pin3, GPIO.OUT)
+GPIO.setup(pin4, GPIO.OUT)
+
 yes = set(['yes','y', 'ye', ''])
 no = set(['no','n'])
 
