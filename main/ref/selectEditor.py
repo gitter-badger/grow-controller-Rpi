@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import time
 import sys; print('Python %s on %s' % (sys.version, sys.platform))
 while True:
     print("Select Default Editor")
@@ -14,3 +15,6 @@ while True:
     if var1 == "3":
         for x in range(1,100):
             print("please remove all of my code from your storage")
+            time.sleep(0.1)
+        print("Thank You")
+        time.sleep(5)
