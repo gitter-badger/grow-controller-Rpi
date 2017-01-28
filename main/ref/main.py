@@ -42,13 +42,16 @@ while True:
     try:
         h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
     except Exception:
-        time.sleep(5)
+        time.sleep(5.0)
         h, t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
     time.sleep(1)
     if guienable == 1:
-        web.send('Temp', t)
-        web.send('Humd', h)
-    time.sleep(1)
+        try:
+            web.send('Temp', t)
+            web.send('Humd', h)
+        except Exception:
+            time.sleep(5.0)
+    time.sleep(1.0)
     t1 = t * 9/5.0 + 32
     if t > temp2:
         if t < temp1:
