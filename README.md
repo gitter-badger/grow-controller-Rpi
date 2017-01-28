@@ -26,11 +26,9 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
   
     sudo apt upgrade -y
   
-    sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune rpi-update python3-rpi.gpio  -y
+    sudo apt install build-essential python3 python3-dev python3-smbus python3-pip git cowsay fortune python3-rpi.gpio  -y
   
     sudo pip3 install adafruit-io
-  
-    sudo rpi-update
   
     cd ~
   
