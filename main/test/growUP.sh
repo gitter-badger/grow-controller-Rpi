@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-
-
-
-
-
-sudo rm ~/grow-controller-Rpi
+cd ~
+sudo rm home/pi/grow-controller-Rpi -r
 git clone https://github.com/growmaster420/grow-controller-Rpi.git
