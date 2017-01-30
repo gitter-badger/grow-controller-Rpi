@@ -29,26 +29,27 @@ gpstate4 = gpioState.state4  # ocfan
 
 
 #main
-web.send('timeOn', lightOn)
-web.send('timeOff', lightOff)
-web.send('lowTemp', temp2)
-web.send('highTemp', temp1)
 
-if gpstate1 == 0:
-    web.send('ballastState', 'ON')
-if gpstate1 == 1:
-    web.send('ballastState', 'OFF')
+try:
+    web.send('timeOn', lightOn)
+    web.send('timeOff', lightOff)
+    web.send('lowTemp', temp2)
+    web.send('highTemp', temp1)
 
-if gpstate2 == 0:
-    web.send('ballastFan', 'ON')
-if gpstate2 == 1:
-    web.send('ballastFan', 'OFF')
-
-if gpstate3 == 0:
-    web.send('heaterState', 'ON')
-if gpstate3 == 1:
-    web.send('heaterState', 'OFF')
-
+    if gpstate1 == 0:
+        web.send('ballastState', 'ON')
+    if gpstate1 == 1:
+        web.send('ballastState', 'OFF')
+    if gpstate2 == 0:
+        web.send('ballastFan', 'ON')
+    if gpstate2 == 1:
+        web.send('ballastFan', 'OFF')
+    if gpstate3 == 0:
+        web.send('heaterState', 'ON')
+    if gpstate3 == 1:
+        web.send('heaterState', 'OFF')
+except Exception:
+    pass
 '''
 #10 feeds is the limit###
 if gpstate4 == 0:
