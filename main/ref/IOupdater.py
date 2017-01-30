@@ -38,19 +38,18 @@ if gpstate1 == 0:
     web.send('ballastState', 'ON')
 if gpstate1 == 1:
     web.send('ballastState', 'OFF')
-'''
-if gpstate1 == 0:
-    web.send('', )
-if gpstate1 == 1:
-    web.send('', )
+
+if gpstate2 == 0:
+    web.send('ballastFan', 'ON')
+if gpstate2 == 1:
+    web.send('ballastFan', 'OFF')
 
 if gpstate1 == 0:
-    web.send('', )
+    web.send('heaterState', 'ON')
 if gpstate1 == 1:
-    web.send('', )
+    web.send('heaterState', 'OFF')
 
 if gpstate1 == 0:
-    web.send('', )
+    web.send('acState', 'ON')
 if gpstate1 == 1:
-    web.send('', )
-'''
+    web.send('acState', 'OFF')
