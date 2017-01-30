@@ -49,7 +49,12 @@ if gpstate3 == 0:
 if gpstate3 == 1:
     web.send('heaterState', 'OFF')
 
+'''
+#10 feeds is the limit###
 if gpstate4 == 0:
-    web.send('acfanState', 'ON')
+    web.send('ocfanState', 'ON')
 if gpstate4 == 1:
-    web.send('acfanState', 'OFF')
+    web.send('ocfanState', 'OFF')
+'''
+
+
