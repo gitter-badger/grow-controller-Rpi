@@ -12,5 +12,14 @@ settings.light()
 lightOn = settings.lightOn
 lightOff = settings.lightOff
 
-web.send('timeOn', lightOn)
-web.send('timeOff', lightOff)
+settings.temps()
+temp1 = settings.maxTemp
+temp2 = settings.minTemp
+
+#main
+try:
+    web.send('timeOn', lightOn)
+    web.send('timeOff', lightOff)
+    web.send('lowTemp', temp2)
+    web.send('highTemp', temp1)
+
