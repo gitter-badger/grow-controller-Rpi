@@ -22,6 +22,14 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
 ***************************************************************************************
+
+#Main Menu
+![Menu](/main/test/git-assets/menu.PNG)
+#AdafruitIO 
+![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
+
+live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
+***************************************************************************************
 ## install
     sudo apt update
   
@@ -64,14 +72,6 @@ set variables in settings.py in menu [l]
 I plan to continue development on this project until my death.
 
 ***************************************************************************************
-#Main Menu
-![Menu](/main/test/git-assets/menu.PNG)
-#AdafruitIO 
-![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
-
-live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
-***************************************************************************************
-
 4 more project info read comments in settings.py
 
 Writen with K.I.S.S. in mind (https://en.wikipedia.org/wiki/KISS_principle)
