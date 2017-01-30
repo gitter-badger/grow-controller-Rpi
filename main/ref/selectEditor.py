@@ -15,6 +15,6 @@ while True:
     if var1 == "3":
         for x in range(1,100):
             print("please remove all of my code from your storage")
-            time.sleep(0.1)
+            time.sleep(0.01)
         print("Thank You")
         time.sleep(5)
