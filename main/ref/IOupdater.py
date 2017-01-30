@@ -35,9 +35,9 @@ web.send('lowTemp', temp2)
 web.send('highTemp', temp1)
 
 if gpstate1 == 0:
-    web.send('ballastState', OFF)
+    web.send('ballastState', 'ON')
 if gpstate1 == 1:
-    web.send('ballastState', ON)
+    web.send('ballastState', 'OFF')
 '''
 if gpstate1 == 0:
     web.send('', )
