@@ -74,4 +74,3 @@ I plan to continue development on this project until my death.
 ***************************************************************************************
 4 more project info read comments in settings.py
 
-Writen with K.I.S.S. in mind (https://en.wikipedia.org/wiki/KISS_principle)
