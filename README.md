@@ -5,7 +5,7 @@
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
-live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
+(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
 ***************************************************************************************
 ## install
     sudo apt update
@@ -41,13 +41,13 @@ live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-r
     sudo raspi-config #i2c enable
   
 put Adafruit.IO key in settings.py if enabled 
-*  
+  
 set variables in settings.py in menu [l]
-*
+
 create a file in "boot" partition named "ssh"
-*
+
 4 more project info read comments in settings.py
-*
+
 Raspberry Pi Zero v1.3
 
 Python v3
