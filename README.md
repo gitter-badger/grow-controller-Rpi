@@ -1,4 +1,4 @@
-v0.0.0.0.0.0.9-pre-alpha(Now with proper version control!)
+v0.0.0.0.0.1beta(Now with proper version control!)[not really]
 
 ***********************************************************************************
 
