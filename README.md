@@ -24,7 +24,7 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 ***************************************************************************************
 
 #Main Menu
-![Menu](/main/test/git-assets/bashMenu.PNG)
+![Menu](/main/test/git-assets/BashMenu.jpg)
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
