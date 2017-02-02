@@ -1,4 +1,16 @@
 0.0.0.0.0.2 beta
+
+This controller controls:
+    
+    heater
+    A/C
+    Light timer
+    
+To be added:
+    
+    soil moisture sensor
+    co2 sensor
+    Others
 ***************************************************************************************
 #Main Menu
 ![Menu](/main/test/git-assets/menu.png)
