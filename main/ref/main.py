@@ -44,14 +44,14 @@ while True:
     except Exception:
         time.sleep(5.0)
         h, t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
-    time.sleep(1)
+    time.sleep(2)
     if guienable == 1:
         try:
             web.send('Temp', t)
             web.send('Humd', h)
         except Exception:
             time.sleep(5.0)
-    time.sleep(1.0)
+    time.sleep(2)
     t1 = t * 9/5.0 + 32
     if t > temp2:
         if t < temp1:
@@ -83,7 +83,7 @@ while True:
         if heatvar == 1:
             if gpstate3 == 1:
                 GPIO.output(pin3, GPIO.LOW)  # heater on
-    time.sleep(1)
+    time.sleep(2)
     lcd.clear()  # clear the lcd
     lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
-    time.sleep(5)
+    time.sleep(10)

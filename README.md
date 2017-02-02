@@ -1,34 +1,11 @@
-v0.0.0.0.0.0.9-pre-alpha(Now with proper version control!)
-
-***********************************************************************************
-
-#lastest raspbian ssh server is off by default
-create a file in "boot" partition named "ssh"
-
-************************************************************************************
-
-Raspberry Pi Zero v1.3
-
-Python v3
-
-using BCM for GPIO values
-
-using OS: Raspbian jessie lite
-
-Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) 
-
-Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
-
-Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
-
+0.0.0.0.0.1beta
 ***************************************************************************************
-
 #Main Menu
 ![Menu](/main/test/git-assets/BashMenu.jpg)
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
-live feed at (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
+(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
 ***************************************************************************************
 ## install
     sudo apt update
@@ -67,10 +44,22 @@ put Adafruit.IO key in settings.py if enabled
   
 set variables in settings.py in menu [l]
 
-*************************************
+create a file in "boot" partition named "ssh"
 
-I plan to continue development on this project until my death.
-
-***************************************************************************************
 4 more project info read comments in settings.py
+
+
+Raspberry Pi Zero v1.3
+
+Python v3
+
+using BCM for GPIO values
+
+using OS: Raspbian jessie lite
+
+Using Adafruit DHT22 raspberry pi library(https://github.com/adafruit/Adafruit_Python_DHT) 
+
+Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafruit_Python_CharLCD)
+
+Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
