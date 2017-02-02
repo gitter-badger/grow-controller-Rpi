@@ -1,7 +1,7 @@
-
+0.0.0.0.0.1beta
 ***************************************************************************************
 #Main Menu
-![Menu](/main/test/git-assets/menu.PNG)
+![Menu](/main/test/git-assets/BashMenu.jpg)
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
@@ -47,6 +47,7 @@ set variables in settings.py in menu [l]
 create a file in "boot" partition named "ssh"
 
 4 more project info read comments in settings.py
+
 
 Raspberry Pi Zero v1.3
 
