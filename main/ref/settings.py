@@ -4,8 +4,8 @@
 ###set min max temps here, in C###
 def temps():
     global maxTemp, minTemp
-    maxTemp = 30
-    minTemp = 20
+    maxTemp = 30   # temp at which the A/C turns on
+    minTemp = 20   # temp at which the heater turns on
 ###set pins here###
 def pins():
     global ballast, ballastfan, heater, ocfan, dhtsensor
