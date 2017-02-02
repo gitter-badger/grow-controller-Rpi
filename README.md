@@ -1,7 +1,7 @@
 0.0.0.0.0.1beta
 ***************************************************************************************
 #Main Menu
-![Menu](/main/test/git-assets/menu.PNG)
+![Menu](/main/test/git-assets/menu.png)
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
