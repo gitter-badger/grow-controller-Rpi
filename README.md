@@ -23,19 +23,11 @@
     git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
   
     git clone https://github.com/growmaster420/grow-controller-Rpi.git
-  
-    cd Adafruit_Python_DHT
-  
-    sudo python3 setup.py install 
-  
-    cd ~
-  
-    cd Adafruit_Python_CharLCD
-  
-    sudo python3 setup.py install 
-  
-    cd ~
     
+    sudo python3 Adafruit_Python_DHT/setup.py install 
+      
+    sudo python3 Adafruit_Python_CharLCD/setup.py install 
+      
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
