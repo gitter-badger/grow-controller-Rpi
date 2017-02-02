@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 # expect this file to get infinitely more complex 
+#Copyright (C) 2016  Growmaster420
 import Adafruit_CharLCD as LCD
 import Adafruit_DHT as dht
 import settings
