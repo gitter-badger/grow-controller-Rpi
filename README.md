@@ -20,8 +20,8 @@ To be added:
 (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)(<DOWN until further notice)
 ***************************************************************************************
 
-## install
-#step1
+# install
+## step1
 
     sudo apt update
   
@@ -46,7 +46,7 @@ To be added:
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
-#step2  
+## step2  
 put Adafruit.IO key in settings.py if enabled 
   
 set variables in settings.py in menu [l]
