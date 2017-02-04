@@ -10,12 +10,10 @@ if [ $yourch = "y" ];
         sudo apt install $insch
         sudo apt upgrade
         sudo apt dist-upgrade
-        sudo apt autoremove
 fi
 if [ $yourch != "y" ];
     then
         sudo apt upgrade
         sudo apt dist-upgrade
-        sudo apt autoremove
 fi
 exit

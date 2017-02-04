@@ -2,6 +2,8 @@
 import settings
 from Adafruit_IO import Client
 import gpioState
+from datetime import datetime
+
 
 
 settings.webgui()
@@ -49,7 +51,9 @@ try:
     if gpstate3 == 1:
         web.send('heaterState', 'OFF')
 except Exception:
-    pass
+    now = datetime.now()
+    print("IOupdater.py failed @", now)
+
 '''
 #10 feeds is the limit###
 if gpstate4 == 0:

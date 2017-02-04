@@ -1,13 +1,30 @@
-0.0.0.0.0.1beta
+# grow-controller-Rpi
+
+0.0.0.0.0.2 beta
+
+This controller controls:
+    
+    heater
+    A/C
+    Light timer
+    
+To be added:
+    
+    soil moisture sensor
+    co2 sensor
+    Others
 ***************************************************************************************
 #Main Menu
 ![Menu](/main/test/git-assets/menu.png)
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
-(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)
+(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)(<DOWN until further notice)
 ***************************************************************************************
-## install
+
+# install
+## step1
+
     sudo apt update
   
     sudo apt upgrade -y
@@ -23,31 +40,26 @@
     git clone https://github.com/adafruit/Adafruit_Python_CharLCD.git
   
     git clone https://github.com/growmaster420/grow-controller-Rpi.git
-  
-    cd Adafruit_Python_DHT
-  
-    sudo python3 setup.py install 
-  
-    cd ~
-  
-    cd Adafruit_Python_CharLCD
-  
-    sudo python3 setup.py install 
-  
-    cd ~
     
+    sudo python3 Adafruit_Python_DHT/setup.py install 
+      
+    sudo python3 Adafruit_Python_CharLCD/setup.py install 
+      
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
-  
+## step2  
 put Adafruit.IO key in settings.py if enabled 
   
 set variables in settings.py in menu [l]
 
 create a file in "boot" partition named "ssh"
 
+install wpa_supplicant.conf in sdcard as root
+
 4 more project info read comments in settings.py
 
+**************************************************
 
 Raspberry Pi Zero v1.3
 
