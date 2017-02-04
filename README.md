@@ -82,3 +82,5 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 **************************************************
 
 Dev branches are normally stable if u git clone after the days commits stop, around 12GMT = 4PST
+
+this project will reach v1.0 when all elements are I require added 
