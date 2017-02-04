@@ -59,7 +59,9 @@ install wpa_supplicant.conf in sdcard as root
 
 4 more project info read comments in settings.py
 
-install crontab with cronmaker.py from menu(automatic)
+run cronmaker from menu
+
+install crontab from menu
 
 **************************************************
 
