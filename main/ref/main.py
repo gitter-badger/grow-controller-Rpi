@@ -93,7 +93,8 @@ while True:
     time.sleep(10)
     if gpstate1 == 1:
         lcd.clear
-        lcd.set_color(0.0, 0.0, 1.0)
+        lcd.set_color(1.0, 0.0, 1.0)
+        lcd.set_color(1.0, 1.0, 1.0)
         lcd.message('light is off\n DO NOT OPEN DOOR!!!' )
         time.sleep(5)
 
