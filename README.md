@@ -51,7 +51,7 @@ To be added:
 ## step2  
 put Adafruit.IO key in settings.py if enabled 
   
-set variables in settings.py in menu [l]
+set variables in settings.py in (menu 'l')
 
 create a file in "boot" partition named "ssh"
 
@@ -59,9 +59,9 @@ install wpa_supplicant.conf in sdcard as root
 
 4 more project info read comments in settings.py
 
-run cronmaker from menu
+run cronmaker from menu (menu 'b')
 
-install crontab from menu
+install crontab from menu (menu 'g')
 
 **************************************************
 
