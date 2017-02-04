@@ -43,7 +43,7 @@ case $yourch in
         read yourch ;;
     a) python3 /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
         read yourch ;;
-    b) python3 ref/cronmaker.py > ref/crontab && echo -n "Enter to continue"
+    b) python3 /home/pi/grow-controller-Rpi/main/ref/cronmaker.py > /home/pi/grow-controller-Rpi/main/ref/crontab && echo -n "Enter to continue"
         read yourch ;;
     c) python3 /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
         read yourch ;;
