@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # boot set default relay values
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import settings
 from datetime import datetime
 from time import sleep
@@ -12,6 +12,7 @@ pin3 = settings.heater
 pin4 = settings.ocfan
 lightOn = settings.lightOn
 lightOff = settings.lightOff
+lightOff = lightOff + 1 # adjust lightoff for correct light off time
 now = datetime.now()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
