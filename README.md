@@ -81,4 +81,4 @@ Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
 **************************************************
 
-Dev branches are normally stable if u git clone after the days commits stop, around 4amPST
+Dev branches are normally stable if u git clone after the days commits stop, around 12GMT = 4PST
