@@ -10,6 +10,7 @@ pin4 = settings.ocfan
 lightOn = settings.lightOn
 lightOff = settings.lightOff
 print("###INSTALL AS ROOT###")
+print("@reboot python3 /home/pi/grow-controller-Rpi/main/ref/alloff.py &")
 print("@reboot python3 /home/pi/grow-controller-Rpi/main/ref/main.py &  >> /home/pi/grow-controller-Rpi/main/ref/error.log")
 print("@reboot python3 /home/pi/grow-controller-Rpi/main/ref/boot.py &")
 print("@reboot sudo echo", pin1, "> /sys/class/gpio/export")
