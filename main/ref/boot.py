@@ -26,9 +26,4 @@ if (var1 <= lightOff) and (var1 >= lightOn):
     GPIO.output(pin2, GPIO.LOW)  # ballast fan on
     GPIO.output(pin3, GPIO.HIGH)  # off
     GPIO.output(pin4, GPIO.HIGH)  # off
-else:
-    GPIO.output(pin1, GPIO.HIGH)  # off
-    GPIO.output(pin2, GPIO.HIGH)  # off
-    GPIO.output(pin3, GPIO.HIGH)  # off
-    GPIO.output(pin4, GPIO.HIGH)  # off
 exit()
