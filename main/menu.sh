@@ -6,7 +6,7 @@ fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
 echo "All settings are in settings.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "! 0.0.0.0.0.2 beta             Grow controller          GROWMASTER420         !"
+echo "!   0.0.0.0.0.3-beta           Grow controller          GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
@@ -43,7 +43,7 @@ case $yourch in
         read yourch ;;
     a) python3 /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
         read yourch ;;
-    b) python3 /home/pi/grow-controller-Rpi/main/ref/cronmaker.py && echo -n "Enter to continue"
+    b) python3 ref/cronmaker.py > ref/crontab && echo -n "Enter to continue"
         read yourch ;;
     c) python3 /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
         read yourch ;;
