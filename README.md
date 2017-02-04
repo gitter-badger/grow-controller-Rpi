@@ -19,7 +19,10 @@ To be added:
 
 (https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)(<DOWN until further notice)
 ***************************************************************************************
+
 ## install
+#step1
+
     sudo apt update
   
     sudo apt upgrade -y
@@ -43,7 +46,7 @@ To be added:
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
-  
+#step2  
 put Adafruit.IO key in settings.py if enabled 
   
 set variables in settings.py in menu [l]
@@ -54,6 +57,7 @@ install wpa_supplicant.conf in sdcard as root
 
 4 more project info read comments in settings.py
 
+**************************************************
 
 Raspberry Pi Zero v1.3
 
