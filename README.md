@@ -50,6 +50,8 @@ set variables in settings.py in menu [l]
 
 create a file in "boot" partition named "ssh"
 
+install wpa_supplicant.conf in sdcard as root
+
 4 more project info read comments in settings.py
 
 
