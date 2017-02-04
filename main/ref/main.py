@@ -16,6 +16,8 @@ guienable = settings.enable1
 ADAFRUIT_IO_KEY = settings.key1
 web = Client(ADAFRUIT_IO_KEY)
 ###GPIOstate###
+gpioState.relay1()
+gpstate1 = gpioState.state1  # heater
 gpioState.relay3()
 gpstate3 = gpioState.state3  # heater
 gpioState.relay4()
@@ -89,3 +91,9 @@ while True:
     lcd.clear()  # clear the lcd
     lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
     time.sleep(10)
+    if gpstate1 == 1:
+        lcd.clear
+        lcd.set_color(0.0, 0.0, 1.0)
+        lcd.message('light is off\n DO NOT OPEN DOOR!!!' )
+        time.sleep(5)
+
