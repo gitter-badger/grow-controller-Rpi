@@ -79,3 +79,6 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 
 Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
+**************************************************
+
+Dev branches are normally stable if u git clone after the days commits stop, around 4amPST
