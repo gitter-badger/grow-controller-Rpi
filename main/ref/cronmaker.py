@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import settings
-import os
+#import os
 settings.pins()
 settings.light()
 pin1 = settings.ballast
@@ -21,4 +21,4 @@ print("0", lightOff, "* * * python3 /home/pi/grow-controller-Rpi/main/ref/relay.
 print("0", lightOn, "* * * python3 /home/pi/grow-controller-Rpi/main/ref/relay.py -b on")
 print("0", lightOff, "* * * python3 /home/pi/grow-controller-Rpi/main/ref/relay.py -b off")
 print("*/5 * * * * python3 /home/pi/grow-controller-Rpi/main/ref/IOupdater.py >> /home/pi/grow-controller-Rpi/main/ref/error.log")
-os.system('sudo crontab /home/pi/grow-controller-Rpi/main/ref/crontab.cron')
+#os.system('sudo crontab /home/pi/grow-controller-Rpi/main/ref/crontab.cron')

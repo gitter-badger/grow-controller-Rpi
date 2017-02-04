@@ -14,7 +14,7 @@ echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus   
 echo "! [4] root crontab -l    ! [d] Start main.py &      ! [o] All Relays Off      !"
 echo "! [5] root crontab -e    ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
-echo "! [7] processor temp     ! [g]                      ! [r]                     !"
+echo "! [7] processor temp     ! [g] crontab installer    ! [r]                     !"
 echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
 echo "! [9] tail syslog        ! [i] Edit this Menu       ! [t]                     !"
 echo "! [0] Exit               ! [j] Shutdown             ! [u]                     !"
@@ -53,8 +53,8 @@ case $yourch in
         read yourch ;;
     f) ifconfig && iwconfig wlan0 && echo -n "Enter to continue"
         read yourch ;;
-#    g) python3 /home/pi/grow-controller-Rpi/main/ref/ && echo -n "Enter to continue"
-#        read yourch ;;
+    g) sudo crontab /home/pi/grow-controller-Rpi/main/ref/crontab.cron && echo -n "Enter to continue"
+        read yourch ;;
     h) tail /var/log/auth.log && echo -n "Enter to continue"
         read yourch ;;
     i) nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
