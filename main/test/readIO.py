@@ -9,7 +9,7 @@ ADAFRUIT_IO_KEY = settings.key
 web = Client(ADAFRUIT_IO_KEY)
 
 while True:
-    data = web.receive('Butt1')
+    data = web.receive('test1')
     time.sleep(1.0)
-    print('data from Adafruit.IO {0}'.format(data.value))
+    print("test1 data",data.value)
 
