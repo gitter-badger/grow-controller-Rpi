@@ -42,10 +42,10 @@ try:
         web.send('ballastState', 'ON')
     if gpstate1 == 1:
         web.send('ballastState', 'OFF')
-    if gpstate2 == 0:
-        web.send('ballastFan', 'ON')
-    if gpstate2 == 1:
-        web.send('ballastFan', 'OFF')
+    if gpstate4 == 0:
+        web.send('ocfanState', 'ON')
+    if gpstate4 == 1:
+        web.send('ocfanState', 'OFF')
     if gpstate3 == 0:
         web.send('heaterState', 'ON')
     if gpstate3 == 1:
@@ -56,10 +56,12 @@ except Exception:
 
 '''
 #10 feeds is the limit###
-if gpstate4 == 0:
-    web.send('ocfanState', 'ON')
-if gpstate4 == 1:
-    web.send('ocfanState', 'OFF')
+
+    if gpstate2 == 0:
+        web.send('ballastFan', 'ON')
+    if gpstate2 == 1:
+        web.send('ballastFan', 'OFF')
+
 '''
 
 
