@@ -57,15 +57,14 @@ while True:
             time.sleep(5.0)
     time.sleep(2)
     t1 = t * 9/5.0 + 32
-    if t > temp2:
-        if t < temp1:
-            lcd.set_color(0.0, 1.0, 0.0) # green = good temp
-            if heatvar == 1:
-                if gpstate3 == 0:
-                    GPIO.output(pin3, GPIO.HIGH)  # heater off
-            if coolvar == 1:
-                if gpstate4 == 0:
-                    GPIO.output(pin4, GPIO.HIGH)  # ac off
+    if t > temp2 and t < temp1:
+        lcd.set_color(0.0, 1.0, 0.0) # green = good temp
+        if heatvar == 1:
+            if gpstate3 == 0:
+                GPIO.output(pin3, GPIO.HIGH)  # heater off
+        if coolvar == 1:
+            if gpstate4 == 0:
+                GPIO.output(pin4, GPIO.HIGH)  # ac off
     if t > temp1:  # explains itself
         lcd.set_color(1.0, 0.0, 0.0)  # high heat
         lcd.clear()
