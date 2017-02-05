@@ -17,7 +17,7 @@ echo "! [6] htop               ! [f] network info         ! [q]                 
 echo "! [7] processor temp     ! [g] crontab installer    ! [r]                     !"
 echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
 echo "! [9] tail syslog        ! [i] Edit this Menu       ! [t]                     !"
-echo "! [0] Exit               ! [j] Shutdown             ! [u]                     !"
+echo "! [0] Exit               ! [j] Reboot               ! [u]                     !"
 echo "! [ ]                    ! [k] date                 ! [v]                     !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo -n "[1-0,a-k]: "
@@ -59,12 +59,12 @@ case $yourch in
         read yourch ;;
     i) nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
         read yourch ;;
-    j) echo -n 'shutdown? [y/n]'
+    j) echo -n 'Reboot System? [y/n]'
         read Var1 -n
            if [ $Var1 = 'y' ] ; then
-             echo 'sudo shutdown -h -P now'
+             echo 'sudo reboot now'
              sleep 5
-             sudo shutdown -h -P now
+             sudo reboot now
            fi ;;
     k) date && echo -n "Enter to continue"
         read yourch ;;
