@@ -90,7 +90,7 @@ while True:
     lcd.clear()  # clear the lcd
     lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
     time.sleep(2)
-    if gpstate1 == 1:
+    if gpstate1 == 0:
         lcd.clear()
         lcd.set_color(1.0, 0.0, 1.0)
         lcd.message('light is off\nDO NOT OPEN DOOR' )
