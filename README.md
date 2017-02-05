@@ -27,6 +27,8 @@ To be added:
 # install
 ## step1
 
+    passwd #change password
+
     sudo apt update
   
     sudo apt upgrade -y
@@ -50,7 +52,9 @@ To be added:
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
-## step2  
+## step2 
+ 
+ 
 put Adafruit.IO key in settings.py if enabled 
   
 set variables in settings.py in (menu 'l')
