@@ -7,8 +7,8 @@ cd ~
 git clone https://github.com/growmaster420/Adafruit_Python_DHT.git
 git clone https://github.com/growmaster420/Adafruit_Python_CharLCD.git
 git clone https://github.com/growmaster420/grow-controller-Rpi.git
-sudo python3 Adafruit_Python_DHT/setup.py install
-sudo python3 Adafruit_Python_CharLCD/setup.py install
+sudo python3 /home/pi/Adafruit_Python_DHT/setup.py install
+sudo python3 /home/pi/Adafruit_Python_CharLCD/setup.py install
 cat /home/pi/grow-controller-Rpi/.bashrc >> /home/pi/.bashrc
 echo""
 echo""

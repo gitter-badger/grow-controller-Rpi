@@ -6,7 +6,7 @@ fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
 echo "All settings are in settings.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "! 0.0.0.0.0.2 beta             Grow controller          GROWMASTER420         !"
+echo "!   0.0.0.0.0.3-beta           Grow controller          GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
@@ -14,10 +14,10 @@ echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus   
 echo "! [4] root crontab -l    ! [d] Start main.py &      ! [o] All Relays Off      !"
 echo "! [5] root crontab -e    ! [e] HDMI OFF             ! [p]                     !"
 echo "! [6] htop               ! [f] network info         ! [q]                     !"
-echo "! [7] processor temp     ! [g]                      ! [r]                     !"
+echo "! [7] processor temp     ! [g] crontab installer    ! [r]                     !"
 echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
 echo "! [9] tail syslog        ! [i] Edit this Menu       ! [t]                     !"
-echo "! [0] Exit               ! [j] Shutdown             ! [u]                     !"
+echo "! [0] Exit               ! [j] Reboot               ! [u]                     !"
 echo "! [ ]                    ! [k] date                 ! [v]                     !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo -n "[1-0,a-k]: "
@@ -43,7 +43,7 @@ case $yourch in
         read yourch ;;
     a) python3 /home/pi/grow-controller-Rpi/main/ref/relaymenu.py && echo -n "Enter to continue"
         read yourch ;;
-    b) python3 /home/pi/grow-controller-Rpi/main/ref/cronmaker.py && echo -n "Enter to continue"
+    b) sudo python3 /home/pi/grow-controller-Rpi/main/ref/cronmaker.py > /home/pi/grow-controller-Rpi/main/ref/crontab.cron && echo -n "Enter to continue"
         read yourch ;;
     c) python3 /home/pi/grow-controller-Rpi/main/ref/gpioState.py && echo -n "Enter to continue"
         read yourch ;;
@@ -53,18 +53,18 @@ case $yourch in
         read yourch ;;
     f) ifconfig && iwconfig wlan0 && echo -n "Enter to continue"
         read yourch ;;
-#    g) python3 /home/pi/grow-controller-Rpi/main/ref/ && echo -n "Enter to continue"
-#        read yourch ;;
+    g) sudo crontab /home/pi/grow-controller-Rpi/main/ref/crontab.cron && echo -n "Enter to continue"
+        read yourch ;;
     h) tail /var/log/auth.log && echo -n "Enter to continue"
         read yourch ;;
     i) nano /home/pi/grow-controller-Rpi/main/menu.sh && echo -n "Enter to continue"
         read yourch ;;
-    j) echo -n 'shutdown? [y/n]'
+    j) echo -n 'Reboot System? [y/n]'
         read Var1 -n
            if [ $Var1 = 'y' ] ; then
-             echo 'sudo shutdown -h -P now'
+             echo 'sudo reboot now'
              sleep 5
-             sudo shutdown -h -P now
+             sudo reboot now
            fi ;;
     k) date && echo -n "Enter to continue"
         read yourch ;;

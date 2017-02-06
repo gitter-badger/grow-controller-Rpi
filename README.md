@@ -1,6 +1,8 @@
 # grow-controller-Rpi
 
-0.0.0.0.0.2 beta
+grow conrtoller 1 is now a dev unit, all other units on main feed
+
+0.0.0.0.0.3-beta
 
 This controller controls:
     
@@ -25,6 +27,8 @@ To be added:
 # install
 ## step1
 
+    passwd #change password
+
     sudo apt update
   
     sudo apt upgrade -y
@@ -48,16 +52,22 @@ To be added:
     sudo dpkg-reconfigure tzdata
     
     sudo raspi-config #i2c enable
-## step2  
+## step2 
+ 
+ 
 put Adafruit.IO key in settings.py if enabled 
   
-set variables in settings.py in menu [l]
+set variables in settings.py in (menu 'l')
 
 create a file in "boot" partition named "ssh"
 
 install wpa_supplicant.conf in sdcard as root
 
 4 more project info read comments in settings.py
+
+run cronmaker from menu (menu 'b')
+
+install crontab from menu (menu 'g')
 
 **************************************************
 
@@ -75,3 +85,8 @@ Using Adafruit 16x2 I2C PiPlate LCD display (https://github.com/adafruit/Adafrui
 
 Using Adafruit-IO python client (https://github.com/adafruit/io-client-python)
 
+**************************************************
+
+Dev branches are normally stable if u git clone after the days commits stop, around 12GMT = 4PST
+
+this project will reach v1.0 when all elements are I require added 

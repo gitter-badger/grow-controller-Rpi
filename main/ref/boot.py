@@ -20,15 +20,10 @@ GPIO.setup(pin2, GPIO.OUT)  #  ballast fan
 GPIO.setup(pin3, GPIO.OUT)  #  water pump
 GPIO.setup(pin4, GPIO.OUT)  #  oc fan
 var1 = now.hour
-if (var1 <= lightOff) and (var1 >= lightOn):
+if (var1 < lightOff) and (var1 >= lightOn):
     sleep(15)  # if power outage was short give the bulb a little time to cool
     GPIO.output(pin1, GPIO.LOW)  # main light on
     GPIO.output(pin2, GPIO.LOW)  # ballast fan on
-    GPIO.output(pin3, GPIO.HIGH)  # off
-    GPIO.output(pin4, GPIO.HIGH)  # off
-else:
-    GPIO.output(pin1, GPIO.HIGH)  # off
-    GPIO.output(pin2, GPIO.HIGH)  # off
     GPIO.output(pin3, GPIO.HIGH)  # off
     GPIO.output(pin4, GPIO.HIGH)  # off
 exit()
