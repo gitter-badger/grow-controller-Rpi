@@ -76,7 +76,7 @@ case $yourch in
         read yourch ;;
     o) python3 /home/pi/grow-controller-Rpi/main/ref/alloff.py && echo -n "Enter to continue"
         read yourch ;;
-    o) git pull && echo -n "Enter to continue"
+    p) git pull && echo -n "Enter to continue"
         read yourch ;;
     0) exit 0 ;;
 *) echo "really?";
