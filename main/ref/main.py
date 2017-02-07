@@ -77,6 +77,7 @@ while True:
             if gpstate4 == 1:
                 GPIO.output(pin4, GPIO.LOW)  # ac on
     if t < temp2:
+        lcd.clear()
         lcd.set_color(0.0, 0.0, 1.0)  # Blue = cold shut off a/c
         lcd.message('TEMP TOO LOW\n')
         time.sleep(5)
