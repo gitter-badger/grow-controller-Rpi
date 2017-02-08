@@ -6,14 +6,14 @@ fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
 echo "All settings are in settings.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "!   0.0.0.0.0.3-beta           Grow controller          GROWMASTER420         !"
+echo "!   0.0.0.0.0.4-beta           Grow controller          GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"
 echo "! [3] w & last           ! [c] GPIO state           ! [n] Reset I2C bus       !"
 echo "! [4] root crontab -l    ! [d] Start main.py &      ! [o] All Relays Off      !"
-echo "! [5] root crontab -e    ! [e] HDMI OFF             ! [p]                     !"
-echo "! [6] htop               ! [f] network info         ! [q]                     !"
+echo "! [5] root crontab -e    ! [e] HDMI OFF             ! [p] git checkout        !"
+echo "! [6] htop               ! [f] network info         ! [q] update controller   !"
 echo "! [7] processor temp     ! [g] crontab installer    ! [r]                     !"
 echo "! [8] Check Space        ! [h] auth log             ! [s]                     !"
 echo "! [9] tail syslog        ! [i] Edit this Menu       ! [t]                     !"
@@ -75,6 +75,10 @@ case $yourch in
     n) sudo modprobe -r i2c_bcm2708 && sudo modprobe i2c_bcm2708 baudrate=100010 && echo -n "Enter to continue"
         read yourch ;;
     o) python3 /home/pi/grow-controller-Rpi/main/ref/alloff.py && echo -n "Enter to continue"
+        read yourch ;;
+    p)
+        read yourch ;;
+    q) git pull -v -fq && echo -n "Enter to continue"
         read yourch ;;
     0) exit 0 ;;
 *) echo "really?";
