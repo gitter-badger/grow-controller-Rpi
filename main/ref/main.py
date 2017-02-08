@@ -16,12 +16,7 @@ guienable = settings.enable1
 ADAFRUIT_IO_KEY = settings.key1
 web = Client(ADAFRUIT_IO_KEY)
 ###GPIOstate###
-gpioState.relay1()
-gpstate1 = gpioState.state1  # heater
-gpioState.relay3()
-gpstate3 = gpioState.state3  # heater
-gpioState.relay4()
-gpstate4 = gpioState.state4  # ac
+
 ####Settings####
 settings.temps()
 temp1 = settings.maxTemp
@@ -41,6 +36,13 @@ lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
 
 ###Main Loop###
 while True:
+    # get gpio states
+    gpioState.relay1()
+    gpstate1 = gpioState.state1  # heater
+    gpioState.relay3()
+    gpstate3 = gpioState.state3  # heater
+    gpioState.relay4()
+    gpstate4 = gpioState.state4  # ac
     now = datetime.now()
     try:
         h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
