@@ -15,8 +15,6 @@ settings.webgui()
 guienable = settings.enable1
 ADAFRUIT_IO_KEY = settings.key1
 web = Client(ADAFRUIT_IO_KEY)
-###GPIOstate###
-
 ####Settings####
 settings.temps()
 temp1 = settings.maxTemp
