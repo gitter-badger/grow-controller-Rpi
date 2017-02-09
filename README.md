@@ -21,7 +21,7 @@ To be added:
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
-(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)(<DOWN until further notice)
+https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi 
 ***************************************************************************************
 
 # install
