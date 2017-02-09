@@ -16,5 +16,5 @@ time.sleep(0.2)
 while True:
   button_1 = GPIO.input(26)
   if button_1 == False:
-    os.system("sudo shutdown -h -P now")
+    os.system("echo 'hello world'")
   time.sleep(0.2)

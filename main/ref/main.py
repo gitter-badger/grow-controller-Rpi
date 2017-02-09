@@ -31,7 +31,6 @@ coolvar = settings.cool1
 GPIO.setup(pin3, GPIO.OUT)  # heater
 GPIO.setup(pin4, GPIO.OUT)  # ac
 lcd = LCD.Adafruit_CharLCDPlate() # defines lcd
-
 ###Main Loop###
 while True:
     # get gpio states
