@@ -46,14 +46,14 @@ while True:
         h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
     except Exception:
         time.sleep(5.0)
-        print("DHTread error @ ", now)
+        print("main.py DHTread error @ ", now)
     time.sleep(2)
     if guienable == 1:
         try:
             web.send('Temp', t)
             web.send('Humd', h)
         except Exception:
-            print("AdafruitIO send error error @ ", now)
+            print("main.py AdafruitIO send error error @ ", now)
             time.sleep(5.0)
     time.sleep(2)
     t1 = t * 9/5.0 + 32
