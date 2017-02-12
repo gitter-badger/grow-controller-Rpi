@@ -2,7 +2,7 @@
 
 grow conrtoller 1 is now a dev unit, all other units on main feed
 
-0.0.0.0.0.4-beta
+0.0.0.0.0.5-beta
 
 This controller controls:
     
@@ -21,7 +21,7 @@ To be added:
 #AdafruitIO 
 ![AdafruitIO](/main/test/git-assets/AdafruitIO.png)
 
-(https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi)(<DOWN until further notice)
+https://io.adafruit.com/growmaster420/dashboards/grow-controller-rpi 
 ***************************************************************************************
 
 # install
