@@ -40,14 +40,11 @@ def webgui():  #  requires a Adafruit.IO account(free)
     enable1 = 1   # webGui enable #  ## 0 = no / 1 = yes
     key1 = 'your_adafruit_IO_key'
 
-
-''' # what to turn on at boot, NOT FINISHED
-def boot():
-    global 1, 2, 3, 4
-    1 = 0
-    2 = 0
-    3 = 0
-    4 = 0
+def boot():   # what to turn on at boot, NOT FINISHED , ( 0 = off / 1 = on / 2 = on if light on / 3 = on if light off )
+    global boot1, boot2, boot3, boot4
+    boot1 = 0  # ballast
+    boot2 = 0  # ballfan
+    boot3 = 0  # heater
+    boot4 = 0  # ocfan
 
 
-'''

@@ -9,6 +9,7 @@ settings.expGpio()
 settings.heat()
 settings.cooling()
 settings.webgui()
+settings.boot()
 #######################
 
 ###Set Variables######
@@ -29,6 +30,10 @@ heatvar = settings.heat1
 coolvar = settings.cool1
 ADAFRUIT_IO_KEY = settings.key1
 guienable = settings.enable1
+b1 = settings.boot1
+b2 = settings.boot2
+b3 = settings.boot3
+b4 = settings.boot4
 #######################
 
 ###Relay Pins###
@@ -59,3 +64,8 @@ print("coolvar", coolvar)
 #################
 print('key1', ADAFRUIT_IO_KEY)
 print('gui enable', guienable)
+#################
+print('boot1', b1)
+print('boot2', b2)
+print('boot3', b3)
+print('boot4', b4)

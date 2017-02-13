@@ -6,12 +6,14 @@ from datetime import datetime
 from time import sleep
 settings.pins()
 settings.light()
+settings.boot()
 pin1 = settings.ballast
 pin2 = settings.ballastfan
 pin3 = settings.heater
 pin4 = settings.ocfan
 lightOn = settings.lightOn
 lightOff = settings.lightOff
+
 now = datetime.now()
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
