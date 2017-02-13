@@ -1,5 +1,7 @@
 # grow-controller-Rpi
 
+[![Join the chat at https://gitter.im/grow-controller-Rpi/Lobby](https://badges.gitter.im/grow-controller-Rpi/Lobby.svg)](https://gitter.im/grow-controller-Rpi/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 grow conrtoller 1 is now a dev unit, all other units on main feed
 
 0.0.0.0.0.5-beta
