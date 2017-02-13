@@ -6,7 +6,7 @@ fortune | cowsay -f tux # sudo apt install fortune cowsay -y
 uptime
 echo "All settings are in settings.py. Selection [l]"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
-echo "!   0.0.0.0.0.5-beta           Grow controller          GROWMASTER420         !"
+echo "!   0.0.0.0.0.6-beta           Grow controller          GROWMASTER420         !"
 echo "︻╦╤─--------------------*==========================*---------------------─╤╦︻"
 echo "! [1] apt-get u/g/d/a/i  ! [a] Light menu           ! [l] edit settings.py    !"
 echo "! [2] calculate V/A      ! [b] crontab maker        ! [m] SelectDefaultEditor !"

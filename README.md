@@ -2,7 +2,7 @@
 
 grow conrtoller 1 is now a dev unit, all other units on main feed
 
-0.0.0.0.0.5-beta
+0.0.0.0.0.6-beta
 
 This controller controls:
     
