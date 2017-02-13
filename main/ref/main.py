@@ -44,18 +44,17 @@ while True:
     try:
         h,t = dht.read_retry(dht.DHT22, pin5)  # read DHT22
     except Exception:
-        time.sleep(5.0)
         print("main.py DHTread error @ ", now)
-    time.sleep(2)
     if guienable == 1:
         try:
             web.send('Temp', t)
             web.send('Humd', h)
         except Exception:
             print("main.py AdafruitIO send error error @ ", now)
-            time.sleep(5.0)
-    time.sleep(2)
     t1 = t * 9/5.0 + 32
+    lcd.clear()  # clear the lcd
+    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
+    time.sleep(10)
     if t > temp2 and t < temp1:
         lcd.set_color(0.0, 1.0, 0.0) # green = good temp
         if heatvar == 1:
@@ -74,7 +73,6 @@ while True:
         if coolvar == 1:
             if gpstate4 == 1:
                 GPIO.output(pin4, GPIO.LOW)  # ac on
-        time.sleep(10)
     if t < temp2:
         lcd.clear()
         lcd.set_color(0.0, 0.0, 1.0)  # Blue = cold shut off a/c
@@ -85,14 +83,8 @@ while True:
         if heatvar == 1:
             if gpstate3 == 1:
                 GPIO.output(pin3, GPIO.LOW)  # heater on
-        time.sleep(10)
-    time.sleep(2)
-    lcd.clear()  # clear the lcd
-    lcd.message('T={0:0.1f} H={1:0.1f}\nF={2:0.1f} %s:%s:%s'.format(t, h, t1) % (now.hour, now.minute, now.second))
-    time.sleep(2)
     if gpstate1 == 1:
         lcd.clear()
         lcd.set_color(1.0, 0.0, 1.0)
         lcd.message('light is off\nDO NOT OPEN DOOR' )
-        time.sleep(5)
-
+        time.sleep(1)
